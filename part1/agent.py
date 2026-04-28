@@ -1,4 +1,3 @@
-import numpy as np
 import torch
 import torch.nn.functional as F
 from torch.distributions import Normal
@@ -37,7 +36,9 @@ class Policy(torch.nn.Module):
         """
             Critic network
         """
-        # TASK 3: critic network for actor-critic algorithm
+        self.fc1_critic = torch.nn.Linear(state_space, self.hidden)
+        self.fc2_critic = torch.nn.Linear(self.hidden, self.hidden)
+        self.fc3_critic_value = torch.nn.Linear(self.hidden, 1)
 
 
         self.init_weights()
@@ -65,17 +66,21 @@ class Policy(torch.nn.Module):
         """
             Critic
         """
-        # TASK 3: forward in the critic network
-
-        
         return normal_dist
 
 
+    def value(self, x):
+        x_critic = self.tanh(self.fc1_critic(x))
+        x_critic = self.tanh(self.fc2_critic(x_critic))
+        return self.fc3_critic_value(x_critic).squeeze(-1)
+
+
 class Agent(object):
-    def __init__(self, policy, device='cpu'):
+    def __init__(self, policy, device='cpu', algorithm='reinforce'):
         self.train_device = device
         self.policy = policy.to(self.train_device)
         self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
+        self.algorithm = algorithm
 
         self.gamma = 0.99
         self.states = []
@@ -100,7 +105,10 @@ class Agent(object):
         #   - compute policy gradient loss function given actions and returns
         #   - compute gradients and step the optimizer
         #
-
+        if self.algorithm == 'reinforce':
+            returns = discount_rewards(rewards, self.gamma)
+            returns = (returns - returns.mean()) / (returns.std() + 1e-8)
+            loss = -(action_log_probs * returns).mean()
 
         #
         # TASK 3:
@@ -109,6 +117,22 @@ class Agent(object):
         #   - compute actor loss and critic loss
         #   - compute gradients and step the optimizer
         #
+        elif self.algorithm == 'actor_critic':
+            values = self.policy.value(states)
+            next_values = self.policy.value(next_states).detach()
+            targets = rewards + self.gamma * next_values * (1 - done)
+            advantages = targets - values
+
+            actor_loss = -(action_log_probs * advantages.detach()).mean()
+            critic_loss = F.mse_loss(values, targets)
+            loss = actor_loss + critic_loss
+
+        else:
+            raise ValueError("algorithm must be 'reinforce' or 'actor_critic'")
+
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
 
         return        
 
