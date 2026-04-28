@@ -66,12 +66,10 @@ class Policy(torch.nn.Module):
         """
             Critic
         """
-        return normal_dist
 
-
-    def value(self, x):
         x_critic = self.tanh(self.fc1_critic(x))
         x_critic = self.tanh(self.fc2_critic(x_critic))
+        
         return self.fc3_critic_value(x_critic).squeeze(-1)
 
 
