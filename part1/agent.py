@@ -72,12 +72,16 @@ class Policy(torch.nn.Module):
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu'):
+    def __init__(self, policy, device='cpu', use_baseline=False):
         self.train_device = device
         self.policy = policy.to(self.train_device)
         self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
 
         self.gamma = 0.99
+        # If use_baseline is True, the agent will learn a value function baseline to reduce the variance 
+        # of the policy gradient estimator
+        self.use_baseline = use_baseline
+
         self.states = []
         self.next_states = []
         self.action_log_probs = []
@@ -104,18 +108,21 @@ class Agent(object):
         # Compute discounted returns
         returns = discount_rewards(rewards, self.gamma)
 
-        # Normalize returns (helps a lot)
-        returns = (returns - returns.mean()) / (returns.std() + 1e-8)
+        # Use baseline if enabled
+        if self.use_baseline:
+            # Compute baseline as the mean of returns and subtract it from returns to get advantage estimates
+            baseline = 20.0
+            returns = returns - baseline
 
-        # Compute policy loss
+        # Compute loss
         loss = - (action_log_probs * returns).sum()
 
         # Gradient step
-        #Clear the memory before computing new gradients
+        # Clear the gradients
         self.optimizer.zero_grad()
-        #This computes gradients of the loss w.r.t. all parameters
+        # Compute gradients
         loss.backward()
-        #This updates the parameters using the computed gradients
+        # Step the optimizer
         self.optimizer.step()
 
         #
