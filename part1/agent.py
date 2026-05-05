@@ -101,6 +101,22 @@ class Agent(object):
         #   - compute gradients and step the optimizer
         #
 
+        # Compute discounted returns
+        returns = discount_rewards(rewards, self.gamma)
+
+        # Normalize returns (helps a lot)
+        returns = (returns - returns.mean()) / (returns.std() + 1e-8)
+
+        # Compute policy loss
+        loss = - (action_log_probs * returns).sum()
+
+        # Gradient step
+        #Clear the memory before computing new gradients
+        self.optimizer.zero_grad()
+        #This computes gradients of the loss w.r.t. all parameters
+        loss.backward()
+        #This updates the parameters using the computed gradients
+        self.optimizer.step()
 
         #
         # TASK 3:
