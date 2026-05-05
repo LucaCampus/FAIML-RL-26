@@ -7,7 +7,12 @@ import torch
 from agent import Policy, Agent
 
 def main():
-    env = gym.make('Hopper-v4')
+    render = True
+
+    if render:
+        env = gym.make('Hopper-v4', render_mode='human')
+    else:
+        env = gym.make('Hopper-v4', render_mode='rgb_array')
 
     print('State space:', env.observation_space)
     print('Action space:', env.action_space)
@@ -77,3 +82,12 @@ if __name__ == '__main__':
 #of an episode or a running average over multiple episodes. 
 #Fixed constant baselines are generally suboptimal because they do not adapt to changes
 #in the reward scale during training.
+
+#How does the baseline affect the training, and why?
+#The baseline reduces variance by turning rewards into relative performance, 
+#making learning more stable without changing the final solution.
+#However, if the baseline is not well-chosen (e.g., too high or too low), it can introduce bias and lead to
+#suboptimal policies. A poorly chosen baseline can cause the agent to underestimate or overestimate the advantage, 
+#leading to noisy updates and slower convergence.
+#without baseline -> gradient ∝ log π(a|s) * return
+#with baseline -> gradient ∝ log π(a|s) * (return - baseline)
