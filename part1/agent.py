@@ -72,7 +72,7 @@ class Policy(torch.nn.Module):
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu', use_baseline=False):
+    def __init__(self, policy, device='cpu', use_baseline=False, baseline_value=20.0):
         self.train_device = device
         self.policy = policy.to(self.train_device)
         self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
@@ -81,6 +81,7 @@ class Agent(object):
         # If use_baseline is True, the agent will learn a value function baseline to reduce the variance 
         # of the policy gradient estimator
         self.use_baseline = use_baseline
+        self.baseline_value = baseline_value
 
         self.states = []
         self.next_states = []
@@ -110,8 +111,8 @@ class Agent(object):
 
         # Use baseline if enabled
         if self.use_baseline:
-            # Compute baseline as the mean of returns and subtract it from returns to get advantage estimates
-            baseline = 20.0
+            # Subtract a constant baseline to get advantage estimates.
+            baseline = self.baseline_value
             #Advantage is the learning signal that tells your agent whether an action was better or worse than expected
             returns = returns - baseline
 

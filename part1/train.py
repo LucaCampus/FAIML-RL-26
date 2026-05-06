@@ -7,7 +7,7 @@ import torch
 from agent import Policy, Agent
 
 def main():
-    render = True
+    render = False
 
     if render:
         env = gym.make('Hopper-v4', render_mode='human')
@@ -24,41 +24,51 @@ def main():
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
     use_baseline = True # change to False for vanilla REINFORCE
-    agent = Agent(policy, use_baseline=use_baseline)
+    mean_rewards = []
+    for baseline_value in range (20):
+        agent = Agent(policy, use_baseline=use_baseline, baseline_value=baseline_value)
 
-    print("Using baseline:", use_baseline)
+        print("Used baseline:", agent.baseline_value if agent.use_baseline else None)
 
-    num_episodes = 500
-    for ep in range(num_episodes):
-        # Reset environment at the start of each episode
-        state, _ = env.reset()
-        # Initialize variables to track episode reward and done flag
-        done = False
-        episode_reward = 0
+        num_episodes = 500
+        tot = 0
+        for ep in range(num_episodes):
+            # Reset environment at the start of each episode
+            state, _ = env.reset()
+            # Initialize variables to track episode reward and done flag
+            done = False
+            episode_reward = 0
 
-        while not done:
-            # Get action from the agent's policy
-            action, log_prob = agent.get_action(state)
+            while not done:
+                # Get action from the agent's policy
+                action, log_prob = agent.get_action(state)
 
-            # Take a step in the environment using the action
-            next_state, reward, terminated, truncated, _ = env.step(action.detach().numpy())
-            # The episode is done if either terminated or truncated is True
-            done = terminated or truncated
+                # Take a step in the environment using the action
+                next_state, reward, terminated, truncated, _ = env.step(action.detach().numpy())
+                # The episode is done if either terminated or truncated is True
+                done = terminated or truncated
 
-            # Store the outcome in the agent's memory
-            agent.store_outcome(state, next_state, log_prob, reward, done)
+                # Store the outcome in the agent's memory
+                agent.store_outcome(state, next_state, log_prob, reward, done)
 
-            # Update the current state and accumulate the episode reward
-            state = next_state
-            episode_reward += reward
+                # Update the current state and accumulate the episode reward
+                state = next_state
+                episode_reward += reward
 
-        # After the episode is done, update the policy using the collected experience
-        agent.update_policy()
+            # After the episode is done, update the policy using the collected experience
+            agent.update_policy()
 
-        print(f"Episode {ep}, Reward: {episode_reward}")
+            # print(f"Episode {ep}, Reward: {episode_reward}")
+            tot += episode_reward
 
-    # Close the environment after training is complete
-    env.close()
+        # Close the environment after training is complete
+        print(f"Mean Reward: {tot/num_episodes}")
+        mean_rewards[baseline_value] = tot/num_episodes
+        env.close()
+    best_index = mean_rewards.index(max(mean_rewards))
+    print(f"Best baseline index: {best_index}")
+    print(f"Best mean reward: {mean_rewards[best_index]}")
+
 
 if __name__ == '__main__':
     main()
