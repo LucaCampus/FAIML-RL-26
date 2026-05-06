@@ -67,6 +67,7 @@ def main():
         env.close()
     best_index = mean_rewards.index(max(mean_rewards))
     print(f"Best baseline index: {best_index}")
+
     print(f"Best mean reward: {mean_rewards[best_index]}")
 
 
