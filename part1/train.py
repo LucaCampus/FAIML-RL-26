@@ -24,11 +24,11 @@ def main():
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
     use_baseline = True # change to False for vanilla REINFORCE
-    agent = Agent(policy, use_baseline=use_baseline)
+    agent = Agent(policy, use_baseline=use_baseline, algorithm='reinforce')
 
     print("Using baseline:", use_baseline)
 
-    num_episodes = 500
+    num_episodes = 1000
     for ep in range(num_episodes):
         # Reset environment at the start of each episode
         state, _ = env.reset()
@@ -38,7 +38,7 @@ def main():
 
         while not done:
             # Get action from the agent's policy
-            action, log_prob = agent.get_action(state)
+            action, log_prob, state_value = agent.get_action(state)
 
             # Take a step in the environment using the action
             next_state, reward, terminated, truncated, _ = env.step(action.detach().numpy())
@@ -46,7 +46,7 @@ def main():
             done = terminated or truncated
 
             # Store the outcome in the agent's memory
-            agent.store_outcome(state, next_state, log_prob, reward, done)
+            agent.store_outcome(state, next_state, log_prob, state_value, reward, done)
 
             # Update the current state and accumulate the episode reward
             state = next_state
@@ -86,8 +86,10 @@ if __name__ == '__main__':
 #How does the baseline affect the training, and why?
 #The baseline reduces variance by turning rewards into relative performance, 
 #making learning more stable without changing the final solution.
-#However, if the baseline is not well-chosen (e.g., too high or too low), it can introduce bias and lead to
-#suboptimal policies. A poorly chosen baseline can cause the agent to underestimate or overestimate the advantage, 
+#However, if the baseline is not well-chosen (e.g., too high or too low), it may fail to reduce variance effectively and can 
+#lead to unstable or slower learning. A poorly chosen baseline can cause the agent to underestimate or overestimate the advantage, 
 #leading to noisy updates and slower convergence.
 #without baseline -> gradient ∝ log π(a|s) * return
 #with baseline -> gradient ∝ log π(a|s) * (return - baseline)
+#In terms of computational cost, using a constant baseline introduces almost no additional
+#overhead compared to standard REINFORCE, since it only requires subtracting a scalar value from the returns.
