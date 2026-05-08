@@ -148,7 +148,10 @@ class Agent(object):
             # For every state the critic estimates a value, and we store these predictions.
             state_values = torch.stack(self.state_values).to(self.train_device).squeeze(-1)
 
-            
+            #This tells PyTorch: “Do NOT compute gradients for the operations inside this block.”
+            #Normally PyTorch builds a computation graph for backpropagation.
+            #Without no_grad, every tensor operation is stored so .backward() can later compute gradients.
+            #But here we only want to estimate values, not train from them directly.
             with torch.no_grad():
                 _, next_state_values = self.policy(next_states)
                 next_state_values = next_state_values.squeeze(-1)

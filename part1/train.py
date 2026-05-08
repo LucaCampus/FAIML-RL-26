@@ -23,8 +23,8 @@ def main():
 
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
-    use_baseline = True  # change to False for vanilla REINFORCE
-    agent = Agent(policy, algorithm = 'reinforce', use_baseline=use_baseline)
+    use_baseline = False  # change to False for vanilla REINFORCE
+    agent = Agent(policy, algorithm = 'actor-critic', use_baseline=use_baseline)
     
     if use_baseline:
         print("Using baseline:", use_baseline)
