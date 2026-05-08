@@ -41,8 +41,8 @@ class Policy(torch.nn.Module):
 
         self.fc1_critic = torch.nn.Linear(state_space, self.hidden)
         self.fc2_critic = torch.nn.Linear(self.hidden, self.hidden)
+        # The critic outputs a single scalar value representing the estimated value of the input state
         self.fc3_critic = torch.nn.Linear(self.hidden, 1)
-
 
         self.init_weights()
 
@@ -83,12 +83,13 @@ class Agent(object):
     def __init__(self, policy, device='cpu', algorithm = 'reinforce', use_baseline=False):
         self.train_device = device
         self.policy = policy.to(self.train_device)
+        #lr=3e-4 for actor-critic, 1e-3 for REINFORCE
         self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
-
         self.gamma = 0.99
         # If use_baseline is True, the agent will learn a value function baseline to reduce the variance 
         # of the policy gradient estimator
         self.use_baseline = use_baseline
+        #algorithm can be 'reinforce' or 'actor_critic'
         self.algorithm = algorithm
 
         self.state_values = []
@@ -106,14 +107,13 @@ class Agent(object):
         next_states = torch.stack(self.next_states, dim=0).to(self.train_device).squeeze(-1)
         rewards = torch.stack(self.rewards, dim=0).to(self.train_device).squeeze(-1)
         done = torch.Tensor(self.done).to(self.train_device)
-
+        
         #
         #REINFORCE
         #
 
         # Compute discounted returns
         returns = discount_rewards(rewards, self.gamma)
-        print (returns.size)
 
         # Use baseline if enabled
         if self.algorithm == 'reinforce':
@@ -145,24 +145,34 @@ class Agent(object):
         
         elif self.algorithm == 'actor_critic':
 
+            # For every state the critic estimates a value, and we store these predictions.
             state_values = torch.stack(self.state_values).to(self.train_device).squeeze(-1)
 
+            
             with torch.no_grad():
                 _, next_state_values = self.policy(next_states)
                 next_state_values = next_state_values.squeeze(-1)
 
+            # Compute TD targets bootstraped, because instead of waiting until the end of the episode, 
+            # you estimate future rewards using the critic itself. 
+            # We multiply the next state values by (1 - done) to ensure that if the episode has ended, 
+            # we don't add any future value.
             targets = rewards + self.gamma * next_state_values * (1 - done)
             
+            # Compute advantages by subtracting the critic's value estimates from the TD targets.
+            # Was this action better or worse than expected?
             advantages = targets - state_values
+            advantages = (advantages - advantages.mean()) / (advantages.std() + 1e-8)
 
+            # Without .deatch actor loss would also modify critic parameters incorrectly.
             actor_loss = -(action_log_probs * advantages.detach()).sum()
 
+
+            # The critic tries to learn the actual returns, using mean squared error loss between 
+            # its value estimates and the TD targets.
             critic_loss = F.mse_loss(state_values, targets)
 
-            loss = actor_loss + critic_loss
-
-            self.state_values = []
-
+            loss = actor_loss + 0.5 *critic_loss
 
         # Gradient step
         # Clear the gradients
@@ -180,6 +190,7 @@ class Agent(object):
         self.action_log_probs = []
         self.rewards = []
         self.done = []
+        self.state_values = []
 
         return        
 

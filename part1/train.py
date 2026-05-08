@@ -7,7 +7,7 @@ import torch
 from agent import Policy, Agent
 
 def main():
-    render = True
+    render = False
 
     if render:
         env = gym.make('Hopper-v4', render_mode='human')
@@ -23,12 +23,13 @@ def main():
 
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
-    use_baseline = True # change to False for vanilla REINFORCE
-    agent = Agent(policy, use_baseline=use_baseline, algorithm='reinforce')
+    use_baseline = True  # change to False for vanilla REINFORCE
+    agent = Agent(policy, algorithm = 'reinforce', use_baseline=use_baseline)
+    
+    if use_baseline:
+        print("Using baseline:", use_baseline)
 
-    print("Using baseline:", use_baseline)
-
-    num_episodes = 1000
+    num_episodes = 500
     for ep in range(num_episodes):
         # Reset environment at the start of each episode
         state, _ = env.reset()
@@ -93,3 +94,14 @@ if __name__ == '__main__':
 #with baseline -> gradient ∝ log π(a|s) * (return - baseline)
 #In terms of computational cost, using a constant baseline introduces almost no additional
 #overhead compared to standard REINFORCE, since it only requires subtracting a scalar value from the returns.
+
+#Analyze the performance of the trained policies in terms of reward and time consumption.
+#The Actor-Critic approach achieved strong performance in its best run, reaching high rewards and effective policy learning.
+#However, training exhibited high variance across executions and required significant computational time due 
+#to the joint optimization of actor and critic networks.
+
+#Compare the results with the REINFORCE algorithm you have previously obtained, highlighting 
+#any notable differences in terms of learning stability and convergence speed.
+#“Compared to REINFORCE, the Actor-Critic algorithm achieved faster convergence and higher rewards 
+#thanks to the critic-guided updates. While both methods exhibited some instability, 
+#Actor-Critic generally provided more efficient and stable learning behavior.”
