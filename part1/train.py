@@ -63,7 +63,7 @@ def main():
 
         # Close the environment after training is complete
         print(f"Mean Reward: {tot/num_episodes}")
-        mean_rewards[baseline_value] = tot/num_episodes
+        mean_rewards.append(tot/num_episodes)
         env.close()
     best_index = mean_rewards.index(max(mean_rewards))
     print(f"Best baseline index: {best_index}")
