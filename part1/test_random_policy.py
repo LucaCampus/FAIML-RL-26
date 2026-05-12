@@ -12,6 +12,7 @@ def main():
 
     n_episodes = 50000
     a=1
+    model = env.unwrapped.model
     
     for ep in range(n_episodes):  
         done = False
@@ -26,6 +27,9 @@ def main():
 
             if render:
                 env.render()
+    for i in range(model.nbody):
+        print(model.body(i).name)
+        print(model.body(i).mass)
 
 
 if __name__ == '__main__':
