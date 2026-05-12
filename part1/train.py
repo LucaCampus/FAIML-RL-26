@@ -7,7 +7,7 @@ import torch
 from agent import Policy, Agent
 
 def main():
-    render = False
+    render = True
 
     if render:
         env = gym.make('Hopper-v4', render_mode='human')
@@ -24,12 +24,12 @@ def main():
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
     use_baseline = False  # change to False for vanilla REINFORCE
-    agent = Agent(policy, algorithm = 'actor-critic', use_baseline=use_baseline)
-    
+    agent = Agent(policy, device=torch.device('cuda'), algorithm = 'actor_critic', use_baseline=use_baseline)
+    print(agent.train_device)
     if use_baseline:
         print("Using baseline:", use_baseline)
 
-    num_episodes = 500
+    num_episodes = 10000
     for ep in range(num_episodes):
         # Reset environment at the start of each episode
         state, _ = env.reset()
@@ -42,7 +42,7 @@ def main():
             action, log_prob, state_value = agent.get_action(state)
 
             # Take a step in the environment using the action
-            next_state, reward, terminated, truncated, _ = env.step(action.detach().numpy())
+            next_state, reward, terminated, truncated, _ = env.step(action.detach().cpu().numpy())
             # The episode is done if either terminated or truncated is True
             done = terminated or truncated
 
