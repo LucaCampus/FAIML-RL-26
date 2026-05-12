@@ -8,24 +8,6 @@ from stable_baselines3 import SAC, PPO
 from rand_wrapper import RandomizationWrapper
 import wandb
 
-wandb.init(
-
-    project="faiml-rl",
-
-    config={
-
-        "algorithm": args.algo,
-        "env": args.env_type,
-        "timesteps": args.timesteps,
-        "sampling_strategy": args.sampling_strategy,
-        "learning_rate": 3e-4,
-
-    },
-    sync_tensorboard=True,
-    monitor_gym=True,
-    save_code=True,
-
-)
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train SAC on PandaPush-v3")
@@ -57,6 +39,24 @@ def parse_args() -> argparse.Namespace:
         help="RL algorithm to use for training",
     )
     return parser.parse_args()
+
+wandb.init(
+    project="faiml-rl",
+    name = "SAC-PPO-PandaPush",
+    config={
+        "algorithm": args.algorithm,
+        "env": args.env_type,
+        "timesteps": args.timesteps,
+        "sampling_strategy": args.sampling_strategy,
+        "learning_rate": 3e-4,
+
+    },
+    sync_tensorboard=True,
+    monitor_gym=True,
+    save_code=True,
+
+)
+args = parse_args()
 
 
 def main() -> None:
