@@ -7,6 +7,7 @@ import panda_gym  # type: ignore[import-not-found]
 from stable_baselines3 import SAC, PPO
 from rand_wrapper import RandomizationWrapper
 import wandb
+from wandb.integration.sb3 import WandbCallback
 
 
 def parse_args() -> argparse.Namespace:
@@ -40,24 +41,6 @@ def parse_args() -> argparse.Namespace:
     )
     return parser.parse_args()
 
-wandb.init(
-    project="faiml-rl",
-    name = "SAC-PPO-PandaPush",
-    config={
-        "algorithm": args.algorithm,
-        "env": args.env_type,
-        "timesteps": args.timesteps,
-        "sampling_strategy": args.sampling_strategy,
-        "learning_rate": 3e-4,
-
-    },
-    sync_tensorboard=True,
-    monitor_gym=True,
-    save_code=True,
-
-)
-args = parse_args()
-
 
 def main() -> None:
     args = parse_args()
@@ -69,6 +52,21 @@ def main() -> None:
         reward_type="dense",
     )
 
+    wandb.init(
+    project="faiml-rl",
+    name = "SAC-PPO-PandaPush",
+    config={
+        "algorithm": args.algorithm,
+        "env": args.env_type,
+        "timesteps": args.timesteps,
+        "sampling_strategy": args.sampling_strategy
+    },
+    sync_tensorboard=True,
+    monitor_gym=True,
+    save_code=True,
+
+)
+
     #TODO: add randomization wrapper here
     # if args.sampling_strategy != "none":
     #     env = RandomizationWrapper(env, args.sampling_strategy)
@@ -77,11 +75,15 @@ def main() -> None:
         model = SAC("MultiInputPolicy", env)
     elif args.algorithm == "ppo":
         model = PPO("MultiInputPolicy", env)
-    model.learn(total_timesteps=args.timesteps)
-    save_name = f"{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k"
+    model.learn(total_timesteps=args.timesteps,
+                callback=WandbCallback(
+                    model_save_path=f"models/{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k",
+                    verbose=2
+                )
+                )
+    # save_name = f"{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k"
     # TODO: model.save(save_name)
-
-
+    model.save(f"models/{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k")
 
 if __name__ == "__main__":
     main()
