@@ -4,6 +4,8 @@
 """
 import gymnasium as gym
 import torch
+import wandb
+import numpy as np
 from agent import Policy, Agent
 
 def main():
@@ -26,10 +28,39 @@ def main():
     use_baseline = False  # change to False for vanilla REINFORCE
     agent = Agent(policy, device=torch.device('cuda'), algorithm = 'actor_critic', use_baseline=use_baseline)
     print(agent.train_device)
+
     if use_baseline:
         print("Using baseline:", use_baseline)
 
-    num_episodes = 10000
+    num_episodes = 100
+
+        #
+    # WANDB
+    #
+    wandb.init(
+        project="hopper-rl",
+        name="hopper-actor-critic",
+        config={
+            "environment": "Hopper-v4",
+            "algorithm": agent.algorithm,
+            "gamma": agent.gamma,
+            "episodes": num_episodes,
+            "device": str(agent.train_device)
+        }
+    )
+
+    #
+    # WATCH MODEL
+    #
+    wandb.watch(policy, log="all")
+
+    #
+    # TRAINING STATS
+    #
+    rewards_history = []
+
+    best_avg_reward = -1e9
+
     for ep in range(num_episodes):
         # Reset environment at the start of each episode
         state, _ = env.reset()
@@ -56,10 +87,62 @@ def main():
         # After the episode is done, update the policy using the collected experience
         agent.update_policy()
 
+        #
+        # SAVE REWARD
+        #
+        rewards_history.append(episode_reward)
+
+        #
+        # MOVING AVERAGE
+        #
+        avg_reward = np.mean(rewards_history[-100:])
+
+        #
+        # SAVE BEST MODEL
+        #
+        if avg_reward > best_avg_reward:
+
+            best_avg_reward = avg_reward
+
+            torch.save(policy.state_dict(),"best_model.pt")
+
+            wandb.save("best_model.pt")
+
+            print(f"\n[BEST MODEL SAVED] "f"Avg100 Reward: {best_avg_reward:.2f}\n")
+
+            #
+            # PRINT LOG
+            #
+            print(
+                f"Episode: {ep:5d} | "
+                f"Reward: {episode_reward:10.2f} | "
+                f"Avg100: {avg_reward:10.2f}"
+            )
+
+            #
+            # WANDB LOGGING
+            #
+            log_dict = {"episode": ep, "reward": episode_reward, "avg_reward_100": avg_reward}
+
+            #
+            # OPTIONAL LOSSES
+            #
+            if hasattr(agent, "last_actor_loss"):
+                log_dict["actor_loss"] = agent.last_actor_loss
+
+            if hasattr(agent, "last_critic_loss"):
+                log_dict["critic_loss"] = agent.last_critic_loss
+
+            wandb.log(log_dict)
+
         print(f"Episode {ep}, Reward: {episode_reward}")
 
     # Close the environment after training is complete
     env.close()
+
+    wandb.finish()
+
+    print("Training completed.")
 
 if __name__ == '__main__':
     main()

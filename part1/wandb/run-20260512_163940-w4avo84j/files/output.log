@@ -1,0 +1,71 @@
+[34m[1mwandb[0m: [33mWARNING[0m Linked 1 file into the W&B run directory (hardlinks); call wandb.save again to sync new files.
+
+[BEST MODEL SAVED] Avg100 Reward: 49.28
+
+Episode:     0 | Reward:      49.28 | Avg100:      49.28
+Episode 0, Reward: 49.27694288720945
+
+[BEST MODEL SAVED] Avg100 Reward: 57.71
+
+Episode:     1 | Reward:      66.14 | Avg100:      57.71
+Episode 1, Reward: 66.13524574073993
+Episode 2, Reward: -4.229746266011533
+Episode 3, Reward: 64.63003570103835
+Episode 4, Reward: 57.9255211378196
+Episode 5, Reward: 98.17323775603255
+Episode 6, Reward: 71.38001633779747
+
+[BEST MODEL SAVED] Avg100 Reward: 58.21
+
+Episode:     7 | Reward:      62.39 | Avg100:      58.21
+Episode 7, Reward: 62.38898971920448
+
+[BEST MODEL SAVED] Avg100 Reward: 58.69
+
+Episode:     8 | Reward:      62.55 | Avg100:      58.69
+Episode 8, Reward: 62.5545873077258
+
+[BEST MODEL SAVED] Avg100 Reward: 59.39
+
+Episode:     9 | Reward:      65.71 | Avg100:      59.39
+Episode 9, Reward: 65.71384225934487
+Episode 10, Reward: 47.25880686738427
+Episode 11, Reward: 70.09121105697061
+Episode 12, Reward: 37.73539420327795
+Episode 13, Reward: 51.38616378570959
+Episode 14, Reward: 59.402098775740214
+Episode 15, Reward: 62.91063161311895
+Episode 16, Reward: 73.97962168955054
+Episode 17, Reward: 46.824959991870315
+Episode 18, Reward: 57.57811213248843
+Episode 19, Reward: 55.019289139973424
+Episode 20, Reward: 61.94168164081849
+Episode 21, Reward: 56.78965969622373
+Episode 22, Reward: 59.5441337863371
+Episode 23, Reward: 65.92770549036544
+Episode 24, Reward: 56.99506779325147
+Episode 25, Reward: 61.63048451354519
+Episode 26, Reward: 64.55894724125743
+Episode 27, Reward: 65.65166916854115
+Episode 28, Reward: 51.066145637836975
+Episode 29, Reward: 52.4415883281602
+Episode 30, Reward: 52.58318494494935
+Episode 31, Reward: 45.517961244715025
+Episode 32, Reward: 72.20232511068374
+Episode 33, Reward: 56.01550492232048
+Episode 34, Reward: 71.64866011629928
+Episode 35, Reward: 66.76050949871197
+Episode 36, Reward: 60.781105392690684
+Episode 37, Reward: 54.17766392612827
+Episode 38, Reward: 67.64065966481331
+Episode 39, Reward: 69.82291849168448
+Episode 40, Reward: 58.810078109096374
+Episode 41, Reward: 56.06844644300565
+Episode 42, Reward: 58.88130442896599
+Episode 43, Reward: 62.79600724502193
+Episode 44, Reward: 37.7824745387069
+Episode 45, Reward: 71.5214856118511
+Episode 46, Reward: 47.759705532308864
+Episode 47, Reward: 53.85521705540537
+Episode 48, Reward: 53.96770882351155
+Episode 49, Reward: 63.49250560151419
