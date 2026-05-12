@@ -72,7 +72,7 @@ class Policy(torch.nn.Module):
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu', use_baseline=False, baseline_value=20.0):
+    def __init__(self, policy, device='cpu', use_baseline=False, baseline_value=20.0, algorithm="reinforce"):
         self.train_device = device
         self.policy = policy.to(self.train_device)
         self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
@@ -82,6 +82,7 @@ class Agent(object):
         # of the policy gradient estimator
         self.use_baseline = use_baseline
         self.baseline_value = baseline_value
+        self.algorithm = algorithm
 
         self.states = []
         self.next_states = []
@@ -110,43 +111,22 @@ class Agent(object):
         returns = discount_rewards(rewards, self.gamma)
 
         # Use baseline if enabled
-        if self.use_baseline:
-            # Subtract a constant baseline to get advantage estimates.
-            baseline = self.baseline_value
-            #Advantage is the learning signal that tells your agent whether an action was better or worse than expected
-            returns = returns - baseline
+        if self.algorithm == "reinforce":
+            if self.use_baseline:
+                # Subtract a constant baseline to get advantage estimates.
+                baseline = self.baseline_value
+                #Advantage is the learning signal that tells your agent whether an action was better or worse than expected
+                returns = returns - baseline
 
-        # Compute loss
-        # action_log_probs = logπ(a|s) = log(probability of action a given state s)
-        # If the action was likely, log-prob ≈ high (less negative) 
-        # If the action was unlikely, log-prob ≈ very negative
-        # returns = Total future reward from time t --> Tells you how good that action turned out to be
-        # the multiplication scale the log-probability by how good the outcome was.
-        # If return is high → increase probability of that action, If return is low → decrease probability
-        # Because PyTorch minimizes loss, but we want to: maximize logπ(a∣s)⋅G
-        # So we flip the sign.
-        # You sum over all timesteps in the episode because you want to update
-        # the policy based on the entire episode's experience.
-        # This is Monte Carlo estimation of expected return.
         loss = - (action_log_probs * returns).sum()
-        # If an action led to good results → make it more likely
-        # If it led to bad results → make it less likely
 
-        # Gradient step
-        # Clear the gradients
+
         self.optimizer.zero_grad()
-        # Compute gradients
+
         loss.backward()
-        # Step the optimizer
+
         self.optimizer.step()
 
-        #
-        # TASK 3:
-        #   - compute boostrapped discounted return estimates
-        #   - compute advantage terms
-        #   - compute actor loss and critic loss
-        #   - compute gradients and step the optimizer
-        #
 
         return        
 
