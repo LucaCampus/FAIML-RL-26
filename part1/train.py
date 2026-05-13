@@ -76,6 +76,13 @@ def main():
             next_state, reward, terminated, truncated, _ = env.step(action.detach().cpu().numpy())
             # The episode is done if either terminated or truncated is True
             done = terminated or truncated
+            if done:
+                print(
+                    "terminated:", terminated,
+                    "truncated:", truncated,
+                    "height:", env.unwrapped.data.qpos[1],
+                    "angle:", env.unwrapped.data.qpos[2],
+                )
 
             # Store the outcome in the agent's memory
             agent.store_outcome(state, next_state, log_prob, state_value, reward, done)
