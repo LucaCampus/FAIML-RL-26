@@ -137,6 +137,8 @@ def main():
 
         print(f"Episode {ep}, Reward: {episode_reward}")
 
+    torch.save(policy.state_dict(), "hopper_policy.pt")
+
     # Close the environment after training is complete
     env.close()
 
