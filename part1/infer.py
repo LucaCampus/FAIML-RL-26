@@ -39,7 +39,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     render_mode = "human" if args.render else "rgb_array"
 
-    env = gym.make("Hopper-v4", render_mode=render_mode)
+    env = gym.make("Hopper-v4", render_mode=render_mode,  healthy_angle_range=(-0.5, 0.5))
 
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]

@@ -12,9 +12,9 @@ def main():
     render = False
 
     if render:
-        env = gym.make('Hopper-v4', render_mode='human')
+        env = gym.make('Hopper-v4', render_mode='human',  healthy_angle_range=(-0.5, 0.5))
     else:
-        env = gym.make('Hopper-v4', render_mode='rgb_array')
+        env = gym.make('Hopper-v4', render_mode='rgb_array',  healthy_angle_range=(-0.5, 0.5))
 
     print('State space:', env.observation_space)
     print('Action space:', env.action_space)
