@@ -37,7 +37,7 @@ class Policy(torch.nn.Module):
         """
             Critic network
         """
-        # TASK 3: critic network for actor-critic algorithm
+        # TODO: TASK 3: critic network for actor-critic algorithm
 
         self.fc1_critic = torch.nn.Linear(state_space, self.hidden)
         self.fc2_critic = torch.nn.Linear(self.hidden, self.hidden)
@@ -117,26 +117,10 @@ class Agent(object):
             # Compute discounted returns
             returns = discount_rewards(rewards, self.gamma)
             if self.use_baseline:
-            # Compute baseline as the mean of returns and subtract it from returns to get advantage estimates
                 baseline = 20.0
-            #Advantage is the learning signal that tells your agent whether an action was better or worse than expected
                 returns = returns - baseline
 
-        # Compute loss
-        # action_log_probs = logπ(a|s) = log(probability of action a given state s)
-        # If the action was likely, log-prob ≈ high (less negative) 
-        # If the action was unlikely, log-prob ≈ very negative
-        # returns = Total future reward from time t --> Tells you how good that action turned out to be
-        # the multiplication scale the log-probability by how good the outcome was.
-        # If return is high → increase probability of that action, If return is low → decrease probability
-        # Because PyTorch minimizes loss, but we want to: maximize logπ(a∣s)⋅G
-        # So we flip the sign.
-        # You sum over all timesteps in the episode because you want to update
-        # the policy based on the entire episode's experience.
-        # This is Monte Carlo estimation of expected return.
             loss = - (action_log_probs * returns).sum()
-        # If an action led to good results → make it more likely
-        # If it led to bad results → make it less likely
         
         #
         #ACTOR-CRITIC

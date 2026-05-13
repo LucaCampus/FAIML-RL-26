@@ -57,7 +57,7 @@ def main():
 
         while not done:
             with torch.no_grad():
-                action, _, _ = agent.get_action(state, evaluation=not args.stochastic)
+                action, _, _ = agent.get_action(state, evaluation=True)
 
             action = action.detach().cpu().numpy()
             action = np.clip(action, env.action_space.low, env.action_space.high)
