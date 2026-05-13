@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument(
         "--episodes",
         type=int,
-        default=10,
+        default=50,
         help="Number of inference episodes to run.",
     )
     parser.add_argument(
@@ -37,7 +37,7 @@ def parse_args():
 def main():
     args = parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    render_mode = "human" if args.render else "rgb_array"
+    render_mode = "human"
 
     env = gym.make("Hopper-v4", render_mode=render_mode,  healthy_angle_range=(-0.5, 0.5))
 

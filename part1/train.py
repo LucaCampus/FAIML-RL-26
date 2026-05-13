@@ -72,8 +72,10 @@ def main():
             # Get action from the agent's policy
             action, log_prob, state_value = agent.get_action(state)
 
-            # Take a step in the environment using the action
-            next_state, reward, terminated, truncated, _ = env.step(action.detach().cpu().numpy())
+            # Take a step in the environment using a valid clipped action
+            action_np = action.detach().cpu().numpy()
+            action_np = np.clip(action_np, env.action_space.low, env.action_space.high)
+            next_state, reward, terminated, truncated, _ = env.step(action_np)
             # The episode is done if either terminated or truncated is True
             done = terminated or truncated
             if done:
