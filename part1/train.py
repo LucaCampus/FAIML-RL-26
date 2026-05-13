@@ -9,7 +9,7 @@ import numpy as np
 from agent import Policy, Agent
 
 def main():
-    render = True
+    render = False
 
     if render:
         env = gym.make('Hopper-v4', render_mode='human')
