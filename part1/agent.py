@@ -117,8 +117,7 @@ class Agent(object):
             # Compute discounted returns
             returns = discount_rewards(rewards, self.gamma)
             if self.use_baseline:
-                baseline = 20.0
-                returns = returns - baseline
+                returns = (returns - returns.mean()) / (returns.std() + 1e-8)
 
             loss = - (action_log_probs * returns).sum()
         

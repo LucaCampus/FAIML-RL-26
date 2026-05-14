@@ -25,21 +25,21 @@ def main():
 
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
-    use_baseline = False  # change to False for vanilla REINFORCE
-    agent = Agent(policy, device=torch.device('cuda'), algorithm = 'actor_critic', use_baseline=use_baseline)
+    use_baseline = True  # change to False for vanilla REINFORCE
+    agent = Agent(policy, device=torch.device('cuda'), algorithm = 'reinforce', use_baseline=use_baseline)
     print(agent.train_device)
 
     if use_baseline:
         print("Using baseline:", use_baseline)
 
-    num_episodes = 100
+    num_episodes = 20000
 
         #
     # WANDB
     #
     wandb.init(
         project="hopper-rl",
-        name="hopper-actor-critic",
+        name="hopper-reinforce-baseline",
         config={
             "environment": "Hopper-v4",
             "algorithm": agent.algorithm,
