@@ -85,7 +85,7 @@ class Agent(object):
         self.policy = policy.to(self.train_device)
         #lr=3e-4 for actor-critic, 1e-3 for REINFORCE
         self.optimizer = torch.optim.Adam(policy.parameters(), lr=3e-4)
-        self.gamma = 0.999
+        self.gamma = 0.99
         # If use_baseline is True, the agent will learn a value function baseline to reduce the variance 
         # of the policy gradient estimator
         self.use_baseline = use_baseline
