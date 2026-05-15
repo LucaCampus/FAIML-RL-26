@@ -7,8 +7,24 @@ import torch
 import wandb
 import numpy as np
 from agent import Policy, Agent
+import json
+import argparse
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Train RL on Hopper")
+    # Instead of defining every single variable, we just ask for the file path!
+    parser.add_argument("--config", type=str, required=True, help="Path to the JSON config file")
+    return parser.parse_args()
 
 def main():
+
+    args = parse_args()
+    with open(args.config, 'r') as f:
+        config = json.load(f)
+        
+    print(f"Loaded configuration from {args.config}:")
+    print(config)
+
     render = False
 
     if render:
@@ -25,28 +41,36 @@ def main():
 
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
-    use_baseline = True  # change to False for vanilla REINFORCE
-    agent = Agent(policy, device=torch.device('cuda'), algorithm = 'reinforce', use_baseline=use_baseline)
+
+    use_baseline = config["baseline"] > 0.0
+    
+    agent = Agent(
+        policy, 
+        device=torch.device('cpu'), 
+        algorithm=config["algorithm"], 
+        use_baseline=use_baseline,
+        lr=config["lr"],         # Passed from JSON
+        gamma=config["gamma"]    # Passed from JSON
+    )
+    
+    if use_baseline:
+        agent.baseline_value = config["baseline"]
+
+    num_episodes = config["episodes"]
+
     print(agent.train_device)
 
     if use_baseline:
         print("Using baseline:", use_baseline)
 
-    num_episodes = 20000
-
         #
     # WANDB
     #
     wandb.init(
-        project="hopper-rl",
-        name="hopper-reinforce-baseline",
-        config={
-            "environment": "Hopper-v4",
-            "algorithm": agent.algorithm,
-            "gamma": agent.gamma,
-            "episodes": num_episodes,
-            "device": str(agent.train_device)
-        }
+        entity="terr1veneto",
+        project="REINFORCE",
+        name=f"{config['algorithm']}_base{config['baseline']}_lr{config['lr']}",
+        config=config
     )
 
     #

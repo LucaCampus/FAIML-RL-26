@@ -1,0 +1,7 @@
+{
+    "algorithm": "reinforce",
+    "lr": 0.0003,
+    "gamma": 0.999,
+    "baseline": 0.0,
+    "episodes": 10000
+}

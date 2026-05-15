@@ -80,12 +80,16 @@ class Policy(torch.nn.Module):
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu', algorithm = 'reinforce', use_baseline=False):
+    def __init__(self, policy, device='cpu', algorithm='reinforce', use_baseline=False, lr=3e-4, gamma=0.99):
         self.train_device = device
         self.policy = policy.to(self.train_device)
-        #lr=3e-4 for actor-critic, 1e-3 for REINFORCE
-        self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
-        self.gamma = 0.999
+        
+        # === FIXED: Replaced hardcoded 1e-3 with the lr variable ===
+        self.optimizer = torch.optim.Adam(policy.parameters(), lr=lr)
+        
+        # === NEW: Use dynamic gamma and setup a placeholder for baseline ===
+        self.gamma = gamma
+        self.baseline_value = 0.0
         # If use_baseline is True, the agent will learn a value function baseline to reduce the variance 
         # of the policy gradient estimator
         self.use_baseline = use_baseline
@@ -117,7 +121,7 @@ class Agent(object):
             # Compute discounted returns
             returns = discount_rewards(rewards, self.gamma)
             if self.use_baseline:
-                returns = (returns - returns.mean()) / (returns.std() + 1e-8)
+                returns = returns - self.baseline_value
 
             loss = - (action_log_probs * returns).sum()
         
