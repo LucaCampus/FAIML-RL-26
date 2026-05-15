@@ -8,6 +8,7 @@ from stable_baselines3 import SAC, PPO
 from rand_wrapper import RandomizationWrapper
 import wandb
 from wandb.integration.sb3 import WandbCallback
+from stable_baselines3.common.monitor import Monitor
 
 
 def parse_args() -> argparse.Namespace:
@@ -35,7 +36,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--algorithm",
         type=str,
-        default="ppo",
+        default="sac",
         choices=["sac", "ppo"],
         help="RL algorithm to use for training",
     )
@@ -48,9 +49,11 @@ def main() -> None:
     env = gym.make(
         "PandaPush-v3",
         render_mode="rgb_array",
-        type=args.env_type,
+       # type=args.env_type, CAPIRE A MODIFICA
         reward_type="dense",
     )
+
+    env = Monitor(env)
 
     wandb.init(
     project="faiml-rl",
@@ -72,9 +75,9 @@ def main() -> None:
     #     env = RandomizationWrapper(env, args.sampling_strategy)
     #TODO: create model and train it
     if args.algorithm == "sac":
-        model = SAC("MultiInputPolicy", env)
+        model = SAC("MultiInputPolicy", env, verbose=1, tensorboard_log=f"runs/{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k")
     elif args.algorithm == "ppo":
-        model = PPO("MultiInputPolicy", env)
+        model = PPO("MultiInputPolicy", env, verbose=1, tensorboard_log=f"runs/{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k")
     model.learn(total_timesteps=args.timesteps,
                 callback=WandbCallback(
                     model_save_path=f"models/{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k",
