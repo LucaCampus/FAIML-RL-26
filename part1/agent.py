@@ -123,7 +123,7 @@ class Agent(object):
             loss = - (action_log_probs * returns).sum()
         
         #
-        #ACTOR-CRITIC
+        #TODO: ACTOR-CRITIC
         #
         
         elif self.algorithm == 'actor_critic':
@@ -192,6 +192,8 @@ class Agent(object):
 
         else:   # Sample from the distribution
             action = normal_dist.sample()
+            # [1, 1.5, -2] --> aciton
+            # [20%, 5%, 23%] = log(0.2*0.05*0.23) --> prob di compiere azione action
 
             # Compute Log probability of the action [ log(p(a[0] AND a[1] AND a[2])) = log(p(a[0])*p(a[1])*p(a[2])) = log(p(a[0])) + log(p(a[1])) + log(p(a[2])) ]
             action_log_prob = normal_dist.log_prob(action).sum()
