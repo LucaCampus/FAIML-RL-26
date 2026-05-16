@@ -27,6 +27,11 @@ def parse_args():
         help="Render the Hopper environment in a window.",
     )
     parser.add_argument(
+        "--save-video",
+        action="store_true",
+        help="Save mp4 videos of the evaluation episodes.",
+    )
+    parser.add_argument(
         "--stochastic",
         action="store_true",
         help="Sample actions from the policy instead of using the deterministic mean action.",
@@ -37,9 +42,28 @@ def parse_args():
 def main():
     args = parse_args()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    render_mode = "human"
+
+    if args.save_video:
+        render_mode = "rgb_array"
+    elif args.render:
+        render_mode = "human"
+    else:
+        render_mode = None
+
+    # render_mode = "human"
 
     env = gym.make("Hopper-v4", render_mode=render_mode,  healthy_angle_range=(-0.5, 0.5))
+
+    if args.save_video:
+        # This will save files into a new folder named 'videos'
+        # episode_trigger records every episode we run
+        env = gym.wrappers.RecordVideo(
+            env, 
+            video_folder="videos", 
+            episode_trigger=lambda episode_id: True,
+            name_prefix="hopper_eval"
+        )
+        print("Video recording enabled. Videos will be saved to the './videos' folder.")
 
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0]
