@@ -1,0 +1,28 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.8.2",
+  "startedAt": "2026-05-16T13:53:42.104780Z",
+  "program": "upload_full_run.py",
+  "codePath": "part1\\upload_full_run.py",
+  "codePathLocal": "upload_full_run.py",
+  "git": {
+    "remote": "https://github.com/LucaCampus/FAIML-RL-26.git",
+    "commit": "70bf96290bfac03a83f3617abb463bbb441a8fdb"
+  },
+  "email": "pendin.margherita@gmail.com",
+  "root": "C:\\Users\\UTENTE\\Desktop\\Machine and Deep Learning\\Project\\FAIML-RL-26\\part1",
+  "host": "DESKTOP-UPUVEVA",
+  "executable": "C:\\Program Files\\Python38\\python.exe",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "disk": {
+    "/": {
+      "total": "511069646848",
+      "used": "300668141568"
+    }
+  },
+  "memory": {
+    "total": "6376128512"
+  },
+  "writerId": "0kwrlz5gjsusci4su5rqqgdix29qfo1l"
+}
