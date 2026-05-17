@@ -5,13 +5,25 @@
 
     For example, what happens if you don't reset the environment
     even after the episode is over?
+    Resetting th environment puts the agent back to the initial state,
+    adds a small noise to the join angles (so each episode starts differently) and
+    returns the initial observation. 
+    Without reset the environment has no valid physical state from, so it raises an error.
+    
     When exactly is the episode over?
+    The episode is over when the agent falls down, 
+    which happens when the height of the torso is less than 0.7 or 
+    when the angle of the torso is greater than 0.2 radians.
+    
     What is an action here?
+    An action is a 3-dimensional vector of torques applied 
+    to the 3 joints of the hopper.
+    The action space is continuous, so the agent can apply any torque.
 """
 import gymnasium as gym
 
 def main():
-    render = False
+    render = True
 
     if render:
         env = gym.make('Hopper-v4', render_mode='human')
