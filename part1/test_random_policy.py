@@ -32,6 +32,13 @@ def main():
     print('State space:', env.observation_space)  # state-space
     print('Action space:', env.action_space)  # action-space
 
+    model = env.unwrapped.model
+
+    for i in range(model.nbody):
+        name = model.body(i).name
+        mass = model.body(i).mass
+        print(f'{name}:{mass}')
+
     n_episodes = 50
 
     for ep in range(n_episodes):  
@@ -46,6 +53,9 @@ def main():
 
             if render:
                 env.render()
+
+
+    env.close()
 
 
 if __name__ == '__main__':
