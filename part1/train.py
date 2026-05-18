@@ -18,6 +18,7 @@ def main():
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--lr', type=float, default=1e-3)
     parser.add_argument('--baseline', type=float, default=None)
+    parser.add_argument('--algorithm', type=str, default='reinforce', choices=['reinforce', 'actor-critic'])
     args = parser.parse_args()
 
     env = gym.make('Hopper-v4')
@@ -33,7 +34,7 @@ def main():
     action_space = env.action_space.shape[0]      # 3
 
     policy = Policy(state_space, action_space)
-    agent = Agent(policy, gamma=args.gamma, lr=args.lr, baseline=args.baseline)
+    agent = Agent(policy, gamma=args.gamma, lr=args.lr, baseline=args.baseline, algorithm=args.algorithm)
 
     wandb.init(entity="terr1veneto", project='REINFORCE', name=f"ep{args.n_episodes}_gamma{args.gamma}_lr{args.lr}", config=vars(args))
 
