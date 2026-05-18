@@ -45,7 +45,7 @@ def main():
 
     for ep in range(args.n_episodes):
         done = False
-        state, info = env.reset()  # Reset environment to initial state
+        state, info = env.reset(seed=42 if ep == 0 else None)  # Reset environment to initial state
         episode_reward = 0
 
         while not done:  # Until the episode is over
