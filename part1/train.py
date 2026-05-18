@@ -2,15 +2,71 @@
 
     Here you will implement the training loop for REINFORCE and Actor-Critic
 """
+import argparse
+import numpy as np
+import torch
 import gymnasium as gym
+import wandb
+from agent import Policy, Agent
+
+torch.manual_seed(42)
+np.random.seed(42)
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--n_episodes', type=int, default=1000)
+    parser.add_argument('--gamma', type=float, default=0.99)
+    parser.add_argument('--lr', type=float, default=1e-3)
+    parser.add_argument('--baseline', type=float, default=None)
+    args = parser.parse_args()
+
     env = gym.make('Hopper-v4')
 
     print('State space:', env.observation_space)  # state-space
     print('Action space:', env.action_space)  # action-space
 
     #TODO: implement training loop for REINFORCE and Actor-Critic using the agent defined in agent.py
+
+    # setup policy and agent
+
+    state_space = env.observation_space.shape[0]  # 11
+    action_space = env.action_space.shape[0]      # 3
+
+    policy = Policy(state_space, action_space)
+    agent = Agent(policy, gamma=args.gamma, lr=args.lr, baseline=args.baseline)
+
+    wandb.init(entity="terr1veneto", project='REINFORCE', name=f"ep{args.n_episodes}_gamma{args.gamma}_lr{args.lr}", config=vars(args))
+
+    best_avg_reward = -float('inf')
+    rewards_history=[]
+
+    for ep in range(args.n_episodes):
+        done = False
+        state, info = env.reset()  # Reset environment to initial state
+        episode_reward = 0
+
+        while not done:  # Until the episode is over
+            action, log_prob = agent.get_action(state)  # Sample action from policy
+            next_state, reward, terminated, truncated, _ = env.step(action.detach().numpy())  # Step the simulator to the next timestep
+            done = terminated or truncated
+
+            agent.store_outcome(state, next_state, log_prob, reward, done)
+            state = next_state
+            episode_reward += reward
+
+        loss = agent.update_policy()
+        rewards_history.append(episode_reward)
+        average_reward = np.mean(rewards_history[-100:])
+        
+        wandb.log({'episode_reward': episode_reward, 'loss': loss, 'average_reward': average_reward}, step=ep)
+        print(f'Episode {ep+1} reward: {episode_reward:.2f}, average reward: {average_reward:.2f}, loss: {loss:.4f}')
+
+        if average_reward > best_avg_reward:
+            best_avg_reward = average_reward
+            torch.save(policy.state_dict(), 'best_model.pt')
+            wandb.save('best_model.pt')
+
+    wandb.finish()   
 
 if __name__ == '__main__':
     main()

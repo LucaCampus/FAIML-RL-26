@@ -72,12 +72,13 @@ class Policy(torch.nn.Module):
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu'):
+    def __init__(self, policy, device='cpu', gamma=0.99, lr=1e-3, baseline=None):
         self.train_device = device
         self.policy = policy.to(self.train_device)
-        self.optimizer = torch.optim.Adam(policy.parameters(), lr=1e-3)
+        self.optimizer = torch.optim.Adam(policy.parameters(), lr=lr)
 
-        self.gamma = 0.99
+        self.gamma = gamma
+        self.baseline = baseline
         self.states = []
         self.next_states = []
         self.action_log_probs = []
@@ -97,10 +98,20 @@ class Agent(object):
         #
         # TASK 2:
         #   - compute discounted returns
-        #   - compute policy gradient loss function given actions and returns
-        #   - compute gradients and step the optimizer
-        #
+        returns = discount_rewards(rewards, self.gamma)
+        if self.baseline is not None:
+            returns = returns - self.baseline
 
+        #   - compute policy gradient loss function given actions and returns
+        loss = -(action_log_probs*returns).sum()
+
+        # TODO
+        # loss = -(action_log_probs*returns).mean()
+        #   - compute gradients and step the optimizer
+        self.optimizer.zero_grad()
+        loss.backward()
+        self.optimizer.step()
+        return loss.item()
 
         #
         # TASK 3:
@@ -109,8 +120,6 @@ class Agent(object):
         #   - compute actor loss and critic loss
         #   - compute gradients and step the optimizer
         #
-
-        return        
 
 
     def get_action(self, state, evaluation=False):
