@@ -130,7 +130,6 @@ if __name__ == "__main__":
 #| source → target    | -3.768      | 62%          | LOWER BOUND
 #| target → target    | -1.881      | 92%          | UPPER BOUND
 
-
 #source→target performs worse than source→source.
 #This means the policy trained on light dynamics does not transfer well to heavy dynamics. 
 #This will be our lower bound.

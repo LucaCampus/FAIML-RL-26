@@ -77,19 +77,36 @@ def main() -> None:
         reward_type="dense",
     )
 
-    if args.env_type == "source":
-        env = RandomizationWrapper(
+    if args.sampling_strategy == "none":
+
+        if args.env_type == "source":
+            env = RandomizationWrapper(
             env,
             mass_range=(1.0, 1.0),
             mode="none",
-        )
+            )
 
-    elif args.env_type == "target":
-        env = RandomizationWrapper(
+        elif args.env_type == "target":
+            env = RandomizationWrapper(
             env,
             mass_range=(5.0, 5.0),
             mode="none",
         )
+
+    elif args.sampling_strategy == "udr":
+        env = RandomizationWrapper(
+        env,
+        mass_range=(0.5, 6.0),
+        mode="udr",
+    )
+    
+    elif args.sampling_strategy == "adr":
+
+        env = RandomizationWrapper(
+        env,
+        mass_range=(0.5, 5.5),
+        mode="adr",
+    )
 
     
     #TODO: create model and train it
