@@ -38,6 +38,7 @@ def main():
 
     baseline_str = f"_baseline{args.baseline}" if args.baseline is not None else ""
     run_name = f"{args.algorithm}_ep{args.n_episodes}_gamma{args.gamma}_lr{args.lr}{baseline_str}"
+    model_name = f"best_model_{args.algorithm}{baseline_str}.pt"
     wandb.init(entity="terr1veneto", project='REINFORCE', name=run_name, config=vars(args))
 
     best_avg_reward = -float('inf')
@@ -66,8 +67,8 @@ def main():
 
         if average_reward > best_avg_reward:
             best_avg_reward = average_reward
-            torch.save(policy.state_dict(), 'best_model.pt')
-            wandb.save('best_model.pt')
+            torch.save(policy.state_dict(), model_name)
+            wandb.save(model_name)
 
     wandb.finish()   
 
