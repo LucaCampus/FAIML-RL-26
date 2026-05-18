@@ -28,7 +28,7 @@ def main():
     action_space = env.action_space.shape[0]
 
     policy = Policy(state_space, action_space)
-    policy.load_state_dict(torch.load(args.model, map_location='cpu'))
+    policy.load_state_dict(torch.load(args.model, map_location='cpu'), strict=False)
     policy.eval()
 
     agent = Agent(policy)
@@ -40,7 +40,7 @@ def main():
         episode_reward = 0
 
         while not done:
-            action, _ = agent.get_action(state, infer=True)
+            action, _ = agent.get_action(state, evaluation=True)
             state, reward, terminated, truncated, _ = env.step(action.detach().numpy())
             done = terminated or truncated
             episode_reward += reward
