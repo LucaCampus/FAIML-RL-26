@@ -36,7 +36,9 @@ def main():
     policy = Policy(state_space, action_space)
     agent = Agent(policy, gamma=args.gamma, lr=args.lr, baseline=args.baseline, algorithm=args.algorithm)
 
-    wandb.init(entity="terr1veneto", project='REINFORCE', name=f"ep{args.n_episodes}_gamma{args.gamma}_lr{args.lr}", config=vars(args))
+    baseline_str = f"_baseline{args.baseline}" if args.baseline is not None else ""
+    run_name = f"{args.algorithm}_ep{args.n_episodes}_gamma{args.gamma}_lr{args.lr}{baseline_str}"
+    wandb.init(entity="terr1veneto", project='REINFORCE', name=run_name, config=vars(args))
 
     best_avg_reward = -float('inf')
     rewards_history=[]
