@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# RL artifacts
+*.zip
+models/
+wandb/
+tensorboard_logs/
+videos/
+
+# VSCode
+.vscode/
+
+# Logs
+*.log

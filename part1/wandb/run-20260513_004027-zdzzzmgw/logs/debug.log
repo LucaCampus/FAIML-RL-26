@@ -1,0 +1,540 @@
+2026-05-13 00:40:27,621 INFO    MainThread:28424 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-05-13 00:40:27,621 INFO    MainThread:28424 [wandb_setup.py:_flush():81] Configure stats pid to 28424
+2026-05-13 00:40:27,621 INFO    MainThread:28424 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-13 00:40:27,621 INFO    MainThread:28424 [wandb_init.py:setup_run_log_directory():723] Logging user logs to C:\Users\enric\OneDrive\Documenti\Fundamentals of AI\Projects\FAIML-RL-26\part1\wandb\run-20260513_004027-zdzzzmgw\logs\debug.log
+2026-05-13 00:40:27,622 INFO    MainThread:28424 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to C:\Users\enric\OneDrive\Documenti\Fundamentals of AI\Projects\FAIML-RL-26\part1\wandb\run-20260513_004027-zdzzzmgw\logs\debug-internal.log
+2026-05-13 00:40:27,622 INFO    MainThread:28424 [wandb_init.py:init():850] calling init triggers
+2026-05-13 00:40:27,622 INFO    MainThread:28424 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'environment': 'Hopper-v4', 'algorithm': 'actor_critic', 'gamma': 0.99, 'episodes': 50000, 'device': 'cuda', '_wandb': {}}
+2026-05-13 00:40:27,622 INFO    MainThread:28424 [wandb_init.py:init():898] starting backend
+2026-05-13 00:40:29,934 INFO    MainThread:28424 [wandb_init.py:init():913] sending inform_init request
+2026-05-13 00:40:30,527 INFO    MainThread:28424 [wandb_init.py:init():918] backend started and connected
+2026-05-13 00:40:30,558 INFO    MainThread:28424 [wandb_init.py:init():988] updated telemetry
+2026-05-13 00:40:30,630 INFO    MainThread:28424 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-05-13 00:40:33,538 INFO    MainThread:28424 [wandb_init.py:init():1056] starting run threads in backend
+2026-05-13 00:40:33,690 INFO    MainThread:28424 [wandb_run.py:_console_start():2554] atexit reg
+2026-05-13 00:40:33,690 INFO    MainThread:28424 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-05-13 00:40:33,690 INFO    MainThread:28424 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-05-13 00:40:33,691 INFO    MainThread:28424 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-05-13 00:40:33,698 INFO    MainThread:28424 [wandb_init.py:init():1094] run started, returning control to user process
+2026-05-13 00:40:33,699 INFO    MainThread:28424 [wandb_watch.py:_watch():69] Watching
+2026-05-13 01:05:52,584 ERROR   wandb-AsyncioManager-main:28424 [service_client.py:_forward_responses():131] Error reading server response.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:52,684 INFO    wandb-AsyncioManager-main:28424 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.
+2026-05-13 01:05:52,878 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:52,910 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,094 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,098 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,258 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,262 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,489 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,493 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,692 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,695 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,893 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile
+2026-05-13 01:05:53,897 ERROR   wandb-AsyncioManager-main:28424 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 485, in finish_recv
+    return ov.getresult()
+           ^^^^^^^^^^^^^^
+OSError: [WinError 64] Il nome di rete specificato non è più disponibile
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 366, in drain
+    raise exc
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 728, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 522, in _wait_for_data
+    await self._waiter
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\proactor_events.py", line 282, in _loop_reading
+    length = fut.result()
+             ^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 837, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\asyncio\windows_events.py", line 489, in finish_recv
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] Il nome di rete specificato non è più disponibile

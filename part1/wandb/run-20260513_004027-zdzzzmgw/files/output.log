@@ -1,0 +1,3573 @@
+[34m[1mwandb[0m: [33mWARNING[0m Linked 1 file into the W&B run directory (hardlinks); call wandb.save again to sync new files.
+
+[BEST MODEL SAVED] Avg100 Reward: 2.76
+
+Episode:     0 | Reward:       2.76 | Avg100:       2.76
+Episode 0, Reward: 2.7645999071601106
+Episode 1, Reward: 2.2133377534542023
+Episode 2, Reward: 2.772384750649385
+
+[BEST MODEL SAVED] Avg100 Reward: 2.87
+
+Episode:     3 | Reward:       3.72 | Avg100:       2.87
+Episode 3, Reward: 3.7201350504094823
+Episode 4, Reward: 2.537367361242695
+
+[BEST MODEL SAVED] Avg100 Reward: 2.87
+
+Episode:     5 | Reward:       3.23 | Avg100:       2.87
+Episode 5, Reward: 3.228756950147744
+Episode 6, Reward: 2.739192227409807
+Episode 7, Reward: 2.519052652413008
+Episode 8, Reward: 2.430507727128598
+
+[BEST MODEL SAVED] Avg100 Reward: 2.88
+
+Episode:     9 | Reward:       3.86 | Avg100:       2.88
+Episode 9, Reward: 3.858014132763489
+Episode 10, Reward: 2.5519887161306105
+Episode 11, Reward: 2.387376967656577
+Episode 12, Reward: 2.1846319467093083
+Episode 13, Reward: 2.925661525609022
+Episode 14, Reward: 3.1773503747532295
+Episode 15, Reward: 2.463337817649478
+Episode 16, Reward: 3.357261529736066
+Episode 17, Reward: 2.341554384856445
+Episode 18, Reward: 2.5904528797739266
+Episode 19, Reward: 3.023659313675793
+Episode 20, Reward: 4.051562706703877
+
+[BEST MODEL SAVED] Avg100 Reward: 2.89
+
+Episode:    21 | Reward:       3.68 | Avg100:       2.89
+Episode 21, Reward: 3.6812848244496355
+
+[BEST MODEL SAVED] Avg100 Reward: 2.90
+
+Episode:    22 | Reward:       3.18 | Avg100:       2.90
+Episode 22, Reward: 3.177063096190972
+
+[BEST MODEL SAVED] Avg100 Reward: 2.93
+
+Episode:    23 | Reward:       3.67 | Avg100:       2.93
+Episode 23, Reward: 3.6656688416186283
+
+[BEST MODEL SAVED] Avg100 Reward: 2.93
+
+Episode:    24 | Reward:       2.98 | Avg100:       2.93
+Episode 24, Reward: 2.976070540383575
+Episode 25, Reward: 2.604252607073505
+
+[BEST MODEL SAVED] Avg100 Reward: 2.96
+
+Episode:    26 | Reward:       4.05 | Avg100:       2.96
+Episode 26, Reward: 4.051725588918343
+
+[BEST MODEL SAVED] Avg100 Reward: 2.96
+
+Episode:    27 | Reward:       2.98 | Avg100:       2.96
+Episode 27, Reward: 2.9763658686259173
+
+[BEST MODEL SAVED] Avg100 Reward: 2.99
+
+Episode:    28 | Reward:       3.74 | Avg100:       2.99
+Episode 28, Reward: 3.7427603161134364
+
+[BEST MODEL SAVED] Avg100 Reward: 3.05
+
+Episode:    29 | Reward:       4.92 | Avg100:       3.05
+Episode 29, Reward: 4.924504386873885
+
+[BEST MODEL SAVED] Avg100 Reward: 3.08
+
+Episode:    30 | Reward:       3.98 | Avg100:       3.08
+Episode 30, Reward: 3.98271576820462
+
+[BEST MODEL SAVED] Avg100 Reward: 3.16
+
+Episode:    31 | Reward:       5.42 | Avg100:       3.16
+Episode 31, Reward: 5.418316439439543
+Episode 32, Reward: 3.1506988226119974
+Episode 33, Reward: 3.0544291430632593
+
+[BEST MODEL SAVED] Avg100 Reward: 3.21
+
+Episode:    34 | Reward:       4.96 | Avg100:       3.21
+Episode 34, Reward: 4.962774667906601
+
+[BEST MODEL SAVED] Avg100 Reward: 3.26
+
+Episode:    35 | Reward:       5.07 | Avg100:       3.26
+Episode 35, Reward: 5.06611798735245
+
+[BEST MODEL SAVED] Avg100 Reward: 3.26
+
+Episode:    36 | Reward:       3.29 | Avg100:       3.26
+Episode 36, Reward: 3.286213379178495
+
+[BEST MODEL SAVED] Avg100 Reward: 3.28
+
+Episode:    37 | Reward:       4.02 | Avg100:       3.28
+Episode 37, Reward: 4.017253275753143
+
+[BEST MODEL SAVED] Avg100 Reward: 3.30
+
+Episode:    38 | Reward:       4.04 | Avg100:       3.30
+Episode 38, Reward: 4.039810561776504
+
+[BEST MODEL SAVED] Avg100 Reward: 3.33
+
+Episode:    39 | Reward:       4.68 | Avg100:       3.33
+Episode 39, Reward: 4.675491724168833
+
+[BEST MODEL SAVED] Avg100 Reward: 3.40
+
+Episode:    40 | Reward:       6.31 | Avg100:       3.40
+Episode 40, Reward: 6.311916589911666
+
+[BEST MODEL SAVED] Avg100 Reward: 3.45
+
+Episode:    41 | Reward:       5.34 | Avg100:       3.45
+Episode 41, Reward: 5.340941838525301
+Episode 42, Reward: 2.5262665765440486
+Episode 43, Reward: 2.3764849017328764
+Episode 44, Reward: 3.3449979140258614
+Episode 45, Reward: 2.9339632014569985
+Episode 46, Reward: 2.7414214995717034
+Episode 47, Reward: 3.8572763650532282
+Episode 48, Reward: 3.1970640316370234
+Episode 49, Reward: 4.448621791428235
+Episode 50, Reward: 2.851202172236576
+Episode 51, Reward: -0.5642376712603034
+Episode 52, Reward: 6.0676040160740055
+Episode 53, Reward: 3.0846217246783225
+Episode 54, Reward: 2.9133465216481644
+Episode 55, Reward: 5.397352954590194
+Episode 56, Reward: 5.657546083992643
+Episode 57, Reward: 2.582616189325253
+Episode 58, Reward: 3.345554430487374
+Episode 59, Reward: 4.310393946317706
+Episode 60, Reward: 3.410634395162049
+Episode 61, Reward: 4.113057838751534
+Episode 62, Reward: 3.0082983196761908
+
+[BEST MODEL SAVED] Avg100 Reward: 3.48
+
+Episode:    63 | Reward:       6.22 | Avg100:       3.48
+Episode 63, Reward: 6.2235929558302026
+Episode 64, Reward: 3.1533151537612665
+
+[BEST MODEL SAVED] Avg100 Reward: 3.49
+
+Episode:    65 | Reward:       4.58 | Avg100:       3.49
+Episode 65, Reward: 4.582191276179911
+
+[BEST MODEL SAVED] Avg100 Reward: 3.50
+
+Episode:    66 | Reward:       3.70 | Avg100:       3.50
+Episode 66, Reward: 3.70039444605992
+Episode 67, Reward: 2.732933940947725
+
+[BEST MODEL SAVED] Avg100 Reward: 3.50
+
+Episode:    68 | Reward:       4.45 | Avg100:       3.50
+Episode 68, Reward: 4.447859396278819
+
+[BEST MODEL SAVED] Avg100 Reward: 3.51
+
+Episode:    69 | Reward:       4.57 | Avg100:       3.51
+Episode 69, Reward: 4.566371692657424
+
+[BEST MODEL SAVED] Avg100 Reward: 3.52
+
+Episode:    70 | Reward:       3.82 | Avg100:       3.52
+Episode 70, Reward: 3.822881688418678
+
+[BEST MODEL SAVED] Avg100 Reward: 3.52
+
+Episode:    71 | Reward:       4.01 | Avg100:       3.52
+Episode 71, Reward: 4.0122339310084465
+
+[BEST MODEL SAVED] Avg100 Reward: 3.56
+
+Episode:    72 | Reward:       6.27 | Avg100:       3.56
+Episode 72, Reward: 6.269651663029189
+
+[BEST MODEL SAVED] Avg100 Reward: 3.57
+
+Episode:    73 | Reward:       3.80 | Avg100:       3.57
+Episode 73, Reward: 3.8018494219024435
+Episode 74, Reward: 2.8988839092043506
+Episode 75, Reward: 2.9209271166313493
+Episode 76, Reward: 4.46008790557046
+
+[BEST MODEL SAVED] Avg100 Reward: 3.58
+
+Episode:    77 | Reward:       4.88 | Avg100:       3.58
+Episode 77, Reward: 4.879106911686767
+
+[BEST MODEL SAVED] Avg100 Reward: 3.58
+
+Episode:    78 | Reward:       4.10 | Avg100:       3.58
+Episode 78, Reward: 4.096740038561623
+Episode 79, Reward: 3.141179362593039
+
+[BEST MODEL SAVED] Avg100 Reward: 3.61
+
+Episode:    80 | Reward:       5.88 | Avg100:       3.61
+Episode 80, Reward: 5.877342057339381
+Episode 81, Reward: 2.9548945911295927
+Episode 82, Reward: 3.1027184700077513
+
+[BEST MODEL SAVED] Avg100 Reward: 3.61
+
+Episode:    83 | Reward:       5.27 | Avg100:       3.61
+Episode 83, Reward: 5.269098229954165
+Episode 84, Reward: 2.5293305004212647
+Episode 85, Reward: 2.6150958053309177
+Episode 86, Reward: 4.303512178633727
+Episode 87, Reward: 4.033712529838542
+Episode 88, Reward: 4.045432232503665
+Episode 89, Reward: 4.054074779049933
+
+[BEST MODEL SAVED] Avg100 Reward: 3.61
+
+Episode:    90 | Reward:       3.88 | Avg100:       3.61
+Episode 90, Reward: 3.8764374204645224
+
+[BEST MODEL SAVED] Avg100 Reward: 3.64
+
+Episode:    91 | Reward:       6.00 | Avg100:       3.64
+Episode 91, Reward: 6.001307775926244
+Episode 92, Reward: 2.784364564557262
+Episode 93, Reward: 3.280053732789483
+
+[BEST MODEL SAVED] Avg100 Reward: 3.64
+
+Episode:    94 | Reward:       5.20 | Avg100:       3.64
+Episode 94, Reward: 5.195546328969345
+
+[BEST MODEL SAVED] Avg100 Reward: 3.65
+
+Episode:    95 | Reward:       4.44 | Avg100:       3.65
+Episode 95, Reward: 4.440464819608039
+Episode 96, Reward: 3.1564034236631433
+Episode 97, Reward: 3.0321271138693433
+Episode 98, Reward: 4.238404805300132
+
+[BEST MODEL SAVED] Avg100 Reward: 3.66
+
+Episode:    99 | Reward:       4.71 | Avg100:       3.66
+Episode 99, Reward: 4.714161373223629
+
+[BEST MODEL SAVED] Avg100 Reward: 3.68
+
+Episode:   100 | Reward:       4.90 | Avg100:       3.68
+Episode 100, Reward: 4.9018270750476445
+
+[BEST MODEL SAVED] Avg100 Reward: 3.71
+
+Episode:   101 | Reward:       5.66 | Avg100:       3.71
+Episode 101, Reward: 5.659814515531206
+
+[BEST MODEL SAVED] Avg100 Reward: 3.74
+
+Episode:   102 | Reward:       5.19 | Avg100:       3.74
+Episode 102, Reward: 5.193217810689189
+Episode 103, Reward: 2.4153735779376952
+
+[BEST MODEL SAVED] Avg100 Reward: 3.74
+
+Episode:   104 | Reward:       4.51 | Avg100:       3.74
+Episode 104, Reward: 4.51075527677955
+
+[BEST MODEL SAVED] Avg100 Reward: 3.75
+
+Episode:   105 | Reward:       3.43 | Avg100:       3.75
+Episode 105, Reward: 3.425249656979737
+
+[BEST MODEL SAVED] Avg100 Reward: 3.77
+
+Episode:   106 | Reward:       4.82 | Avg100:       3.77
+Episode 106, Reward: 4.823541708943763
+
+[BEST MODEL SAVED] Avg100 Reward: 3.78
+
+Episode:   107 | Reward:       4.23 | Avg100:       3.78
+Episode 107, Reward: 4.226161527210444
+
+[BEST MODEL SAVED] Avg100 Reward: 3.82
+
+Episode:   108 | Reward:       6.12 | Avg100:       3.82
+Episode 108, Reward: 6.120340911492553
+Episode 109, Reward: 3.513621067432963
+
+[BEST MODEL SAVED] Avg100 Reward: 3.84
+
+Episode:   110 | Reward:       4.35 | Avg100:       3.84
+Episode 110, Reward: 4.3507091369287645
+
+[BEST MODEL SAVED] Avg100 Reward: 3.87
+
+Episode:   111 | Reward:       5.49 | Avg100:       3.87
+Episode 111, Reward: 5.4921772120270385
+
+[BEST MODEL SAVED] Avg100 Reward: 3.89
+
+Episode:   112 | Reward:       4.79 | Avg100:       3.89
+Episode 112, Reward: 4.7882036320103305
+
+[BEST MODEL SAVED] Avg100 Reward: 3.90
+
+Episode:   113 | Reward:       3.55 | Avg100:       3.90
+Episode 113, Reward: 3.548861480993944
+
+[BEST MODEL SAVED] Avg100 Reward: 3.91
+
+Episode:   114 | Reward:       4.43 | Avg100:       3.91
+Episode 114, Reward: 4.42884638051093
+
+[BEST MODEL SAVED] Avg100 Reward: 3.93
+
+Episode:   115 | Reward:       3.94 | Avg100:       3.93
+Episode 115, Reward: 3.9360395549260794
+
+[BEST MODEL SAVED] Avg100 Reward: 3.95
+
+Episode:   116 | Reward:       5.30 | Avg100:       3.95
+Episode 116, Reward: 5.304794960881185
+
+[BEST MODEL SAVED] Avg100 Reward: 3.98
+
+Episode:   117 | Reward:       5.27 | Avg100:       3.98
+Episode 117, Reward: 5.27293967553628
+
+[BEST MODEL SAVED] Avg100 Reward: 3.99
+
+Episode:   118 | Reward:       4.43 | Avg100:       3.99
+Episode 118, Reward: 4.434800908651218
+Episode 119, Reward: 2.745751728298765
+Episode 120, Reward: 4.177531041635849
+
+[BEST MODEL SAVED] Avg100 Reward: 4.01
+
+Episode:   121 | Reward:       5.56 | Avg100:       4.01
+Episode 121, Reward: 5.562439526346518
+
+[BEST MODEL SAVED] Avg100 Reward: 4.04
+
+Episode:   122 | Reward:       5.73 | Avg100:       4.04
+Episode 122, Reward: 5.733866185779304
+
+[BEST MODEL SAVED] Avg100 Reward: 4.04
+
+Episode:   123 | Reward:       4.49 | Avg100:       4.04
+Episode 123, Reward: 4.486547680794459
+
+[BEST MODEL SAVED] Avg100 Reward: 4.06
+
+Episode:   124 | Reward:       4.93 | Avg100:       4.06
+Episode 124, Reward: 4.928193442655807
+
+[BEST MODEL SAVED] Avg100 Reward: 4.10
+
+Episode:   125 | Reward:       6.33 | Avg100:       4.10
+Episode 125, Reward: 6.328164778295513
+
+[BEST MODEL SAVED] Avg100 Reward: 4.10
+
+Episode:   126 | Reward:       4.38 | Avg100:       4.10
+Episode 126, Reward: 4.379970562000111
+Episode 127, Reward: 2.8762238582062927
+
+[BEST MODEL SAVED] Avg100 Reward: 4.13
+
+Episode:   128 | Reward:       5.95 | Avg100:       4.13
+Episode 128, Reward: 5.951755572065876
+
+[BEST MODEL SAVED] Avg100 Reward: 4.13
+
+Episode:   129 | Reward:       5.14 | Avg100:       4.13
+Episode 129, Reward: 5.14431236102906
+Episode 130, Reward: 3.918172390170814
+
+[BEST MODEL SAVED] Avg100 Reward: 4.13
+
+Episode:   131 | Reward:       6.15 | Avg100:       4.13
+Episode 131, Reward: 6.153610503732476
+
+[BEST MODEL SAVED] Avg100 Reward: 4.14
+
+Episode:   132 | Reward:       3.92 | Avg100:       4.14
+Episode 132, Reward: 3.920553960757715
+
+[BEST MODEL SAVED] Avg100 Reward: 4.16
+
+Episode:   133 | Reward:       4.41 | Avg100:       4.16
+Episode 133, Reward: 4.413450738650621
+
+[BEST MODEL SAVED] Avg100 Reward: 4.16
+
+Episode:   134 | Reward:       5.53 | Avg100:       4.16
+Episode 134, Reward: 5.5342527605649865
+
+[BEST MODEL SAVED] Avg100 Reward: 4.19
+
+Episode:   135 | Reward:       7.47 | Avg100:       4.19
+Episode 135, Reward: 7.469312766087202
+
+[BEST MODEL SAVED] Avg100 Reward: 4.23
+
+Episode:   136 | Reward:       7.23 | Avg100:       4.23
+Episode 136, Reward: 7.228569511937447
+
+[BEST MODEL SAVED] Avg100 Reward: 4.25
+
+Episode:   137 | Reward:       6.14 | Avg100:       4.25
+Episode 137, Reward: 6.139697220924794
+
+[BEST MODEL SAVED] Avg100 Reward: 4.26
+
+Episode:   138 | Reward:       5.39 | Avg100:       4.26
+Episode 138, Reward: 5.3851798584555395
+
+[BEST MODEL SAVED] Avg100 Reward: 4.27
+
+Episode:   139 | Reward:       5.55 | Avg100:       4.27
+Episode 139, Reward: 5.548644483115649
+Episode 140, Reward: 4.895452251385115
+Episode 141, Reward: 5.728734365490245
+
+[BEST MODEL SAVED] Avg100 Reward: 4.27
+
+Episode:   142 | Reward:       4.03 | Avg100:       4.27
+Episode 142, Reward: 4.03481636964665
+
+[BEST MODEL SAVED] Avg100 Reward: 4.30
+
+Episode:   143 | Reward:       5.04 | Avg100:       4.30
+Episode 143, Reward: 5.036492402283856
+
+[BEST MODEL SAVED] Avg100 Reward: 4.31
+
+Episode:   144 | Reward:       4.73 | Avg100:       4.31
+Episode 144, Reward: 4.725517134432664
+Episode 145, Reward: 2.9266896233528774
+
+[BEST MODEL SAVED] Avg100 Reward: 4.34
+
+Episode:   146 | Reward:       5.39 | Avg100:       4.34
+Episode 146, Reward: 5.392067557882637
+Episode 147, Reward: 3.5652895333579657
+
+[BEST MODEL SAVED] Avg100 Reward: 4.36
+
+Episode:   148 | Reward:       5.74 | Avg100:       4.36
+Episode 148, Reward: 5.744627286422328
+
+[BEST MODEL SAVED] Avg100 Reward: 4.39
+
+Episode:   149 | Reward:       7.22 | Avg100:       4.39
+Episode 149, Reward: 7.220361730622073
+
+[BEST MODEL SAVED] Avg100 Reward: 4.40
+
+Episode:   150 | Reward:       4.12 | Avg100:       4.40
+Episode 150, Reward: 4.122844896319533
+
+[BEST MODEL SAVED] Avg100 Reward: 4.47
+
+Episode:   151 | Reward:       5.99 | Avg100:       4.47
+Episode 151, Reward: 5.9908450609842765
+
+[BEST MODEL SAVED] Avg100 Reward: 4.47
+
+Episode:   152 | Reward:       6.51 | Avg100:       4.47
+Episode 152, Reward: 6.513640210858873
+
+[BEST MODEL SAVED] Avg100 Reward: 4.52
+
+Episode:   153 | Reward:       7.84 | Avg100:       4.52
+Episode 153, Reward: 7.84446866221087
+
+[BEST MODEL SAVED] Avg100 Reward: 4.55
+
+Episode:   154 | Reward:       5.50 | Avg100:       4.55
+Episode 154, Reward: 5.497068315652271
+Episode 155, Reward: 3.017682511096303
+Episode 156, Reward: 5.157526902155965
+
+[BEST MODEL SAVED] Avg100 Reward: 4.56
+
+Episode:   157 | Reward:       6.53 | Avg100:       4.56
+Episode 157, Reward: 6.5300153545799215
+
+[BEST MODEL SAVED] Avg100 Reward: 4.58
+
+Episode:   158 | Reward:       5.46 | Avg100:       4.58
+Episode 158, Reward: 5.463428012403886
+
+[BEST MODEL SAVED] Avg100 Reward: 4.60
+
+Episode:   159 | Reward:       6.30 | Avg100:       4.60
+Episode 159, Reward: 6.30148114659907
+
+[BEST MODEL SAVED] Avg100 Reward: 4.63
+
+Episode:   160 | Reward:       6.67 | Avg100:       4.63
+Episode 160, Reward: 6.669654210093133
+
+[BEST MODEL SAVED] Avg100 Reward: 4.66
+
+Episode:   161 | Reward:       6.61 | Avg100:       4.66
+Episode 161, Reward: 6.611686743321459
+
+[BEST MODEL SAVED] Avg100 Reward: 4.69
+
+Episode:   162 | Reward:       6.32 | Avg100:       4.69
+Episode 162, Reward: 6.3219522508550865
+
+[BEST MODEL SAVED] Avg100 Reward: 4.70
+
+Episode:   163 | Reward:       6.83 | Avg100:       4.70
+Episode 163, Reward: 6.8297968510701
+
+[BEST MODEL SAVED] Avg100 Reward: 4.71
+
+Episode:   164 | Reward:       4.90 | Avg100:       4.71
+Episode 164, Reward: 4.897056282700122
+Episode 165, Reward: 4.5070462864926455
+
+[BEST MODEL SAVED] Avg100 Reward: 4.75
+
+Episode:   166 | Reward:       7.31 | Avg100:       4.75
+Episode 166, Reward: 7.308138541885466
+
+[BEST MODEL SAVED] Avg100 Reward: 4.78
+
+Episode:   167 | Reward:       6.06 | Avg100:       4.78
+Episode 167, Reward: 6.061414208859821
+
+[BEST MODEL SAVED] Avg100 Reward: 4.81
+
+Episode:   168 | Reward:       7.00 | Avg100:       4.81
+Episode 168, Reward: 7.003098738652648
+
+[BEST MODEL SAVED] Avg100 Reward: 4.82
+
+Episode:   169 | Reward:       5.63 | Avg100:       4.82
+Episode 169, Reward: 5.633339091001443
+
+[BEST MODEL SAVED] Avg100 Reward: 4.85
+
+Episode:   170 | Reward:       6.78 | Avg100:       4.85
+Episode 170, Reward: 6.784759071506641
+
+[BEST MODEL SAVED] Avg100 Reward: 4.87
+
+Episode:   171 | Reward:       6.34 | Avg100:       4.87
+Episode 171, Reward: 6.336451052989912
+Episode 172, Reward: 0.9784192923048742
+Episode 173, Reward: 5.190004158364523
+Episode 174, Reward: 6.439448244887807
+
+[BEST MODEL SAVED] Avg100 Reward: 4.89
+
+Episode:   175 | Reward:       5.40 | Avg100:       4.89
+Episode 175, Reward: 5.398433123971282
+
+[BEST MODEL SAVED] Avg100 Reward: 4.91
+
+Episode:   176 | Reward:       6.27 | Avg100:       4.91
+Episode 176, Reward: 6.271042564370241
+Episode 177, Reward: 4.821656565742126
+
+[BEST MODEL SAVED] Avg100 Reward: 4.92
+
+Episode:   178 | Reward:       5.05 | Avg100:       4.92
+Episode 178, Reward: 5.051192127766854
+
+[BEST MODEL SAVED] Avg100 Reward: 4.92
+
+Episode:   179 | Reward:       3.18 | Avg100:       4.92
+Episode 179, Reward: 3.1756399979720076
+Episode 180, Reward: 5.001058573101659
+
+[BEST MODEL SAVED] Avg100 Reward: 4.93
+
+Episode:   181 | Reward:       5.12 | Avg100:       4.93
+Episode 181, Reward: 5.119283834890144
+
+[BEST MODEL SAVED] Avg100 Reward: 4.97
+
+Episode:   182 | Reward:       6.86 | Avg100:       4.97
+Episode 182, Reward: 6.858257654206472
+Episode 183, Reward: 3.858769800169728
+
+[BEST MODEL SAVED] Avg100 Reward: 4.99
+
+Episode:   184 | Reward:       5.80 | Avg100:       4.99
+Episode 184, Reward: 5.797148756149504
+
+[BEST MODEL SAVED] Avg100 Reward: 5.02
+
+Episode:   185 | Reward:       5.41 | Avg100:       5.02
+Episode 185, Reward: 5.408834655821314
+
+[BEST MODEL SAVED] Avg100 Reward: 5.03
+
+Episode:   186 | Reward:       5.60 | Avg100:       5.03
+Episode 186, Reward: 5.6022627496851225
+
+[BEST MODEL SAVED] Avg100 Reward: 5.05
+
+Episode:   187 | Reward:       5.75 | Avg100:       5.05
+Episode 187, Reward: 5.747433729236534
+
+[BEST MODEL SAVED] Avg100 Reward: 5.06
+
+Episode:   188 | Reward:       5.54 | Avg100:       5.06
+Episode 188, Reward: 5.538635042757092
+
+[BEST MODEL SAVED] Avg100 Reward: 5.07
+
+Episode:   189 | Reward:       4.93 | Avg100:       5.07
+Episode 189, Reward: 4.927601969129441
+
+[BEST MODEL SAVED] Avg100 Reward: 5.11
+
+Episode:   190 | Reward:       7.55 | Avg100:       5.11
+Episode 190, Reward: 7.551851037467368
+Episode 191, Reward: 4.911035092193319
+
+[BEST MODEL SAVED] Avg100 Reward: 5.12
+
+Episode:   192 | Reward:       4.88 | Avg100:       5.12
+Episode 192, Reward: 4.87664543519675
+
+[BEST MODEL SAVED] Avg100 Reward: 5.15
+
+Episode:   193 | Reward:       7.05 | Avg100:       5.15
+Episode 193, Reward: 7.047333682781059
+Episode 194, Reward: 3.981165716030236
+
+[BEST MODEL SAVED] Avg100 Reward: 5.16
+
+Episode:   195 | Reward:       6.09 | Avg100:       5.16
+Episode 195, Reward: 6.085962579995345
+
+[BEST MODEL SAVED] Avg100 Reward: 5.17
+
+Episode:   196 | Reward:       4.17 | Avg100:       5.17
+Episode 196, Reward: 4.174542935808037
+
+[BEST MODEL SAVED] Avg100 Reward: 5.19
+
+Episode:   197 | Reward:       4.84 | Avg100:       5.19
+Episode 197, Reward: 4.835293569990864
+Episode 198, Reward: 4.13825578765054
+
+[BEST MODEL SAVED] Avg100 Reward: 5.19
+
+Episode:   199 | Reward:       5.12 | Avg100:       5.19
+Episode 199, Reward: 5.117399436626536
+
+[BEST MODEL SAVED] Avg100 Reward: 5.20
+
+Episode:   200 | Reward:       5.84 | Avg100:       5.20
+Episode 200, Reward: 5.837572737870177
+Episode 201, Reward: 5.6151926956123805
+Episode 202, Reward: -1.0127290945108542
+Episode 203, Reward: 6.414037424013125
+Episode 204, Reward: 5.979962154311608
+Episode 205, Reward: 3.7245860634675716
+Episode 206, Reward: 4.214153803198684
+
+[BEST MODEL SAVED] Avg100 Reward: 5.21
+
+Episode:   207 | Reward:       6.03 | Avg100:       5.21
+Episode 207, Reward: 6.034930908460038
+Episode 208, Reward: 4.666908026353079
+Episode 209, Reward: 3.123101725031304
+Episode 210, Reward: 5.675436710586763
+
+[BEST MODEL SAVED] Avg100 Reward: 5.21
+
+Episode:   211 | Reward:       6.28 | Avg100:       5.21
+Episode 211, Reward: 6.284198903428837
+
+[BEST MODEL SAVED] Avg100 Reward: 5.22
+
+Episode:   212 | Reward:       6.20 | Avg100:       5.22
+Episode 212, Reward: 6.1981103309787855
+
+[BEST MODEL SAVED] Avg100 Reward: 5.26
+
+Episode:   213 | Reward:       7.07 | Avg100:       5.26
+Episode 213, Reward: 7.073888177252386
+
+[BEST MODEL SAVED] Avg100 Reward: 5.28
+
+Episode:   214 | Reward:       6.22 | Avg100:       5.28
+Episode 214, Reward: 6.221539557857926
+
+[BEST MODEL SAVED] Avg100 Reward: 5.31
+
+Episode:   215 | Reward:       7.27 | Avg100:       5.31
+Episode 215, Reward: 7.266873709045285
+Episode 216, Reward: 1.5185315509299675
+Episode 217, Reward: 5.195303212527919
+Episode 218, Reward: 5.617751524378745
+
+[BEST MODEL SAVED] Avg100 Reward: 5.31
+
+Episode:   219 | Reward:       5.43 | Avg100:       5.31
+Episode 219, Reward: 5.432070823143944
+
+[BEST MODEL SAVED] Avg100 Reward: 5.32
+
+Episode:   220 | Reward:       4.85 | Avg100:       5.32
+Episode 220, Reward: 4.852737825030187
+Episode 221, Reward: 3.431682761022715
+Episode 222, Reward: 6.553156183270058
+
+[BEST MODEL SAVED] Avg100 Reward: 5.32
+
+Episode:   223 | Reward:       5.82 | Avg100:       5.32
+Episode 223, Reward: 5.823881824932087
+Episode 224, Reward: 4.816686784963767
+Episode 225, Reward: 4.754950712405527
+Episode 226, Reward: 5.083103488356572
+
+[BEST MODEL SAVED] Avg100 Reward: 5.34
+
+Episode:   227 | Reward:       6.56 | Avg100:       5.34
+Episode 227, Reward: 6.5635391104350465
+
+[BEST MODEL SAVED] Avg100 Reward: 5.35
+
+Episode:   228 | Reward:       6.76 | Avg100:       5.35
+Episode 228, Reward: 6.763348008408043
+Episode 229, Reward: 4.806882519420432
+
+[BEST MODEL SAVED] Avg100 Reward: 5.37
+
+Episode:   230 | Reward:       5.95 | Avg100:       5.37
+Episode 230, Reward: 5.953943504794386
+Episode 231, Reward: 4.92074644187128
+
+[BEST MODEL SAVED] Avg100 Reward: 5.39
+
+Episode:   232 | Reward:       7.63 | Avg100:       5.39
+Episode 232, Reward: 7.6269321865243445
+
+[BEST MODEL SAVED] Avg100 Reward: 5.42
+
+Episode:   233 | Reward:       7.33 | Avg100:       5.42
+Episode 233, Reward: 7.32708478327932
+
+[BEST MODEL SAVED] Avg100 Reward: 5.43
+
+Episode:   234 | Reward:       6.25 | Avg100:       5.43
+Episode 234, Reward: 6.253013684168748
+
+[BEST MODEL SAVED] Avg100 Reward: 5.44
+
+Episode:   235 | Reward:       8.02 | Avg100:       5.44
+Episode 235, Reward: 8.022055296279431
+Episode 236, Reward: 3.932911248313278
+Episode 237, Reward: 6.1382286207445755
+Episode 238, Reward: 6.138428756603955
+Episode 239, Reward: 5.982168526593739
+
+[BEST MODEL SAVED] Avg100 Reward: 5.44
+
+Episode:   240 | Reward:       7.49 | Avg100:       5.44
+Episode 240, Reward: 7.486694471753706
+
+[BEST MODEL SAVED] Avg100 Reward: 5.45
+
+Episode:   241 | Reward:       7.20 | Avg100:       5.45
+Episode 241, Reward: 7.202042693562305
+
+[BEST MODEL SAVED] Avg100 Reward: 5.46
+
+Episode:   242 | Reward:       4.56 | Avg100:       5.46
+Episode 242, Reward: 4.56421812450637
+
+[BEST MODEL SAVED] Avg100 Reward: 5.48
+
+Episode:   243 | Reward:       7.31 | Avg100:       5.48
+Episode 243, Reward: 7.313477350030313
+
+[BEST MODEL SAVED] Avg100 Reward: 5.51
+
+Episode:   244 | Reward:       7.19 | Avg100:       5.51
+Episode 244, Reward: 7.186865701265822
+
+[BEST MODEL SAVED] Avg100 Reward: 5.54
+
+Episode:   245 | Reward:       6.35 | Avg100:       5.54
+Episode 245, Reward: 6.350234990389738
+
+[BEST MODEL SAVED] Avg100 Reward: 5.55
+
+Episode:   246 | Reward:       5.84 | Avg100:       5.55
+Episode 246, Reward: 5.843550412175608
+
+[BEST MODEL SAVED] Avg100 Reward: 5.56
+
+Episode:   247 | Reward:       4.88 | Avg100:       5.56
+Episode 247, Reward: 4.8751010685907
+
+[BEST MODEL SAVED] Avg100 Reward: 5.58
+
+Episode:   248 | Reward:       7.65 | Avg100:       5.58
+Episode 248, Reward: 7.648995569510562
+Episode 249, Reward: 4.87875675060711
+Episode 250, Reward: 5.47619540248851
+Episode 251, Reward: 4.435678059544455
+Episode 252, Reward: 6.234865876518914
+Episode 253, Reward: 3.684427732156192
+Episode 254, Reward: 7.2985903356253115
+Episode 255, Reward: 5.322938422462584
+Episode 256, Reward: 5.1093049068772745
+Episode 257, Reward: 7.145189328161524
+Episode 258, Reward: 4.6739459605337865
+Episode 259, Reward: 6.460853706240045
+Episode 260, Reward: 4.279407996567141
+Episode 261, Reward: 4.230214631159826
+Episode 262, Reward: 7.271731712379824
+Episode 263, Reward: 5.7055191209465095
+Episode 264, Reward: 4.014056976736296
+Episode 265, Reward: 5.506536534564926
+Episode 266, Reward: 5.911616159473525
+Episode 267, Reward: 5.379109367669555
+Episode 268, Reward: 5.5319848051509775
+Episode 269, Reward: 6.184368160774988
+Episode 270, Reward: 5.717193446286513
+Episode 271, Reward: 4.998550144334418
+Episode 272, Reward: -0.22001855322671893
+Episode 273, Reward: 5.924180277925443
+Episode 274, Reward: 7.340153333833909
+Episode 275, Reward: 5.19972657719099
+Episode 276, Reward: 3.0057429075537865
+Episode 277, Reward: 6.0119227956892285
+Episode 278, Reward: 4.051229184809655
+Episode 279, Reward: 4.984265430073484
+Episode 280, Reward: 5.298492924620973
+Episode 281, Reward: 5.380224752501631
+Episode 282, Reward: 6.70621292733465
+Episode 283, Reward: 2.440449738770745
+Episode 284, Reward: 5.904627934542634
+Episode 285, Reward: 5.941409827641903
+Episode 286, Reward: 4.675974357340008
+Episode 287, Reward: 6.73411425992929
+Episode 288, Reward: 2.7402795979907144
+Episode 289, Reward: 7.357468005656968
+Episode 290, Reward: 5.805336636519631
+Episode 291, Reward: -1.9721827569444383
+Episode 292, Reward: 4.92522757644928
+Episode 293, Reward: 6.332308887769922
+Episode 294, Reward: 5.560301677179173
+Episode 295, Reward: 6.872586976753635
+Episode 296, Reward: 5.368373782309233
+Episode 297, Reward: 5.675205147959017
+Episode 298, Reward: 2.545668685105941
+Episode 299, Reward: 1.3232501288791143
+Episode 300, Reward: 3.3887579110960218
+Episode 301, Reward: 4.446193975909565
+Episode 302, Reward: 5.604797677813609
+Episode 303, Reward: 4.971399625120676
+Episode 304, Reward: 4.886762064291341
+Episode 305, Reward: 5.731660914691313
+Episode 306, Reward: 4.120667147886383
+Episode 307, Reward: 3.3206150779236268
+Episode 308, Reward: 5.810698680524733
+Episode 309, Reward: 4.5233999005639305
+Episode 310, Reward: 1.2432662838868753
+Episode 311, Reward: -0.7867749673150325
+Episode 312, Reward: 5.940877743264488
+Episode 313, Reward: 2.9584706344319054
+Episode 314, Reward: 5.136633646826767
+Episode 315, Reward: 4.18289252473031
+Episode 316, Reward: 6.075774370237386
+Episode 317, Reward: 6.539159116832297
+Episode 318, Reward: 5.648731046378878
+Episode 319, Reward: 6.321684601259341
+Episode 320, Reward: 4.969362249158369
+Episode 321, Reward: 2.627991542566975
+Episode 322, Reward: 1.8129882831124444
+Episode 323, Reward: 3.342422673273715
+Episode 324, Reward: 4.040557567930716
+Episode 325, Reward: 5.049931802759845
+Episode 326, Reward: 7.020336408383148
+Episode 327, Reward: -2.039668227445086
+Episode 328, Reward: 6.516946767974384
+Episode 329, Reward: 4.266432148072946
+Episode 330, Reward: 3.2341020862124488
+Episode 331, Reward: 4.068396108458019
+Episode 332, Reward: 6.429807606352305
+Episode 333, Reward: 5.410846033303403
+Episode 334, Reward: 4.305122644575861
+Episode 335, Reward: 4.613739865809167
+Episode 336, Reward: 4.5729980879257175
+Episode 337, Reward: 5.769397473056451
+Episode 338, Reward: 1.953638564927247
+Episode 339, Reward: 4.008900226276722
+Episode 340, Reward: 3.1996008400696834
+Episode 341, Reward: 6.411508990947895
+Episode 342, Reward: 6.352428149978995
+Episode 343, Reward: 6.583579249971209
+Episode 344, Reward: 7.201134612727811
+Episode 345, Reward: 5.141400035988491
+Episode 346, Reward: 5.714479001986584
+Episode 347, Reward: 7.605085813589946
+Episode 348, Reward: 5.042071885834915
+Episode 349, Reward: 7.82413545790057
+Episode 350, Reward: 5.985630516851654
+Episode 351, Reward: 4.158078840337305
+Episode 352, Reward: 6.213873909999647
+Episode 353, Reward: -0.08675838554886761
+Episode 354, Reward: 7.043566141662594
+Episode 355, Reward: 6.835568402562231
+Episode 356, Reward: 5.476786960815492
+Episode 357, Reward: 5.939589631909008
+Episode 358, Reward: 4.285097386635276
+Episode 359, Reward: 6.425986100244591
+Episode 360, Reward: 7.000142543043503
+Episode 361, Reward: 4.93155100842475
+Episode 362, Reward: 5.615393279734389
+Episode 363, Reward: -0.09514793803528265
+Episode 364, Reward: 4.563563629441812
+Episode 365, Reward: 2.656614225676259
+Episode 366, Reward: 5.248199744690286
+Episode 367, Reward: 5.409650352106873
+Episode 368, Reward: 7.36626175319852
+Episode 369, Reward: 7.50678166011007
+Episode 370, Reward: 4.8696958253097264
+Episode 371, Reward: 5.7224570335425575
+Episode 372, Reward: 5.783558022967341
+Episode 373, Reward: 7.946816248534613
+Episode 374, Reward: 6.7610668849734
+Episode 375, Reward: 1.1594716457823029
+Episode 376, Reward: 0.7441429679255359
+Episode 377, Reward: 4.432217749940857
+Episode 378, Reward: 6.624031095415673
+Episode 379, Reward: 4.473115101565462
+Episode 380, Reward: 7.129658952714631
+Episode 381, Reward: 6.7200737980060605
+Episode 382, Reward: 6.640035392582082
+Episode 383, Reward: 6.418462212262613
+Episode 384, Reward: 5.5018695975885805
+Episode 385, Reward: 7.557379765645082
+Episode 386, Reward: 5.486432958003934
+Episode 387, Reward: 5.803732236389368
+Episode 388, Reward: 6.071400224467364
+Episode 389, Reward: 6.177138261676632
+Episode 390, Reward: 6.184488920296419
+Episode 391, Reward: 2.8766815744333964
+Episode 392, Reward: 4.181008646086848
+Episode 393, Reward: 5.428923626975075
+Episode 394, Reward: 6.8405972485628626
+Episode 395, Reward: 4.7563899833872085
+Episode 396, Reward: 4.994910539417415
+Episode 397, Reward: 6.375291391299499
+Episode 398, Reward: 6.259501760581913
+Episode 399, Reward: 5.223649866085983
+Episode 400, Reward: 0.3313111514386582
+Episode 401, Reward: 6.680616035754579
+Episode 402, Reward: 7.651882956266751
+Episode 403, Reward: 2.8469708838796963
+Episode 404, Reward: 5.235204304532192
+Episode 405, Reward: 4.366707100481416
+Episode 406, Reward: 4.064845779646782
+Episode 407, Reward: 5.380905087547496
+Episode 408, Reward: 7.653777419107654
+Episode 409, Reward: 7.4054020331719
+Episode 410, Reward: 3.555667003645798
+Episode 411, Reward: 7.614152250094361
+Episode 412, Reward: 3.906378926281632
+Episode 413, Reward: 2.1681886697772876
+Episode 414, Reward: 4.287732038740762
+Episode 415, Reward: 6.123512906417885
+Episode 416, Reward: 4.606026792986257
+Episode 417, Reward: 6.207904912285201
+Episode 418, Reward: -0.02943169388654754
+Episode 419, Reward: 5.615271885304939
+Episode 420, Reward: 4.307568922960322
+Episode 421, Reward: 6.078242736762285
+Episode 422, Reward: 6.471707319862069
+Episode 423, Reward: 3.2057278407692014
+Episode 424, Reward: 6.405491724858941
+Episode 425, Reward: 5.271915982555601
+Episode 426, Reward: 6.843788481399278
+Episode 427, Reward: 4.580129270342628
+Episode 428, Reward: 8.288106085077409
+Episode 429, Reward: 1.7331059886168954
+Episode 430, Reward: 6.527202443175548
+Episode 431, Reward: 2.549617721472585
+Episode 432, Reward: 3.6607169701178255
+Episode 433, Reward: 5.335952136126807
+Episode 434, Reward: 4.84416620355172
+Episode 435, Reward: 6.391835420076026
+Episode 436, Reward: 6.40268188875046
+Episode 437, Reward: 5.047366887954461
+Episode 438, Reward: 5.7301993835492375
+Episode 439, Reward: 4.3606327836736
+Episode 440, Reward: 6.333267495310527
+Episode 441, Reward: 5.595166295784244
+Episode 442, Reward: 3.5273146165452416
+Episode 443, Reward: 6.288811727583229
+Episode 444, Reward: 6.417764427650663
+Episode 445, Reward: 4.804326625720055
+Episode 446, Reward: 7.391297053256045
+Episode 447, Reward: 7.57507030435866
+Episode 448, Reward: -0.20945535250692482
+Episode 449, Reward: 5.787121710954969
+Episode 450, Reward: 4.72567579460064
+Episode 451, Reward: 6.282874431761435
+Episode 452, Reward: 3.116462864863183
+Episode 453, Reward: 4.172253928469862
+Episode 454, Reward: 7.388626782655858
+Episode 455, Reward: 3.8704776169947475
+Episode 456, Reward: 3.496957902436243
+Episode 457, Reward: 4.389453693958396
+Episode 458, Reward: 1.7555208147242376
+Episode 459, Reward: 3.956241156618453
+Episode 460, Reward: 6.468771791316545
+Episode 461, Reward: 5.267043809944674
+Episode 462, Reward: 5.546974183404799
+Episode 463, Reward: 6.715439752964532
+Episode 464, Reward: 4.56014813448468
+Episode 465, Reward: 6.810053512143363
+Episode 466, Reward: 5.863224351855174
+Episode 467, Reward: -0.7048049069011197
+Episode 468, Reward: 5.4072917676705
+Episode 469, Reward: 7.597920198908268
+Episode 470, Reward: 3.0124374028240437
+Episode 471, Reward: 3.3201996404632563
+Episode 472, Reward: 2.227180873076487
+Episode 473, Reward: 6.936448280039618
+Episode 474, Reward: 6.419663661670095
+Episode 475, Reward: 7.04628717252686
+Episode 476, Reward: 7.1889346651675785
+Episode 477, Reward: 3.3763035671179935
+Episode 478, Reward: 6.56064891696068
+Episode 479, Reward: 1.9656662970678394
+Episode 480, Reward: 3.967257558286709
+Episode 481, Reward: 4.156770229390022
+Episode 482, Reward: 7.400565933404588
+Episode 483, Reward: 1.4132919566227797
+Episode 484, Reward: -0.3798875488369753
+Episode 485, Reward: -0.38365113084341207
+Episode 486, Reward: 7.154906152273518
+Episode 487, Reward: 5.477481260970302
+Episode 488, Reward: 8.093289802917587
+Episode 489, Reward: 7.084306032408502
+Episode 490, Reward: 5.024839464204847
+Episode 491, Reward: 5.810174840913695
+Episode 492, Reward: 4.113379237191711
+Episode 493, Reward: 4.5542016338814895
+Episode 494, Reward: 6.397245113857413
+Episode 495, Reward: 6.222844867487178
+Episode 496, Reward: 4.656970247211324
+Episode 497, Reward: 6.716235740802442
+Episode 498, Reward: 8.006797541206534
+Episode 499, Reward: 5.153118533691008
+Episode 500, Reward: 6.0242074228058495
+Episode 501, Reward: 7.199348528926603
+Episode 502, Reward: 4.100935061420367
+Episode 503, Reward: 7.750185260373972
+Episode 504, Reward: 6.5381461939205225
+Episode 505, Reward: 6.298260707000409
+Episode 506, Reward: 6.952667744772716
+Episode 507, Reward: 7.281038403572161
+Episode 508, Reward: 2.324965170935699
+Episode 509, Reward: 5.4370677463658525
+Episode 510, Reward: 2.17226413683963
+Episode 511, Reward: 4.327113897481787
+Episode 512, Reward: 3.0343234176579386
+Episode 513, Reward: 3.288399452903782
+Episode 514, Reward: 6.446206544248622
+Episode 515, Reward: 6.841531433809394
+Episode 516, Reward: -2.407737151302597
+Episode 517, Reward: 7.198965800560239
+Episode 518, Reward: 6.629003942361292
+Episode 519, Reward: 6.304978156934975
+Episode 520, Reward: 6.064311976170969
+Episode 521, Reward: 7.2574524842238795
+Episode 522, Reward: 7.545958061032092
+Episode 523, Reward: 5.583778332070066
+Episode 524, Reward: 5.098099975794739
+Episode 525, Reward: 4.819295659267518
+Episode 526, Reward: 5.450107929650625
+Episode 527, Reward: 6.965872775010242
+Episode 528, Reward: 3.5975513722121204
+Episode 529, Reward: 5.458706682828473
+Episode 530, Reward: 5.693587437706515
+Episode 531, Reward: 5.775285386164326
+Episode 532, Reward: 5.206814797948627
+Episode 533, Reward: -1.5834718407145436
+Episode 534, Reward: 4.324382609829964
+Episode 535, Reward: 6.006824815302084
+Episode 536, Reward: 7.1938251496482435
+Episode 537, Reward: 7.06414308092309
+Episode 538, Reward: -0.6619173902063145
+Episode 539, Reward: 6.201670588885808
+Episode 540, Reward: 6.188644796477716
+Episode 541, Reward: 2.4645012743034207
+Episode 542, Reward: 7.4220975549607004
+Episode 543, Reward: 3.390408958016671
+Episode 544, Reward: 2.4628547079924163
+Episode 545, Reward: 4.630504486798524
+Episode 546, Reward: 6.211987848767836
+Episode 547, Reward: 2.003460790597464
+Episode 548, Reward: 5.945307208747326
+Episode 549, Reward: 6.89172278428296
+Episode 550, Reward: 7.238198495400058
+Episode 551, Reward: 2.475240877569056
+Episode 552, Reward: 3.588023728392853
+Episode 553, Reward: 5.730645553825256
+Episode 554, Reward: -0.4412879821467164
+Episode 555, Reward: 0.0005709525215469857
+Episode 556, Reward: 7.052505665540486
+Episode 557, Reward: 5.372605688368423
+Episode 558, Reward: 6.348651805731234
+Episode 559, Reward: 2.000314699390519
+Episode 560, Reward: 6.961085861822908
+Episode 561, Reward: 6.912091960987198
+Episode 562, Reward: 5.3879998208732385
+Episode 563, Reward: 6.135032166053399
+Episode 564, Reward: -0.415448751755063
+Episode 565, Reward: 5.548537275103903
+Episode 566, Reward: -0.037296383222539586
+Episode 567, Reward: 4.719837850076585
+Episode 568, Reward: 4.84117245141146
+Episode 569, Reward: 4.292973894702233
+Episode 570, Reward: 4.237153188955493
+Episode 571, Reward: 6.133163818667957
+Episode 572, Reward: 6.566873163418907
+Episode 573, Reward: 4.041214401402776
+Episode 574, Reward: 6.996036064133763
+Episode 575, Reward: 5.480841399162683
+Episode 576, Reward: 3.2186749992769097
+Episode 577, Reward: 7.305881505749019
+Episode 578, Reward: 6.68357933525807
+Episode 579, Reward: 6.353782283861085
+Episode 580, Reward: 6.660833588119803
+Episode 581, Reward: 3.1643966081034254
+Episode 582, Reward: -1.3902122610824215
+Episode 583, Reward: 7.302997687534315
+Episode 584, Reward: 6.211098035295282
+Episode 585, Reward: 3.443602197881059
+Episode 586, Reward: 6.568629760721764
+Episode 587, Reward: 0.6518229437424331
+Episode 588, Reward: 6.612239272319133
+Episode 589, Reward: 4.959486991508174
+Episode 590, Reward: 1.3723075359539205
+Episode 591, Reward: 7.385617090681685
+Episode 592, Reward: 6.356784413504731
+Episode 593, Reward: 7.155418001751189
+Episode 594, Reward: 2.2345162864307477
+Episode 595, Reward: 6.206388135728677
+Episode 596, Reward: 5.233114396977524
+Episode 597, Reward: 5.718305503006976
+Episode 598, Reward: 3.344454880408895
+Episode 599, Reward: 5.0794788313005155
+Episode 600, Reward: 6.204190235598994
+Episode 601, Reward: 7.929299756703608
+Episode 602, Reward: 4.427834119847956
+Episode 603, Reward: 5.3972548932869735
+Episode 604, Reward: 7.761579001301991
+Episode 605, Reward: 6.768890827727423
+Episode 606, Reward: 7.59302183962678
+Episode 607, Reward: 3.8175952683898666
+Episode 608, Reward: 7.666913654772274
+Episode 609, Reward: 6.01319584661791
+Episode 610, Reward: 4.8243300009280015
+Episode 611, Reward: 7.759865037952268
+Episode 612, Reward: 6.823141847638775
+Episode 613, Reward: 5.710175519087729
+Episode 614, Reward: 8.033320624788358
+Episode 615, Reward: 1.4041987981033275
+Episode 616, Reward: 7.808297164020064
+Episode 617, Reward: 7.881455733561581
+Episode 618, Reward: 5.7042454256158095
+Episode 619, Reward: -0.03472866195429969
+Episode 620, Reward: -0.17060568122421937
+Episode 621, Reward: 6.474909945633963
+Episode 622, Reward: 6.435110904971491
+Episode 623, Reward: 6.025267525108127
+Episode 624, Reward: 6.252370310164519
+Episode 625, Reward: 3.4701434029234286
+Episode 626, Reward: 6.833166940721958
+Episode 627, Reward: 2.220167536762795
+Episode 628, Reward: 3.667037712460024
+Episode 629, Reward: 6.966482130404366
+Episode 630, Reward: 2.798924938777351
+Episode 631, Reward: 7.018820191815201
+Episode 632, Reward: 5.469221364402179
+Episode 633, Reward: 4.522053718629151
+Episode 634, Reward: 7.310558850574686
+Episode 635, Reward: 7.0966711355064245
+Episode 636, Reward: 7.327367499136685
+Episode 637, Reward: 3.6335995372186423
+Episode 638, Reward: 8.17449182770965
+Episode 639, Reward: 5.333250279169555
+Episode 640, Reward: 5.091847508106959
+Episode 641, Reward: 6.013427314043996
+Episode 642, Reward: 5.444072114573385
+Episode 643, Reward: 5.989430449397046
+Episode 644, Reward: 4.325412702671253
+Episode 645, Reward: 5.072283993164695
+Episode 646, Reward: 4.713702158202786
+Episode 647, Reward: 7.466704556226985
+Episode 648, Reward: 7.023132789420602
+Episode 649, Reward: 6.677536493655688
+Episode 650, Reward: 6.212272283288344
+Episode 651, Reward: 5.789549851803068
+Episode 652, Reward: 4.979035783817277
+Episode 653, Reward: 6.015015595831629
+Episode 654, Reward: 8.32117782961922
+Episode 655, Reward: 2.293862339246201
+Episode 656, Reward: 4.373861882455612
+Episode 657, Reward: 3.6944374923658794
+Episode 658, Reward: 7.84687969728231
+Episode 659, Reward: 7.077232383041587
+Episode 660, Reward: 6.254476890927993
+Episode 661, Reward: 5.584455970694411
+Episode 662, Reward: 7.8756052484276236
+Episode 663, Reward: 7.638683413578917
+Episode 664, Reward: 7.488849764558114
+Episode 665, Reward: 3.72813826521257
+Episode 666, Reward: 6.865113120089623
+Episode 667, Reward: 2.7932516813680888
+Episode 668, Reward: 7.109150623707015
+Episode 669, Reward: 7.726867972834592
+Episode 670, Reward: 5.371095336819069
+Episode 671, Reward: 7.101146600607928
+
+[BEST MODEL SAVED] Avg100 Reward: 5.58
+
+Episode:   672 | Reward:       7.75 | Avg100:       5.58
+Episode 672, Reward: 7.746419884951099
+
+[BEST MODEL SAVED] Avg100 Reward: 5.59
+
+Episode:   673 | Reward:       5.04 | Avg100:       5.59
+Episode 673, Reward: 5.042970463754568
+
+[BEST MODEL SAVED] Avg100 Reward: 5.61
+
+Episode:   674 | Reward:       8.70 | Avg100:       5.61
+Episode 674, Reward: 8.701694957270826
+
+[BEST MODEL SAVED] Avg100 Reward: 5.62
+
+Episode:   675 | Reward:       6.31 | Avg100:       5.62
+Episode 675, Reward: 6.313730477836013
+
+[BEST MODEL SAVED] Avg100 Reward: 5.63
+
+Episode:   676 | Reward:       3.84 | Avg100:       5.63
+Episode 676, Reward: 3.8411689513736484
+Episode 677, Reward: 6.853308690452766
+Episode 678, Reward: 4.247005550819512
+Episode 679, Reward: 3.9682518628234376
+Episode 680, Reward: 5.072048854032477
+Episode 681, Reward: 5.867263192023401
+
+[BEST MODEL SAVED] Avg100 Reward: 5.65
+
+Episode:   682 | Reward:       4.74 | Avg100:       5.65
+Episode 682, Reward: 4.739493056076577
+
+[BEST MODEL SAVED] Avg100 Reward: 5.65
+
+Episode:   683 | Reward:       7.92 | Avg100:       5.65
+Episode 683, Reward: 7.919403978362988
+
+[BEST MODEL SAVED] Avg100 Reward: 5.66
+
+Episode:   684 | Reward:       7.23 | Avg100:       5.66
+Episode 684, Reward: 7.2260140938623865
+
+[BEST MODEL SAVED] Avg100 Reward: 5.68
+
+Episode:   685 | Reward:       5.10 | Avg100:       5.68
+Episode 685, Reward: 5.097761974016065
+
+[BEST MODEL SAVED] Avg100 Reward: 5.68
+
+Episode:   686 | Reward:       7.04 | Avg100:       5.68
+Episode 686, Reward: 7.041294349999598
+
+[BEST MODEL SAVED] Avg100 Reward: 5.75
+
+Episode:   687 | Reward:       7.03 | Avg100:       5.75
+Episode 687, Reward: 7.033232599393189
+
+[BEST MODEL SAVED] Avg100 Reward: 5.75
+
+Episode:   688 | Reward:       7.06 | Avg100:       5.75
+Episode 688, Reward: 7.064639409143444
+
+[BEST MODEL SAVED] Avg100 Reward: 5.79
+
+Episode:   689 | Reward:       8.62 | Avg100:       5.79
+Episode 689, Reward: 8.620491718539062
+
+[BEST MODEL SAVED] Avg100 Reward: 5.84
+
+Episode:   690 | Reward:       6.09 | Avg100:       5.84
+Episode 690, Reward: 6.089377958616031
+Episode 691, Reward: 4.328236648942481
+Episode 692, Reward: 4.597783727034148
+Episode 693, Reward: 4.849931843476085
+Episode 694, Reward: 7.387215742273467
+Episode 695, Reward: 4.248570047377676
+Episode 696, Reward: 6.055417479910067
+Episode 697, Reward: 8.459416643891354
+
+[BEST MODEL SAVED] Avg100 Reward: 5.87
+
+Episode:   698 | Reward:       7.38 | Avg100:       5.87
+Episode 698, Reward: 7.376491017766424
+Episode 699, Reward: 1.7264165540809813
+Episode 700, Reward: 8.2345812142082
+Episode 701, Reward: 6.118163912723008
+
+[BEST MODEL SAVED] Avg100 Reward: 5.87
+
+Episode:   702 | Reward:       7.62 | Avg100:       5.87
+Episode 702, Reward: 7.623405418035938
+
+[BEST MODEL SAVED] Avg100 Reward: 5.88
+
+Episode:   703 | Reward:       6.27 | Avg100:       5.88
+Episode 703, Reward: 6.269613056623903
+Episode 704, Reward: 6.7256749513692675
+Episode 705, Reward: 7.527513627552212
+Episode 706, Reward: 4.123967484834679
+Episode 707, Reward: 6.705087051080051
+Episode 708, Reward: 6.760604384189008
+Episode 709, Reward: 0.39920856292007967
+Episode 710, Reward: 3.30205560085625
+Episode 711, Reward: 5.359087341590943
+Episode 712, Reward: 7.2791455259569116
+Episode 713, Reward: 5.267666539099689
+Episode 714, Reward: 8.521480753567948
+Episode 715, Reward: 8.054733443960911
+Episode 716, Reward: 5.542127675448153
+Episode 717, Reward: 3.3332251380630606
+Episode 718, Reward: 7.335470998636198
+Episode 719, Reward: 7.060033229581932
+
+[BEST MODEL SAVED] Avg100 Reward: 5.90
+
+Episode:   720 | Reward:       4.36 | Avg100:       5.90
+Episode 720, Reward: 4.356877870108562
+
+[BEST MODEL SAVED] Avg100 Reward: 5.92
+
+Episode:   721 | Reward:       8.38 | Avg100:       5.92
+Episode 721, Reward: 8.380362800086388
+
+[BEST MODEL SAVED] Avg100 Reward: 5.93
+
+Episode:   722 | Reward:       7.00 | Avg100:       5.93
+Episode 722, Reward: 6.999525092420189
+Episode 723, Reward: 3.892089916284471
+Episode 724, Reward: 6.119996746492535
+Episode 725, Reward: 3.9962243412547456
+Episode 726, Reward: 6.982498403722452
+
+[BEST MODEL SAVED] Avg100 Reward: 5.93
+
+Episode:   727 | Reward:       3.99 | Avg100:       5.93
+Episode 727, Reward: 3.9858814025315
+
+[BEST MODEL SAVED] Avg100 Reward: 5.97
+
+Episode:   728 | Reward:       7.39 | Avg100:       5.97
+Episode 728, Reward: 7.391616357842076
+
+[BEST MODEL SAVED] Avg100 Reward: 5.98
+
+Episode:   729 | Reward:       8.07 | Avg100:       5.98
+Episode 729, Reward: 8.074641498296701
+
+[BEST MODEL SAVED] Avg100 Reward: 5.99
+
+Episode:   730 | Reward:       3.96 | Avg100:       5.99
+Episode 730, Reward: 3.958191019173342
+
+[BEST MODEL SAVED] Avg100 Reward: 5.99
+
+Episode:   731 | Reward:       7.41 | Avg100:       5.99
+Episode 731, Reward: 7.413126761461765
+Episode 732, Reward: 2.504590986773882
+Episode 733, Reward: 6.645917562258429
+Episode 734, Reward: 5.471230613660911
+Episode 735, Reward: 4.528447334830965
+Episode 736, Reward: 4.881625634613026
+Episode 737, Reward: 1.0665627795328896
+Episode 738, Reward: 7.7128016899212035
+Episode 739, Reward: 4.972162842057707
+Episode 740, Reward: 7.465244282774651
+Episode 741, Reward: 7.886249456053588
+Episode 742, Reward: 6.825377287560526
+Episode 743, Reward: 7.427998646103398
+Episode 744, Reward: 1.6913323903799868
+Episode 745, Reward: 1.7888269067796583
+Episode 746, Reward: 7.8268485187281795
+Episode 747, Reward: 7.042476374602603
+Episode 748, Reward: 7.606888456571345
+Episode 749, Reward: 6.719161760704383
+Episode 750, Reward: 7.700141399370374
+Episode 751, Reward: 6.859006267913137
+Episode 752, Reward: 5.020099527648609
+Episode 753, Reward: 6.843802175328108
+Episode 754, Reward: 3.934040332533823
+Episode 755, Reward: 3.8639665051943233
+Episode 756, Reward: 3.226455408048862
+Episode 757, Reward: 6.903591622265358
+Episode 758, Reward: 0.22267461001144717
+Episode 759, Reward: 5.440380801260862
+Episode 760, Reward: 1.7269587989240203
+Episode 761, Reward: 7.919427156394804
+Episode 762, Reward: 8.14322456415832
+Episode 763, Reward: 4.682821658170025
+Episode 764, Reward: 2.017825547230774
+Episode 765, Reward: 6.588013695257878
+Episode 766, Reward: 6.078463262511871
+Episode 767, Reward: 7.488322037998898
+Episode 768, Reward: 8.116396758234025
+Episode 769, Reward: 4.213159578323462
+Episode 770, Reward: 2.6761461094288426
+Episode 771, Reward: 8.156006877090869
+Episode 772, Reward: 7.531581243672083
+Episode 773, Reward: 7.2302972592643515
+Episode 774, Reward: 5.903778567530407
+Episode 775, Reward: 9.209860024588906
+Episode 776, Reward: 4.925017937535403
+Episode 777, Reward: 8.22303826076502
+Episode 778, Reward: 8.192784425913331
+Episode 779, Reward: 6.899708452474682
+Episode 780, Reward: 7.685892526192923
+Episode 781, Reward: 2.5085122703455625
+Episode 782, Reward: 6.5988578680636545
+Episode 783, Reward: 3.7570022959166463
+Episode 784, Reward: 8.762809936744786
+Episode 785, Reward: 5.4226750756898845
+Episode 786, Reward: 8.26862118475891
+Episode 787, Reward: 6.072955549260045
+Episode 788, Reward: 3.9553523146858094
+Episode 789, Reward: 8.458047968090042
+Episode 790, Reward: 3.075233078357344
+Episode 791, Reward: 0.18674175711468716
+Episode 792, Reward: 4.257220133647333
+Episode 793, Reward: 7.0359588970268
+Episode 794, Reward: 4.500224815977192
+Episode 795, Reward: 7.13933804605311
+Episode 796, Reward: 6.095453641728008
+Episode 797, Reward: 2.7535966395282907
+Episode 798, Reward: 5.7843301173919786
+Episode 799, Reward: 4.882796973831885
+Episode 800, Reward: 8.25275830110267
+Episode 801, Reward: 4.4182799947221465
+Episode 802, Reward: 7.2175002683713
+Episode 803, Reward: 8.744551334441287
+Episode 804, Reward: 0.6561240890517421
+Episode 805, Reward: 9.234796253484218
+Episode 806, Reward: -0.5371407367138993
+Episode 807, Reward: 8.438140538494684
+Episode 808, Reward: 6.22131217166857
+Episode 809, Reward: 8.662029169092618
+Episode 810, Reward: 6.099874833005806
+Episode 811, Reward: 5.761717491418701
+Episode 812, Reward: 7.029533766635199
+Episode 813, Reward: 6.276691377049082
+Episode 814, Reward: 7.288949676032632
+Episode 815, Reward: 4.663399613974519
+Episode 816, Reward: 3.574985303987787
+Episode 817, Reward: 6.22559380096594
+Episode 818, Reward: 4.354386859841624
+Episode 819, Reward: 9.178619208551268
+Episode 820, Reward: 5.319753475768266
+Episode 821, Reward: 4.7638321973116105
+Episode 822, Reward: 2.9157359160531406
+Episode 823, Reward: 6.371507786086845
+Episode 824, Reward: 7.966923923290249
+Episode 825, Reward: 4.28434627792401
+Episode 826, Reward: 8.945063434506253
+Episode 827, Reward: 8.117063921561066
+Episode 828, Reward: 9.029230925464427
+Episode 829, Reward: 8.776703451538163
+Episode 830, Reward: 5.548920645393486
+Episode 831, Reward: 8.358989965178054
+Episode 832, Reward: 3.3624581796643356
+Episode 833, Reward: 2.624457726134319
+Episode 834, Reward: 3.421019443181091
+Episode 835, Reward: 6.7915050006581215
+Episode 836, Reward: 3.7422479026302486
+Episode 837, Reward: 6.1301772439173
+Episode 838, Reward: 7.378860979325996
+Episode 839, Reward: 8.237221662134113
+Episode 840, Reward: 7.328068200481696
+Episode 841, Reward: 5.510008450220115
+Episode 842, Reward: 3.7059743343418172
+Episode 843, Reward: 9.22366162417365
+Episode 844, Reward: 6.108433378780198
+Episode 845, Reward: 4.7037393555710825
+Episode 846, Reward: 6.4515918029456945
+Episode 847, Reward: 8.425008603160665
+Episode 848, Reward: 6.12899440014531
+Episode 849, Reward: 4.8665615259257455
+Episode 850, Reward: 8.54440661493831
+Episode 851, Reward: 8.0326298688733
+Episode 852, Reward: 7.189880982855304
+Episode 853, Reward: 2.9633090334816914
+Episode 854, Reward: 6.719714889751814
+Episode 855, Reward: 8.255269829671887
+
+[BEST MODEL SAVED] Avg100 Reward: 6.01
+
+Episode:   856 | Reward:       7.56 | Avg100:       6.01
+Episode 856, Reward: 7.5635108492199405
+Episode 857, Reward: 6.611871532838821
+
+[BEST MODEL SAVED] Avg100 Reward: 6.10
+
+Episode:   858 | Reward:       8.78 | Avg100:       6.10
+Episode 858, Reward: 8.777001598354417
+
+[BEST MODEL SAVED] Avg100 Reward: 6.11
+
+Episode:   859 | Reward:       6.67 | Avg100:       6.11
+Episode 859, Reward: 6.665326312203608
+
+[BEST MODEL SAVED] Avg100 Reward: 6.15
+
+Episode:   860 | Reward:       6.48 | Avg100:       6.15
+Episode 860, Reward: 6.4753904801375075
+
+[BEST MODEL SAVED] Avg100 Reward: 6.16
+
+Episode:   861 | Reward:       8.80 | Avg100:       6.16
+Episode 861, Reward: 8.804832645082788
+Episode 862, Reward: 3.625272810398363
+Episode 863, Reward: 8.880799794056182
+
+[BEST MODEL SAVED] Avg100 Reward: 6.24
+
+Episode:   864 | Reward:       9.69 | Avg100:       6.24
+Episode 864, Reward: 9.68875118447919
+
+[BEST MODEL SAVED] Avg100 Reward: 6.26
+
+Episode:   865 | Reward:       8.46 | Avg100:       6.26
+Episode 865, Reward: 8.464314179807252
+Episode 866, Reward: 3.7345777163506613
+Episode 867, Reward: 8.40580464059431
+Episode 868, Reward: 4.864674311092202
+
+[BEST MODEL SAVED] Avg100 Reward: 6.26
+
+Episode:   869 | Reward:       9.00 | Avg100:       6.26
+Episode 869, Reward: 8.995469418365513
+
+[BEST MODEL SAVED] Avg100 Reward: 6.32
+
+Episode:   870 | Reward:       8.89 | Avg100:       6.32
+Episode 870, Reward: 8.891741866745535
+Episode 871, Reward: 6.881208945329807
+Episode 872, Reward: 5.308089025342551
+Episode 873, Reward: 3.9933566435187364
+Episode 874, Reward: 7.768885989927109
+Episode 875, Reward: 8.043701506672903
+Episode 876, Reward: 7.288212256886746
+Episode 877, Reward: 7.967430192536286
+Episode 878, Reward: 7.246132885299009
+Episode 879, Reward: 7.109682568154008
+Episode 880, Reward: 9.338314697757317
+
+[BEST MODEL SAVED] Avg100 Reward: 6.35
+
+Episode:   881 | Reward:       8.14 | Avg100:       6.35
+Episode 881, Reward: 8.141826042697627
+
+[BEST MODEL SAVED] Avg100 Reward: 6.35
+
+Episode:   882 | Reward:       6.89 | Avg100:       6.35
+Episode 882, Reward: 6.890155690301621
+
+[BEST MODEL SAVED] Avg100 Reward: 6.38
+
+Episode:   883 | Reward:       6.77 | Avg100:       6.38
+Episode 883, Reward: 6.765684070675631
+Episode 884, Reward: 6.747195631171562
+
+[BEST MODEL SAVED] Avg100 Reward: 6.39
+
+Episode:   885 | Reward:       8.20 | Avg100:       6.39
+Episode 885, Reward: 8.200971182791823
+
+[BEST MODEL SAVED] Avg100 Reward: 6.40
+
+Episode:   886 | Reward:       9.57 | Avg100:       6.40
+Episode 886, Reward: 9.570183175648026
+
+[BEST MODEL SAVED] Avg100 Reward: 6.43
+
+Episode:   887 | Reward:       9.46 | Avg100:       6.43
+Episode 887, Reward: 9.457635154490584
+
+[BEST MODEL SAVED] Avg100 Reward: 6.47
+
+Episode:   888 | Reward:       7.50 | Avg100:       6.47
+Episode 888, Reward: 7.504958997954542
+
+[BEST MODEL SAVED] Avg100 Reward: 6.47
+
+Episode:   889 | Reward:       8.63 | Avg100:       6.47
+Episode 889, Reward: 8.628946736719922
+
+[BEST MODEL SAVED] Avg100 Reward: 6.49
+
+Episode:   890 | Reward:       4.71 | Avg100:       6.49
+Episode 890, Reward: 4.7090589565892556
+
+[BEST MODEL SAVED] Avg100 Reward: 6.55
+
+Episode:   891 | Reward:       6.36 | Avg100:       6.55
+Episode 891, Reward: 6.363300571025314
+
+[BEST MODEL SAVED] Avg100 Reward: 6.59
+
+Episode:   892 | Reward:       8.28 | Avg100:       6.59
+Episode 892, Reward: 8.282725369165359
+
+[BEST MODEL SAVED] Avg100 Reward: 6.59
+
+Episode:   893 | Reward:       7.51 | Avg100:       6.59
+Episode 893, Reward: 7.505834025705447
+
+[BEST MODEL SAVED] Avg100 Reward: 6.64
+
+Episode:   894 | Reward:       8.79 | Avg100:       6.64
+Episode 894, Reward: 8.78935197500722
+
+[BEST MODEL SAVED] Avg100 Reward: 6.64
+
+Episode:   895 | Reward:       7.18 | Avg100:       6.64
+Episode 895, Reward: 7.1758461537979
+
+[BEST MODEL SAVED] Avg100 Reward: 6.67
+
+Episode:   896 | Reward:       9.12 | Avg100:       6.67
+Episode 896, Reward: 9.117850712340324
+
+[BEST MODEL SAVED] Avg100 Reward: 6.73
+
+Episode:   897 | Reward:       8.80 | Avg100:       6.73
+Episode 897, Reward: 8.80430890696548
+
+[BEST MODEL SAVED] Avg100 Reward: 6.75
+
+Episode:   898 | Reward:       8.10 | Avg100:       6.75
+Episode 898, Reward: 8.097299987614605
+
+[BEST MODEL SAVED] Avg100 Reward: 6.78
+
+Episode:   899 | Reward:       7.94 | Avg100:       6.78
+Episode 899, Reward: 7.944098996127973
+Episode 900, Reward: 3.9270211912963564
+Episode 901, Reward: 8.360634375830214
+
+[BEST MODEL SAVED] Avg100 Reward: 6.79
+
+Episode:   902 | Reward:       8.99 | Avg100:       6.79
+Episode 902, Reward: 8.99155970265272
+Episode 903, Reward: 7.506138203315127
+
+[BEST MODEL SAVED] Avg100 Reward: 6.84
+
+Episode:   904 | Reward:       6.66 | Avg100:       6.84
+Episode 904, Reward: 6.6598931031776045
+
+[BEST MODEL SAVED] Avg100 Reward: 6.85
+
+Episode:   905 | Reward:       9.80 | Avg100:       6.85
+Episode 905, Reward: 9.80194816408576
+
+[BEST MODEL SAVED] Avg100 Reward: 6.92
+
+Episode:   906 | Reward:       6.19 | Avg100:       6.92
+Episode 906, Reward: 6.193118167597814
+Episode 907, Reward: 4.0079313060997785
+Episode 908, Reward: 6.661126639020156
+Episode 909, Reward: 8.330576177310562
+Episode 910, Reward: 6.038634163685881
+Episode 911, Reward: 8.662668429904867
+
+[BEST MODEL SAVED] Avg100 Reward: 6.92
+
+Episode:   912 | Reward:       8.65 | Avg100:       6.92
+Episode 912, Reward: 8.653220939821447
+Episode 913, Reward: 6.0769426749912245
+Episode 914, Reward: 3.9297707675057834
+Episode 915, Reward: 5.50960956651173
+
+[BEST MODEL SAVED] Avg100 Reward: 6.94
+
+Episode:   916 | Reward:       8.71 | Avg100:       6.94
+Episode 916, Reward: 8.712597389043893
+Episode 917, Reward: 3.437294172440754
+
+[BEST MODEL SAVED] Avg100 Reward: 6.95
+
+Episode:   918 | Reward:       7.57 | Avg100:       6.95
+Episode 918, Reward: 7.567537905545959
+Episode 919, Reward: 7.071959889165479
+Episode 920, Reward: 6.295148415373126
+
+[BEST MODEL SAVED] Avg100 Reward: 6.96
+
+Episode:   921 | Reward:       7.73 | Avg100:       6.96
+Episode 921, Reward: 7.733101053180488
+
+[BEST MODEL SAVED] Avg100 Reward: 7.00
+
+Episode:   922 | Reward:       6.45 | Avg100:       7.00
+Episode 922, Reward: 6.454826767967046
+
+[BEST MODEL SAVED] Avg100 Reward: 7.01
+
+Episode:   923 | Reward:       7.71 | Avg100:       7.01
+Episode 923, Reward: 7.708846860431319
+
+[BEST MODEL SAVED] Avg100 Reward: 7.02
+
+Episode:   924 | Reward:       8.77 | Avg100:       7.02
+Episode 924, Reward: 8.772325898462503
+
+[BEST MODEL SAVED] Avg100 Reward: 7.07
+
+Episode:   925 | Reward:       8.98 | Avg100:       7.07
+Episode 925, Reward: 8.977148657634128
+Episode 926, Reward: 6.293706297216318
+Episode 927, Reward: 7.574191796082076
+Episode 928, Reward: 7.7820244922220745
+Episode 929, Reward: 8.168216774715038
+Episode 930, Reward: 6.954702736458793
+Episode 931, Reward: 5.87792660785537
+Episode 932, Reward: 8.589352838337872
+
+[BEST MODEL SAVED] Avg100 Reward: 7.11
+
+Episode:   933 | Reward:       7.96 | Avg100:       7.11
+Episode 933, Reward: 7.955513804617926
+
+[BEST MODEL SAVED] Avg100 Reward: 7.14
+
+Episode:   934 | Reward:       5.84 | Avg100:       7.14
+Episode 934, Reward: 5.837193756964153
+
+[BEST MODEL SAVED] Avg100 Reward: 7.14
+
+Episode:   935 | Reward:       7.66 | Avg100:       7.14
+Episode 935, Reward: 7.659392408634414
+
+[BEST MODEL SAVED] Avg100 Reward: 7.19
+
+Episode:   936 | Reward:       8.26 | Avg100:       7.19
+Episode 936, Reward: 8.258869582425204
+
+[BEST MODEL SAVED] Avg100 Reward: 7.20
+
+Episode:   937 | Reward:       7.40 | Avg100:       7.20
+Episode 937, Reward: 7.395289077858372
+Episode 938, Reward: 7.19220829727888
+
+[BEST MODEL SAVED] Avg100 Reward: 7.21
+
+Episode:   939 | Reward:       8.78 | Avg100:       7.21
+Episode 939, Reward: 8.775648716588455
+
+[BEST MODEL SAVED] Avg100 Reward: 7.22
+
+Episode:   940 | Reward:       9.06 | Avg100:       7.22
+Episode 940, Reward: 9.057816667079567
+
+[BEST MODEL SAVED] Avg100 Reward: 7.26
+
+Episode:   941 | Reward:       9.09 | Avg100:       7.26
+Episode 941, Reward: 9.091819093185652
+
+[BEST MODEL SAVED] Avg100 Reward: 7.29
+
+Episode:   942 | Reward:       6.45 | Avg100:       7.29
+Episode 942, Reward: 6.449357134816899
+Episode 943, Reward: 9.008788637264658
+
+[BEST MODEL SAVED] Avg100 Reward: 7.31
+
+Episode:   944 | Reward:       8.83 | Avg100:       7.31
+Episode 944, Reward: 8.825593637589968
+
+[BEST MODEL SAVED] Avg100 Reward: 7.33
+
+Episode:   945 | Reward:       6.13 | Avg100:       7.33
+Episode 945, Reward: 6.126115363769822
+
+[BEST MODEL SAVED] Avg100 Reward: 7.34
+
+Episode:   946 | Reward:       7.41 | Avg100:       7.34
+Episode 946, Reward: 7.412267416970319
+Episode 947, Reward: 7.579385672779877
+
+[BEST MODEL SAVED] Avg100 Reward: 7.35
+
+Episode:   948 | Reward:       8.90 | Avg100:       7.35
+Episode 948, Reward: 8.896593620451755
+
+[BEST MODEL SAVED] Avg100 Reward: 7.40
+
+Episode:   949 | Reward:       9.54 | Avg100:       7.40
+Episode 949, Reward: 9.54285358337651
+Episode 950, Reward: 7.22828508443271
+Episode 951, Reward: 8.232641047479747
+
+[BEST MODEL SAVED] Avg100 Reward: 7.41
+
+Episode:   952 | Reward:       9.13 | Avg100:       7.41
+Episode 952, Reward: 9.131386459026793
+
+[BEST MODEL SAVED] Avg100 Reward: 7.43
+
+Episode:   953 | Reward:       5.30 | Avg100:       7.43
+Episode 953, Reward: 5.295143148666784
+Episode 954, Reward: 3.0675416432669604
+Episode 955, Reward: 8.638655497265932
+Episode 956, Reward: 8.66149734432101
+Episode 957, Reward: 8.137376827230533
+Episode 958, Reward: 2.4314351597663117
+Episode 959, Reward: 9.22334190172167
+Episode 960, Reward: 8.30582552875052
+Episode 961, Reward: 7.606689477625417
+
+[BEST MODEL SAVED] Avg100 Reward: 7.44
+
+Episode:   962 | Reward:       8.15 | Avg100:       7.44
+Episode 962, Reward: 8.15202511174045
+Episode 963, Reward: 7.198802942453685
+Episode 964, Reward: 10.057283904634732
+Episode 965, Reward: 6.006821538692781
+
+[BEST MODEL SAVED] Avg100 Reward: 7.45
+
+Episode:   966 | Reward:       8.75 | Avg100:       7.45
+Episode 966, Reward: 8.749979527616091
+
+[BEST MODEL SAVED] Avg100 Reward: 7.45
+
+Episode:   967 | Reward:       8.49 | Avg100:       7.45
+Episode 967, Reward: 8.490064690766813
+
+[BEST MODEL SAVED] Avg100 Reward: 7.47
+
+Episode:   968 | Reward:       6.96 | Avg100:       7.47
+Episode 968, Reward: 6.960351922412577
+Episode 969, Reward: 8.10361982812703
+Episode 970, Reward: 5.315330779320465
+Episode 971, Reward: 9.823364926797202
+
+[BEST MODEL SAVED] Avg100 Reward: 7.48
+
+Episode:   972 | Reward:       6.98 | Avg100:       7.48
+Episode 972, Reward: 6.978082210570402
+
+[BEST MODEL SAVED] Avg100 Reward: 7.48
+
+Episode:   973 | Reward:       4.16 | Avg100:       7.48
+Episode 973, Reward: 4.164239083741838
+
+[BEST MODEL SAVED] Avg100 Reward: 7.50
+
+Episode:   974 | Reward:       9.79 | Avg100:       7.50
+Episode 974, Reward: 9.786982978766853
+
+[BEST MODEL SAVED] Avg100 Reward: 7.51
+
+Episode:   975 | Reward:       9.24 | Avg100:       7.51
+Episode 975, Reward: 9.240920174852977
+
+[BEST MODEL SAVED] Avg100 Reward: 7.53
+
+Episode:   976 | Reward:       9.44 | Avg100:       7.53
+Episode 976, Reward: 9.44200761051329
+
+[BEST MODEL SAVED] Avg100 Reward: 7.54
+
+Episode:   977 | Reward:       8.78 | Avg100:       7.54
+Episode 977, Reward: 8.778945739225074
+Episode 978, Reward: 6.720438034864803
+Episode 979, Reward: 3.882577268988046
+Episode 980, Reward: 8.199916046723146
+Episode 981, Reward: 7.879229348163645
+Episode 982, Reward: 9.795055817277648
+Episode 983, Reward: 6.776871935059721
+Episode 984, Reward: 3.7479683118825213
+Episode 985, Reward: 7.407841793059561
+Episode 986, Reward: 9.344188578046683
+Episode 987, Reward: 6.931948475948579
+Episode 988, Reward: 5.3573128783441595
+Episode 989, Reward: 9.340455083890005
+Episode 990, Reward: 5.732695775522381
+Episode 991, Reward: 4.676151783674301
+Episode 992, Reward: 7.103880156447966
+Episode 993, Reward: 8.571270436472911
+Episode 994, Reward: 9.618390222026042
+Episode 995, Reward: 8.86443816869904
+Episode 996, Reward: 7.603744303968788
+Episode 997, Reward: 8.129875018322984
+Episode 998, Reward: 7.459361916750156
+Episode 999, Reward: 7.475828339536249
+Episode 1000, Reward: 5.587299163928304
+Episode 1001, Reward: 8.405187202484212
+Episode 1002, Reward: 9.01465698193537
+Episode 1003, Reward: 8.16825112398615
+Episode 1004, Reward: 8.48157837701385
+Episode 1005, Reward: 8.60697564385131
+Episode 1006, Reward: 8.51966015819376
+Episode 1007, Reward: 7.141242526051618
+Episode 1008, Reward: 8.808366204238775
+Episode 1009, Reward: 7.117698386245439
+
+[BEST MODEL SAVED] Avg100 Reward: 7.55
+
+Episode:  1010 | Reward:       9.41 | Avg100:       7.55
+Episode 1010, Reward: 9.406275598478393
+
+[BEST MODEL SAVED] Avg100 Reward: 7.56
+
+Episode:  1011 | Reward:       9.84 | Avg100:       7.56
+Episode 1011, Reward: 9.838761791750956
+Episode 1012, Reward: 5.6593210412226025
+Episode 1013, Reward: 5.83793400027225
+
+[BEST MODEL SAVED] Avg100 Reward: 7.58
+
+Episode:  1014 | Reward:       9.17 | Avg100:       7.58
+Episode 1014, Reward: 9.17224962901197
+
+[BEST MODEL SAVED] Avg100 Reward: 7.60
+
+Episode:  1015 | Reward:       7.81 | Avg100:       7.60
+Episode 1015, Reward: 7.809723196947396
+
+[BEST MODEL SAVED] Avg100 Reward: 7.61
+
+Episode:  1016 | Reward:       9.00 | Avg100:       7.61
+Episode 1016, Reward: 8.99754422613811
+
+[BEST MODEL SAVED] Avg100 Reward: 7.66
+
+Episode:  1017 | Reward:       8.39 | Avg100:       7.66
+Episode 1017, Reward: 8.392924735930588
+Episode 1018, Reward: 6.661459396637239
+
+[BEST MODEL SAVED] Avg100 Reward: 7.67
+
+Episode:  1019 | Reward:       9.80 | Avg100:       7.67
+Episode 1019, Reward: 9.796365752543215
+
+[BEST MODEL SAVED] Avg100 Reward: 7.69
+
+Episode:  1020 | Reward:       7.98 | Avg100:       7.69
+Episode 1020, Reward: 7.978483067273583
+Episode 1021, Reward: 3.4668049163036447
+Episode 1022, Reward: 8.279881556343984
+Episode 1023, Reward: 8.621039688308159
+Episode 1024, Reward: 10.077902771023194
+Episode 1025, Reward: 8.692187379778527
+
+[BEST MODEL SAVED] Avg100 Reward: 7.71
+
+Episode:  1026 | Reward:       8.80 | Avg100:       7.71
+Episode 1026, Reward: 8.798053937511908
+
+[BEST MODEL SAVED] Avg100 Reward: 7.73
+
+Episode:  1027 | Reward:       9.42 | Avg100:       7.73
+Episode 1027, Reward: 9.421246154005715
+
+[BEST MODEL SAVED] Avg100 Reward: 7.74
+
+Episode:  1028 | Reward:       9.05 | Avg100:       7.74
+Episode 1028, Reward: 9.047458542059047
+Episode 1029, Reward: 7.353303022681929
+
+[BEST MODEL SAVED] Avg100 Reward: 7.76
+
+Episode:  1030 | Reward:       9.11 | Avg100:       7.76
+Episode 1030, Reward: 9.109800804826149
+
+[BEST MODEL SAVED] Avg100 Reward: 7.78
+
+Episode:  1031 | Reward:       8.70 | Avg100:       7.78
+Episode 1031, Reward: 8.70070968786401
+Episode 1032, Reward: 6.95232170701302
+Episode 1033, Reward: 9.382063309726657
+
+[BEST MODEL SAVED] Avg100 Reward: 7.81
+
+Episode:  1034 | Reward:       8.55 | Avg100:       7.81
+Episode 1034, Reward: 8.546280423185275
+
+[BEST MODEL SAVED] Avg100 Reward: 7.83
+
+Episode:  1035 | Reward:       9.91 | Avg100:       7.83
+Episode 1035, Reward: 9.91479628013652
+
+[BEST MODEL SAVED] Avg100 Reward: 7.84
+
+Episode:  1036 | Reward:       9.42 | Avg100:       7.84
+Episode 1036, Reward: 9.423010382682069
+
+[BEST MODEL SAVED] Avg100 Reward: 7.85
+
+Episode:  1037 | Reward:       8.44 | Avg100:       7.85
+Episode 1037, Reward: 8.436024578353598
+
+[BEST MODEL SAVED] Avg100 Reward: 7.88
+
+Episode:  1038 | Reward:       9.88 | Avg100:       7.88
+Episode 1038, Reward: 9.875443081845543
+
+[BEST MODEL SAVED] Avg100 Reward: 7.89
+
+Episode:  1039 | Reward:       9.30 | Avg100:       7.89
+Episode 1039, Reward: 9.30155129702895
+
+[BEST MODEL SAVED] Avg100 Reward: 7.89
+
+Episode:  1040 | Reward:       9.16 | Avg100:       7.89
+Episode 1040, Reward: 9.162712298332321
+Episode 1041, Reward: 7.9553048905885655
+
+[BEST MODEL SAVED] Avg100 Reward: 7.89
+
+Episode:  1042 | Reward:       7.97 | Avg100:       7.89
+Episode 1042, Reward: 7.965115842203567
+
+[BEST MODEL SAVED] Avg100 Reward: 7.90
+
+Episode:  1043 | Reward:       9.51 | Avg100:       7.90
+Episode 1043, Reward: 9.514167513444269
+Episode 1044, Reward: 8.477311890139443
+
+[BEST MODEL SAVED] Avg100 Reward: 7.93
+
+Episode:  1045 | Reward:       9.73 | Avg100:       7.93
+Episode 1045, Reward: 9.727386346883701
+Episode 1046, Reward: 7.304606456865061
+Episode 1047, Reward: 5.963565871908109
+Episode 1048, Reward: 8.52097100369597
+Episode 1049, Reward: 6.226002134600522
+Episode 1050, Reward: 8.677689413559994
+Episode 1051, Reward: 10.340695236937165
+Episode 1052, Reward: 9.349829525433496
+
+[BEST MODEL SAVED] Avg100 Reward: 7.94
+
+Episode:  1053 | Reward:       7.97 | Avg100:       7.94
+Episode 1053, Reward: 7.972540016267773
+
+[BEST MODEL SAVED] Avg100 Reward: 8.01
+
+Episode:  1054 | Reward:      10.60 | Avg100:       8.01
+Episode 1054, Reward: 10.596855958593626
+
+[BEST MODEL SAVED] Avg100 Reward: 8.02
+
+Episode:  1055 | Reward:       8.87 | Avg100:       8.02
+Episode 1055, Reward: 8.866611401288557
+Episode 1056, Reward: 8.063896153333216
+Episode 1057, Reward: 8.605507494192759
+
+[BEST MODEL SAVED] Avg100 Reward: 8.09
+
+Episode:  1058 | Reward:       9.67 | Avg100:       8.09
+Episode 1058, Reward: 9.674901103091434
+Episode 1059, Reward: 6.139293450022268
+Episode 1060, Reward: 8.391872154604375
+Episode 1061, Reward: 9.79705260835935
+
+[BEST MODEL SAVED] Avg100 Reward: 8.09
+
+Episode:  1062 | Reward:       9.57 | Avg100:       8.09
+Episode 1062, Reward: 9.57116124245984
+
+[BEST MODEL SAVED] Avg100 Reward: 8.10
+
+Episode:  1063 | Reward:       8.27 | Avg100:       8.10
+Episode 1063, Reward: 8.27276757552594
+Episode 1064, Reward: 9.788427894404707
+
+[BEST MODEL SAVED] Avg100 Reward: 8.15
+
+Episode:  1065 | Reward:      10.34 | Avg100:       8.15
+Episode 1065, Reward: 10.344826133731033
+
+[BEST MODEL SAVED] Avg100 Reward: 8.15
+
+Episode:  1066 | Reward:       9.18 | Avg100:       8.15
+Episode 1066, Reward: 9.182958278560346
+
+[BEST MODEL SAVED] Avg100 Reward: 8.16
+
+Episode:  1067 | Reward:       9.42 | Avg100:       8.16
+Episode 1067, Reward: 9.423417620807733
+
+[BEST MODEL SAVED] Avg100 Reward: 8.17
+
+Episode:  1068 | Reward:       7.66 | Avg100:       8.17
+Episode 1068, Reward: 7.656926304283756
+
+[BEST MODEL SAVED] Avg100 Reward: 8.17
+
+Episode:  1069 | Reward:       8.27 | Avg100:       8.17
+Episode 1069, Reward: 8.270406056497018
+
+[BEST MODEL SAVED] Avg100 Reward: 8.21
+
+Episode:  1070 | Reward:       9.18 | Avg100:       8.21
+Episode 1070, Reward: 9.183956125067713
+
+[BEST MODEL SAVED] Avg100 Reward: 8.21
+
+Episode:  1071 | Reward:       9.90 | Avg100:       8.21
+Episode 1071, Reward: 9.900001663973772
+
+[BEST MODEL SAVED] Avg100 Reward: 8.23
+
+Episode:  1072 | Reward:       9.32 | Avg100:       8.23
+Episode 1072, Reward: 9.322233835645472
+
+[BEST MODEL SAVED] Avg100 Reward: 8.28
+
+Episode:  1073 | Reward:       9.57 | Avg100:       8.28
+Episode 1073, Reward: 9.572258024244919
+Episode 1074, Reward: 8.608569167327625
+Episode 1075, Reward: 8.579791235685997
+Episode 1076, Reward: 9.760741963083671
+Episode 1077, Reward: 8.925714385066883
+Episode 1078, Reward: 7.825389781281924
+
+[BEST MODEL SAVED] Avg100 Reward: 8.34
+
+Episode:  1079 | Reward:       9.74 | Avg100:       8.34
+Episode 1079, Reward: 9.743957139370846
+
+[BEST MODEL SAVED] Avg100 Reward: 8.35
+
+Episode:  1080 | Reward:       9.20 | Avg100:       8.35
+Episode 1080, Reward: 9.199809083193758
+
+[BEST MODEL SAVED] Avg100 Reward: 8.37
+
+Episode:  1081 | Reward:       9.90 | Avg100:       8.37
+Episode 1081, Reward: 9.902472870407816
+
+[BEST MODEL SAVED] Avg100 Reward: 8.37
+
+Episode:  1082 | Reward:       9.90 | Avg100:       8.37
+Episode 1082, Reward: 9.89914294752979
+
+[BEST MODEL SAVED] Avg100 Reward: 8.41
+
+Episode:  1083 | Reward:      10.63 | Avg100:       8.41
+Episode 1083, Reward: 10.629772189415364
+
+[BEST MODEL SAVED] Avg100 Reward: 8.46
+
+Episode:  1084 | Reward:       9.04 | Avg100:       8.46
+Episode 1084, Reward: 9.044550883059406
+
+[BEST MODEL SAVED] Avg100 Reward: 8.48
+
+Episode:  1085 | Reward:       9.31 | Avg100:       8.48
+Episode 1085, Reward: 9.311526089284268
+Episode 1086, Reward: 9.024075998947561
+Episode 1087, Reward: 5.799311850506478
+
+[BEST MODEL SAVED] Avg100 Reward: 8.50
+
+Episode:  1088 | Reward:       8.20 | Avg100:       8.50
+Episode 1088, Reward: 8.195007276400403
+Episode 1089, Reward: 9.229556467718897
+
+[BEST MODEL SAVED] Avg100 Reward: 8.54
+
+Episode:  1090 | Reward:      10.02 | Avg100:       8.54
+Episode 1090, Reward: 10.022586972845017
+
+[BEST MODEL SAVED] Avg100 Reward: 8.58
+
+Episode:  1091 | Reward:       9.38 | Avg100:       8.58
+Episode 1091, Reward: 9.380197777215784
+
+[BEST MODEL SAVED] Avg100 Reward: 8.61
+
+Episode:  1092 | Reward:       9.95 | Avg100:       8.61
+Episode 1092, Reward: 9.947970438628989
+Episode 1093, Reward: 5.856750263595275
+Episode 1094, Reward: 8.435490835624988
+Episode 1095, Reward: 10.830994276613504
+
+[BEST MODEL SAVED] Avg100 Reward: 8.61
+
+Episode:  1096 | Reward:       9.59 | Avg100:       8.61
+Episode 1096, Reward: 9.58758908449867
+
+[BEST MODEL SAVED] Avg100 Reward: 8.63
+
+Episode:  1097 | Reward:       9.64 | Avg100:       8.63
+Episode 1097, Reward: 9.644519916851218
+
+[BEST MODEL SAVED] Avg100 Reward: 8.65
+
+Episode:  1098 | Reward:       9.07 | Avg100:       8.65
+Episode 1098, Reward: 9.074237363498506
+
+[BEST MODEL SAVED] Avg100 Reward: 8.67
+
+Episode:  1099 | Reward:       9.54 | Avg100:       8.67
+Episode 1099, Reward: 9.537473611187524
+
+[BEST MODEL SAVED] Avg100 Reward: 8.71
+
+Episode:  1100 | Reward:       9.70 | Avg100:       8.71
+Episode 1100, Reward: 9.699120932927187
+
+[BEST MODEL SAVED] Avg100 Reward: 8.72
+
+Episode:  1101 | Reward:       9.67 | Avg100:       8.72
+Episode 1101, Reward: 9.672193359116935
+Episode 1102, Reward: 7.043894437020755
+Episode 1103, Reward: 8.975327272893276
+Episode 1104, Reward: 9.290378755637708
+
+[BEST MODEL SAVED] Avg100 Reward: 8.72
+
+Episode:  1105 | Reward:       9.30 | Avg100:       8.72
+Episode 1105, Reward: 9.303844365223988
+Episode 1106, Reward: 7.819026278233245
+
+[BEST MODEL SAVED] Avg100 Reward: 8.74
+
+Episode:  1107 | Reward:       9.84 | Avg100:       8.74
+Episode 1107, Reward: 9.838980661307728
+
+[BEST MODEL SAVED] Avg100 Reward: 8.76
+
+Episode:  1108 | Reward:      10.05 | Avg100:       8.76
+Episode 1108, Reward: 10.05168850364992
+
+[BEST MODEL SAVED] Avg100 Reward: 8.77
+
+Episode:  1109 | Reward:       8.55 | Avg100:       8.77
+Episode 1109, Reward: 8.554692669980788
+Episode 1110, Reward: 9.339978534545482
+Episode 1111, Reward: 8.200376090789119
+
+[BEST MODEL SAVED] Avg100 Reward: 8.80
+
+Episode:  1112 | Reward:      10.56 | Avg100:       8.80
+Episode 1112, Reward: 10.561316787496747
+
+[BEST MODEL SAVED] Avg100 Reward: 8.84
+
+Episode:  1113 | Reward:       9.33 | Avg100:       8.84
+Episode 1113, Reward: 9.334891067017283
+Episode 1114, Reward: 8.60630810816779
+
+[BEST MODEL SAVED] Avg100 Reward: 8.85
+
+Episode:  1115 | Reward:       9.76 | Avg100:       8.85
+Episode 1115, Reward: 9.761078232284792
+Episode 1116, Reward: 7.542836711028222
+
+[BEST MODEL SAVED] Avg100 Reward: 8.85
+
+Episode:  1117 | Reward:      10.18 | Avg100:       8.85
+Episode 1117, Reward: 10.178745357140036
+
+[BEST MODEL SAVED] Avg100 Reward: 8.89
+
+Episode:  1118 | Reward:      10.56 | Avg100:       8.89
+Episode 1118, Reward: 10.560811288291752
+
+[BEST MODEL SAVED] Avg100 Reward: 8.89
+
+Episode:  1119 | Reward:       9.89 | Avg100:       8.89
+Episode 1119, Reward: 9.887082301900708
+
+[BEST MODEL SAVED] Avg100 Reward: 8.91
+
+Episode:  1120 | Reward:       9.42 | Avg100:       8.91
+Episode 1120, Reward: 9.420022103288009
+
+[BEST MODEL SAVED] Avg100 Reward: 8.97
+
+Episode:  1121 | Reward:      10.13 | Avg100:       8.97
+Episode 1121, Reward: 10.132089477272167
+
+[BEST MODEL SAVED] Avg100 Reward: 8.98
+
+Episode:  1122 | Reward:       9.21 | Avg100:       8.98
+Episode 1122, Reward: 9.211750808219966
+
+[BEST MODEL SAVED] Avg100 Reward: 8.99
+
+Episode:  1123 | Reward:       9.06 | Avg100:       8.99
+Episode 1123, Reward: 9.064898821291703
+Episode 1124, Reward: 9.854261522650868
+
+[BEST MODEL SAVED] Avg100 Reward: 9.00
+
+Episode:  1125 | Reward:      10.19 | Avg100:       9.00
+Episode 1125, Reward: 10.19355235908269
+Episode 1126, Reward: 7.891227046249939
+Episode 1127, Reward: 9.609629182400276
+Episode 1128, Reward: 9.113558823247436
+
+[BEST MODEL SAVED] Avg100 Reward: 9.02
+
+Episode:  1129 | Reward:      10.11 | Avg100:       9.02
+Episode 1129, Reward: 10.110776072490538
+
+[BEST MODEL SAVED] Avg100 Reward: 9.03
+
+Episode:  1130 | Reward:       9.57 | Avg100:       9.03
+Episode 1130, Reward: 9.565129398830003
+
+[BEST MODEL SAVED] Avg100 Reward: 9.03
+
+Episode:  1131 | Reward:       9.26 | Avg100:       9.03
+Episode 1131, Reward: 9.256016166688658
+
+[BEST MODEL SAVED] Avg100 Reward: 9.06
+
+Episode:  1132 | Reward:       9.79 | Avg100:       9.06
+Episode 1132, Reward: 9.794902264157429
+
+[BEST MODEL SAVED] Avg100 Reward: 9.06
+
+Episode:  1133 | Reward:       9.75 | Avg100:       9.06
+Episode 1133, Reward: 9.748317647802828
+
+[BEST MODEL SAVED] Avg100 Reward: 9.07
+
+Episode:  1134 | Reward:       8.69 | Avg100:       9.07
+Episode 1134, Reward: 8.693122952871807
+Episode 1135, Reward: 9.875286054969898
+
+[BEST MODEL SAVED] Avg100 Reward: 9.08
+
+Episode:  1136 | Reward:      10.92 | Avg100:       9.08
+Episode 1136, Reward: 10.91897395965313
+
+[BEST MODEL SAVED] Avg100 Reward: 9.09
+
+Episode:  1137 | Reward:       9.69 | Avg100:       9.09
+Episode 1137, Reward: 9.691465215618148
+Episode 1138, Reward: 8.755668804027785
+Episode 1139, Reward: 8.856954337696273
+Episode 1140, Reward: 5.477156236234629
+Episode 1141, Reward: 9.78266945379707
+Episode 1142, Reward: 9.80837694232279
+Episode 1143, Reward: 9.19662601006883
+
+[BEST MODEL SAVED] Avg100 Reward: 9.10
+
+Episode:  1144 | Reward:      10.92 | Avg100:       9.10
+Episode 1144, Reward: 10.918808139984359
+
+[BEST MODEL SAVED] Avg100 Reward: 9.11
+
+Episode:  1145 | Reward:      10.60 | Avg100:       9.11
+Episode 1145, Reward: 10.59920704279097
+
+[BEST MODEL SAVED] Avg100 Reward: 9.11
+
+Episode:  1146 | Reward:       7.30 | Avg100:       9.11
+Episode 1146, Reward: 7.304919550835109
+
+[BEST MODEL SAVED] Avg100 Reward: 9.16
+
+Episode:  1147 | Reward:      10.82 | Avg100:       9.16
+Episode 1147, Reward: 10.817107670689865
+
+[BEST MODEL SAVED] Avg100 Reward: 9.17
+
+Episode:  1148 | Reward:       9.56 | Avg100:       9.17
+Episode 1148, Reward: 9.557174766536763
+
+[BEST MODEL SAVED] Avg100 Reward: 9.20
+
+Episode:  1149 | Reward:       9.81 | Avg100:       9.20
+Episode 1149, Reward: 9.808610108926455
+
+[BEST MODEL SAVED] Avg100 Reward: 9.21
+
+Episode:  1150 | Reward:       9.94 | Avg100:       9.21
+Episode 1150, Reward: 9.941816115351921
+Episode 1151, Reward: 8.928654206792721
+Episode 1152, Reward: 9.862474279344337
+
+[BEST MODEL SAVED] Avg100 Reward: 9.22
+
+Episode:  1153 | Reward:       9.80 | Avg100:       9.22
+Episode 1153, Reward: 9.802784371853818
+Episode 1154, Reward: 9.713971220346798
+Episode 1155, Reward: 9.436920030852226
+
+[BEST MODEL SAVED] Avg100 Reward: 9.24
+
+Episode:  1156 | Reward:       9.68 | Avg100:       9.24
+Episode 1156, Reward: 9.68443684130505
+
+[BEST MODEL SAVED] Avg100 Reward: 9.24
+
+Episode:  1157 | Reward:       8.73 | Avg100:       9.24
+Episode 1157, Reward: 8.727444668010417
+Episode 1158, Reward: 9.518081460276107
+
+[BEST MODEL SAVED] Avg100 Reward: 9.27
+
+Episode:  1159 | Reward:       9.81 | Avg100:       9.27
+Episode 1159, Reward: 9.809698098934469
+
+[BEST MODEL SAVED] Avg100 Reward: 9.29
+
+Episode:  1160 | Reward:       9.79 | Avg100:       9.29
+Episode 1160, Reward: 9.789500924785248
+Episode 1161, Reward: 8.14172675605372
+Episode 1162, Reward: 8.64776818865282
+Episode 1163, Reward: 9.188286879683837
+Episode 1164, Reward: 10.061235202064918
+Episode 1165, Reward: 10.01425848302712
+Episode 1166, Reward: 9.96135726240555
+
+[BEST MODEL SAVED] Avg100 Reward: 9.29
+
+Episode:  1167 | Reward:      10.80 | Avg100:       9.29
+Episode 1167, Reward: 10.8010231801807
+
+[BEST MODEL SAVED] Avg100 Reward: 9.31
+
+Episode:  1168 | Reward:       9.39 | Avg100:       9.31
+Episode 1168, Reward: 9.390298437088234
+
+[BEST MODEL SAVED] Avg100 Reward: 9.33
+
+Episode:  1169 | Reward:      10.14 | Avg100:       9.33
+Episode 1169, Reward: 10.14048976660369
+
+[BEST MODEL SAVED] Avg100 Reward: 9.33
+
+Episode:  1170 | Reward:       9.36 | Avg100:       9.33
+Episode 1170, Reward: 9.359027145698589
+
+[BEST MODEL SAVED] Avg100 Reward: 9.33
+
+Episode:  1171 | Reward:      10.06 | Avg100:       9.33
+Episode 1171, Reward: 10.059580425349044
+Episode 1172, Reward: 8.64506761211979
+Episode 1173, Reward: 9.455413401131699
+
+[BEST MODEL SAVED] Avg100 Reward: 9.33
+
+Episode:  1174 | Reward:       9.43 | Avg100:       9.33
+Episode 1174, Reward: 9.429174162656961
+
+[BEST MODEL SAVED] Avg100 Reward: 9.35
+
+Episode:  1175 | Reward:      10.20 | Avg100:       9.35
+Episode 1175, Reward: 10.197288997387146
+Episode 1176, Reward: 9.577324987345357
+
+[BEST MODEL SAVED] Avg100 Reward: 9.35
+
+Episode:  1177 | Reward:       9.15 | Avg100:       9.35
+Episode 1177, Reward: 9.148912379273366
+
+[BEST MODEL SAVED] Avg100 Reward: 9.37
+
+Episode:  1178 | Reward:       9.96 | Avg100:       9.37
+Episode 1178, Reward: 9.959320570005302
+Episode 1179, Reward: 7.231912521886629
+Episode 1180, Reward: 10.682679451408175
+Episode 1181, Reward: 9.236420942889868
+Episode 1182, Reward: 9.253572224835196
+Episode 1183, Reward: 9.633787696697226
+Episode 1184, Reward: 9.203448685886155
+Episode 1185, Reward: 10.492616800606989
+Episode 1186, Reward: 9.01118083947595
+
+[BEST MODEL SAVED] Avg100 Reward: 9.39
+
+Episode:  1187 | Reward:      10.21 | Avg100:       9.39
+Episode 1187, Reward: 10.20678499352982
+
+[BEST MODEL SAVED] Avg100 Reward: 9.42
+
+Episode:  1188 | Reward:      10.36 | Avg100:       9.42
+Episode 1188, Reward: 10.363665718375733
+Episode 1189, Reward: 9.095969061525254
+Episode 1190, Reward: 9.58833549682819
+Episode 1191, Reward: 8.087742085245358
+Episode 1192, Reward: 9.340542371602462
+
+[BEST MODEL SAVED] Avg100 Reward: 9.43
+
+Episode:  1193 | Reward:       9.81 | Avg100:       9.43
+Episode 1193, Reward: 9.813767271589413
+
+[BEST MODEL SAVED] Avg100 Reward: 9.44
+
+Episode:  1194 | Reward:       9.59 | Avg100:       9.44
+Episode 1194, Reward: 9.59376362846625
+Episode 1195, Reward: 3.599408734934791
+Episode 1196, Reward: 9.223629874397979
+Episode 1197, Reward: 9.233118340020217
+Episode 1198, Reward: 9.576658896412575
+Episode 1199, Reward: 9.550549566986675
+Episode 1200, Reward: 9.576489876949342
+Episode 1201, Reward: 9.263357246323855
+Episode 1202, Reward: 9.07771426805489
+Episode 1203, Reward: 9.24920987802247
+Episode 1204, Reward: 9.71777454912735
+Episode 1205, Reward: 10.37644972310246
+Episode 1206, Reward: 10.104825439585799
+Episode 1207, Reward: 9.716275928601819
+Episode 1208, Reward: 9.400044337760026
+Episode 1209, Reward: 9.47873583568036
+Episode 1210, Reward: 9.147797418054976
+Episode 1211, Reward: 9.62740421439718
+Episode 1212, Reward: 9.494846245486348
+Episode 1213, Reward: 10.044030356379476
+
+[BEST MODEL SAVED] Avg100 Reward: 9.44
+
+Episode:  1214 | Reward:       9.67 | Avg100:       9.44
+Episode 1214, Reward: 9.673498765866977
+Episode 1215, Reward: 9.476075077512306
+
+[BEST MODEL SAVED] Avg100 Reward: 9.47
+
+Episode:  1216 | Reward:      10.10 | Avg100:       9.47
+Episode 1216, Reward: 10.097078810015947
+Episode 1217, Reward: 10.01817459816368
+Episode 1218, Reward: 9.878921833450567
+Episode 1219, Reward: 9.439757761374208
+Episode 1220, Reward: 10.302208583613352
+Episode 1221, Reward: 9.370127221171394
+
+[BEST MODEL SAVED] Avg100 Reward: 9.47
+
+Episode:  1222 | Reward:      10.64 | Avg100:       9.47
+Episode 1222, Reward: 10.63717266769637
+Episode 1223, Reward: 8.850351233933793
+Episode 1224, Reward: 9.298785610327938
+Episode 1225, Reward: 9.902396519821913
+
+[BEST MODEL SAVED] Avg100 Reward: 9.48
+
+Episode:  1226 | Reward:       9.63 | Avg100:       9.48
+Episode 1226, Reward: 9.631985331125552
+
+[BEST MODEL SAVED] Avg100 Reward: 9.48
+
+Episode:  1227 | Reward:       9.71 | Avg100:       9.48
+Episode 1227, Reward: 9.705538019060855
+
+[BEST MODEL SAVED] Avg100 Reward: 9.48
+
+Episode:  1228 | Reward:       9.15 | Avg100:       9.48
+Episode 1228, Reward: 9.150454241358478
+Episode 1229, Reward: 8.447255855276493
+Episode 1230, Reward: 9.184068878890285
+Episode 1231, Reward: 10.418097756449505
+Episode 1232, Reward: 10.072326841124877
+Episode 1233, Reward: 9.977694139376187
+
+[BEST MODEL SAVED] Avg100 Reward: 9.49
+
+Episode:  1234 | Reward:      10.06 | Avg100:       9.49
+Episode 1234, Reward: 10.056177592555246
+
+[BEST MODEL SAVED] Avg100 Reward: 9.49
+
+Episode:  1235 | Reward:      10.28 | Avg100:       9.49
+Episode 1235, Reward: 10.277257273842453
+Episode 1236, Reward: 9.716610642300331
+Episode 1237, Reward: 9.815614886873858
+
+[BEST MODEL SAVED] Avg100 Reward: 9.49
+
+Episode:  1238 | Reward:       9.85 | Avg100:       9.49
+Episode 1238, Reward: 9.851243337265531
+
+[BEST MODEL SAVED] Avg100 Reward: 9.50
+
+Episode:  1239 | Reward:       9.96 | Avg100:       9.50
+Episode 1239, Reward: 9.96065124289261
+
+[BEST MODEL SAVED] Avg100 Reward: 9.55
+
+Episode:  1240 | Reward:      10.26 | Avg100:       9.55
+Episode 1240, Reward: 10.262760028075625
+Episode 1241, Reward: 9.531558402718538
+Episode 1242, Reward: 9.936735498530773
+Episode 1243, Reward: 9.034480018586251
+Episode 1244, Reward: 9.182892043748756
+Episode 1245, Reward: 9.431752848585784
+Episode 1246, Reward: 9.24004202696376
+Episode 1247, Reward: 9.828708078781311
+Episode 1248, Reward: 7.30679188716505
+Episode 1249, Reward: 8.740635583306652
+Episode 1250, Reward: 8.838387216933054
+Episode 1251, Reward: 10.256683429603685
+Episode 1252, Reward: 8.194940705541457
+Episode 1253, Reward: 9.072433596612957
+Episode 1254, Reward: 9.956435445148248
+Episode 1255, Reward: 9.630401975802462
+Episode 1256, Reward: 7.512085959062049
+Episode 1257, Reward: 9.80599385511983
+Episode 1258, Reward: 10.450523414260761
+Episode 1259, Reward: 9.500470810785204
+Episode 1260, Reward: 9.499439447301024
+Episode 1261, Reward: 10.259676156857658
+Episode 1262, Reward: 9.366331013615657
+Episode 1263, Reward: 9.233182681648694
+Episode 1264, Reward: 9.127635450896832
+Episode 1265, Reward: 8.936960756135852
+Episode 1266, Reward: 10.269925314772452
+Episode 1267, Reward: 9.080077253714954
+Episode 1268, Reward: 7.33106858684571
+Episode 1269, Reward: 9.250163363227607
+Episode 1270, Reward: 8.682588459265599
+Episode 1271, Reward: 8.8923337969874
+Episode 1272, Reward: 7.951836559355426
+Episode 1273, Reward: 9.429510535830213
+Episode 1274, Reward: 8.676008474325403
+Episode 1275, Reward: 9.616682389619323
+Episode 1276, Reward: 9.100047178296254
+Episode 1277, Reward: 9.358605462120835
+Episode 1278, Reward: 9.174802551233963
+Episode 1279, Reward: 9.274687901779082
+Episode 1280, Reward: 9.12874743722189
+Episode 1281, Reward: 7.985503631629211
+Episode 1282, Reward: 9.5665751635994
+Episode 1283, Reward: 9.577279607679131
+Episode 1284, Reward: 9.402695968899552
+Episode 1285, Reward: 8.748584090834946
+Episode 1286, Reward: 9.340122776212468
+Episode 1287, Reward: 8.588005769685005
+Episode 1288, Reward: 8.636654668485697
+Episode 1289, Reward: 9.39664758948128
+Episode 1290, Reward: 9.523645416347389
+Episode 1291, Reward: 6.551389863689387
+Episode 1292, Reward: 8.785152683727997
+Episode 1293, Reward: 9.088006081175182
+Episode 1294, Reward: 7.576828609868026
+Episode 1295, Reward: 9.76871784401419
+Episode 1296, Reward: 9.055858696524014
+Episode 1297, Reward: 9.20465588820986
+Episode 1298, Reward: 9.289408058037623
+Episode 1299, Reward: 9.80893219366283
+Episode 1300, Reward: 8.90984666248365
+Episode 1301, Reward: 9.010853097183196
+Episode 1302, Reward: 8.70341244165917
+Episode 1303, Reward: 8.929633785027837
+Episode 1304, Reward: 9.790857739290836
+Episode 1305, Reward: 10.088199689039989
+Episode 1306, Reward: 9.798078612953494
+Episode 1307, Reward: 9.187382006594845
+Episode 1308, Reward: 9.236829463603504
+Episode 1309, Reward: 9.846383471688961
+Episode 1310, Reward: 7.884955617626728
+Episode 1311, Reward: 9.405123045254504
+Episode 1312, Reward: 9.875709732407879
+Episode 1313, Reward: 9.254795194505354
+Episode 1314, Reward: 9.109395397109287
+Episode 1315, Reward: 5.946154920938779
+Episode 1316, Reward: 9.078566890970718
+Episode 1317, Reward: 9.751504659343551
+Episode 1318, Reward: 8.857220481851353
+Episode 1319, Reward: 8.863213943572969
+Episode 1320, Reward: 10.094861623351052
+Episode 1321, Reward: 7.44858423998018
+Episode 1322, Reward: 9.404207410788414
+Episode 1323, Reward: 9.676651413976224
+Episode 1324, Reward: 9.24031531872042
+Episode 1325, Reward: 9.833478332732433
+Episode 1326, Reward: 8.893337146924164
+Episode 1327, Reward: 9.444096107438918
+Episode 1328, Reward: 9.472707268988968
+Episode 1329, Reward: 8.454794765982008
+Episode 1330, Reward: 7.85686948991145
+Episode 1331, Reward: 9.171433181376061
+Episode 1332, Reward: 10.005712502084531
+Episode 1333, Reward: 7.707769957562766
+Episode 1334, Reward: 8.89272539448956
+Episode 1335, Reward: 9.901279413190256
+Episode 1336, Reward: 7.859100744924626
+Episode 1337, Reward: 9.53285286681642
+Episode 1338, Reward: 9.320306281861475
+Episode 1339, Reward: 8.416851117595435
+Episode 1340, Reward: 10.06724331537345
+Episode 1341, Reward: 9.674053678828017
+Episode 1342, Reward: 9.70805516509599
+Episode 1343, Reward: 9.927533431955991
+Episode 1344, Reward: 9.376537862721056
+Episode 1345, Reward: 9.467877507704996
+Episode 1346, Reward: 9.310070566813916
+Episode 1347, Reward: 8.505542856864608
+Episode 1348, Reward: 9.607101357973248
+Episode 1349, Reward: 9.567145034036178
+Episode 1350, Reward: 9.520335430239063
+Episode 1351, Reward: 8.558648317731835
+Episode 1352, Reward: 9.356782467890556
+Episode 1353, Reward: 8.866917823406892
+Episode 1354, Reward: 10.458782706415166
+Episode 1355, Reward: 8.508736537501827
+Episode 1356, Reward: 9.19616610987296
+Episode 1357, Reward: 9.52385684037691
+Episode 1358, Reward: 7.984126092828753
+Episode 1359, Reward: 9.306286390959096
+Episode 1360, Reward: 10.51824768627346
+Episode 1361, Reward: 8.812555121453537
+Episode 1362, Reward: 9.512288587263773
+Episode 1363, Reward: 8.63600868255569
+Episode 1364, Reward: 9.434824929572402
+Episode 1365, Reward: 9.123154312891222
+Episode 1366, Reward: 8.736924335995845
+Episode 1367, Reward: 9.275049660467236
+Episode 1368, Reward: 9.381777316997741
+Episode 1369, Reward: 9.263285933502637
+Episode 1370, Reward: 8.781980689865936
+Episode 1371, Reward: 8.90327262839736
+Episode 1372, Reward: 9.094079573759332
+Episode 1373, Reward: 9.060327782660513
+Episode 1374, Reward: 9.351315823454808
+Episode 1375, Reward: 9.69247822740035
+Episode 1376, Reward: 8.747232096204637
+Episode 1377, Reward: 9.928287113579337
+Episode 1378, Reward: 8.795040698447103
+Episode 1379, Reward: 9.79303446989036
+Episode 1380, Reward: 8.778762130199109
+Episode 1381, Reward: 9.28777376850036
+Episode 1382, Reward: 8.238090619267261
+Episode 1383, Reward: 8.42610536531712
+Episode 1384, Reward: 9.04462103917706
+Episode 1385, Reward: 9.266973124168734
+Episode 1386, Reward: 9.546780584637002
+Episode 1387, Reward: 9.29592085655308
+Episode 1388, Reward: 8.529546334438113
+Episode 1389, Reward: 9.825104270805943
+Episode 1390, Reward: 8.919265805658087
+Episode 1391, Reward: 9.588192445413666
+Episode 1392, Reward: 8.952703756951733
+Episode 1393, Reward: 9.372034140795078
+Episode 1394, Reward: 9.044415566718799
+Episode 1395, Reward: 9.004887248380927
+Episode 1396, Reward: 8.868733424278062
+Episode 1397, Reward: 9.165480422883878
+Episode 1398, Reward: 9.724544496832193
+Episode 1399, Reward: 9.094367683118147
+Episode 1400, Reward: 8.841669152818794
+Episode 1401, Reward: 8.148625844458232
+Episode 1402, Reward: 7.710827586174467
+Episode 1403, Reward: 9.653759301929613
+Episode 1404, Reward: 9.0087021219248
+Episode 1405, Reward: 9.06881878155572
+Episode 1406, Reward: 8.907538340286669
+Episode 1407, Reward: 8.014645466222646
+Episode 1408, Reward: 8.200643924289999
+Episode 1409, Reward: 7.347653669808244
+Episode 1410, Reward: 8.133541952046128
+Episode 1411, Reward: 9.319620849643506
+Episode 1412, Reward: 9.870335007726757
+Episode 1413, Reward: 8.521243202860152
+Episode 1414, Reward: 9.433208272078627
+Episode 1415, Reward: 9.289652223917086
+Episode 1416, Reward: 9.05425859385262
+Episode 1417, Reward: 8.479689170258304
+Episode 1418, Reward: 9.233459568605998
+Episode 1419, Reward: 9.287899048306553
+Episode 1420, Reward: 8.840317117778582
+Episode 1421, Reward: 8.69543169804255
+Episode 1422, Reward: 9.232688816338127
+Episode 1423, Reward: 9.398577700689334
+Episode 1424, Reward: 7.769125056945976
+Episode 1425, Reward: 9.196775898860734
+Episode 1426, Reward: 7.523406105799914
+Episode 1427, Reward: 8.461393559559527
+Episode 1428, Reward: 9.59522419454
+Episode 1429, Reward: 9.572088728842418
+Episode 1430, Reward: 8.148008464323127
+Episode 1431, Reward: 8.735950675000863
+Episode 1432, Reward: 9.588667721371381
+Episode 1433, Reward: 8.514769575830616
+Episode 1434, Reward: 8.257351496027031
+Episode 1435, Reward: 8.068046667822466
+Episode 1436, Reward: 9.173128243824152
+Episode 1437, Reward: 10.220298888332664
+Episode 1438, Reward: 8.645059862482706
+Episode 1439, Reward: 9.220858782758457
+Episode 1440, Reward: 8.940368354683269
+Episode 1441, Reward: 9.33137951955962
+Episode 1442, Reward: 9.785976858119334
+Episode 1443, Reward: 7.855800705155549
+Episode 1444, Reward: 9.588444704497947
+Episode 1445, Reward: 9.056962791253492
+Episode 1446, Reward: 9.648062140088841
+Episode 1447, Reward: 9.696383828043086
+Episode 1448, Reward: 9.38709749554806
+Episode 1449, Reward: 8.941750883563511
+Episode 1450, Reward: 9.918071355754648
+Episode 1451, Reward: 9.581217815208614
+Episode 1452, Reward: 8.077709136969016
+Episode 1453, Reward: 9.196010133315417
+Episode 1454, Reward: 9.10039740157582
+Episode 1455, Reward: 8.565875148412324
+Episode 1456, Reward: 8.97873375924733
+Episode 1457, Reward: 8.920159903581876
+Episode 1458, Reward: 8.689784509838463
+Episode 1459, Reward: 8.666465572264505
+Episode 1460, Reward: 8.81313069180771
+Episode 1461, Reward: 9.516888216896666
+Episode 1462, Reward: 9.616915934472164
+Episode 1463, Reward: 8.876330077885777
+Episode 1464, Reward: 8.716850779901778
+Episode 1465, Reward: 9.57454864265603
+Episode 1466, Reward: 9.400314542723592
+Episode 1467, Reward: 8.008225308738957
+Episode 1468, Reward: 8.71843261381573
+Episode 1469, Reward: 8.733079814865322
+Episode 1470, Reward: 9.152945321953348
+Episode 1471, Reward: 8.994317010089361
+Episode 1472, Reward: 7.660421265906679
+Episode 1473, Reward: 8.649517072545402
+Episode 1474, Reward: 8.045819739366475
+Episode 1475, Reward: 9.854734386609088
+Episode 1476, Reward: 9.38096507941332
+Episode 1477, Reward: 8.928556494802638
+Episode 1478, Reward: 9.012226985626135
+Episode 1479, Reward: 9.14491577560554
+Episode 1480, Reward: 8.80964242463498
+Episode 1481, Reward: 8.77946783953316
+Episode 1482, Reward: 9.132196076850196
+Episode 1483, Reward: 8.798710927166374
+Episode 1484, Reward: 8.925163412328505
+Episode 1485, Reward: 9.007301082297912
+Episode 1486, Reward: 8.88388136582506
+Episode 1487, Reward: 9.23780239317066
+Episode 1488, Reward: 8.981832833259576
+Episode 1489, Reward: 9.051059431953403
+Episode 1490, Reward: 9.328387291247243
+Episode 1491, Reward: 7.074798594867873
+Episode 1492, Reward: 8.681258652587292
+Episode 1493, Reward: 8.690044727313335
+Episode 1494, Reward: 8.132934490895764
+Episode 1495, Reward: 7.992427299640728
+Episode 1496, Reward: 9.226389511497935
+Episode 1497, Reward: 8.665408972670345
+Episode 1498, Reward: 8.326048479021956
+Episode 1499, Reward: 9.126335238393256
+Episode 1500, Reward: 8.130389230033733
+Episode 1501, Reward: 9.279863569392523
+Episode 1502, Reward: 9.341268782187585
+Episode 1503, Reward: 9.314367011106446
+Episode 1504, Reward: 8.83715790230449
+Episode 1505, Reward: 7.991693609977398
+Episode 1506, Reward: 8.517365305084292
+Episode 1507, Reward: 8.008215709876044
+Episode 1508, Reward: 8.446468266915682
+Episode 1509, Reward: 8.58212076268994
+Episode 1510, Reward: 8.390093427532204
+Episode 1511, Reward: 9.245856193404533
+Episode 1512, Reward: 9.122114893141823
+Episode 1513, Reward: 8.40248900044183
+Episode 1514, Reward: 8.635335321305586
+Episode 1515, Reward: 8.524495337272773
+Episode 1516, Reward: 9.088168383982095
+Episode 1517, Reward: 9.495965178513046
+Episode 1518, Reward: 8.77324072472763
+Episode 1519, Reward: 8.827314859374214
+Episode 1520, Reward: 8.727104421324269
+Episode 1521, Reward: 9.070067331318636
+Episode 1522, Reward: 9.094248051341475
+Episode 1523, Reward: 8.774492573886237
+Episode 1524, Reward: 9.725384409625827
+Episode 1525, Reward: 8.627609418825749
+Episode 1526, Reward: 9.64416216827494
+Episode 1527, Reward: 9.365443919613767
+Episode 1528, Reward: 8.199741963104126
+Episode 1529, Reward: 8.945373720991357
+Episode 1530, Reward: 7.495421279246433
+Episode 1531, Reward: 9.624871446734131
+Episode 1532, Reward: 8.85457561728976
+Episode 1533, Reward: 9.006659673658602
+Episode 1534, Reward: 8.559888696331944
+Episode 1535, Reward: 9.50725148382537
+Episode 1536, Reward: 8.109567344115497
+Episode 1537, Reward: 9.158831978060284
+Episode 1538, Reward: 8.669699577457328
+Episode 1539, Reward: 9.039883000986507
+Episode 1540, Reward: 8.987783735522434
+Episode 1541, Reward: 9.006555847588084
+Episode 1542, Reward: 8.729606510459137
+Episode 1543, Reward: 8.255273267494903
+Episode 1544, Reward: 9.249290879225816
+Episode 1545, Reward: 8.719245436826007
+Episode 1546, Reward: 8.910282909190412
+Episode 1547, Reward: 9.952191393685597
+Episode 1548, Reward: 9.212477075267776
+Episode 1549, Reward: 8.635698787131792
+Episode 1550, Reward: 9.253655236984672
+Episode 1551, Reward: 9.39991669323082
+Episode 1552, Reward: 8.816131976086519
+Episode 1553, Reward: 9.102917029468346
+Episode 1554, Reward: 9.431676787135403
+Episode 1555, Reward: 8.923939578717121
+Episode 1556, Reward: 9.636133853799745
+Episode 1557, Reward: 9.095556828504352
+Episode 1558, Reward: 8.622230399085252
+Episode 1559, Reward: 9.033904879502849
+Episode 1560, Reward: 8.938054244178144
+Episode 1561, Reward: 9.05518302526956
+Episode 1562, Reward: 9.223425448375236
+Episode 1563, Reward: 8.837726742021731
+Episode 1564, Reward: 8.323132212045078
+Episode 1565, Reward: 8.642468532070033
+Episode 1566, Reward: 8.833370709122818
+Episode 1567, Reward: 8.85116118216933
+Episode 1568, Reward: 9.40798269915693
+Episode 1569, Reward: 9.086699287870335
+Episode 1570, Reward: 8.983189714463704
+Episode 1571, Reward: 9.29711770645927
+Episode 1572, Reward: 9.002035131299719
+Episode 1573, Reward: 9.745293891552418
+Episode 1574, Reward: 9.334007547204425
+Episode 1575, Reward: 8.985363236995626
+Episode 1576, Reward: 9.205009595011129
+Episode 1577, Reward: 8.452857160557432
+Episode 1578, Reward: 9.766023713938312
+Episode 1579, Reward: 8.344392516468341
+Episode 1580, Reward: 8.349002756649137
+Episode 1581, Reward: 9.120495058007608
+Episode 1582, Reward: 9.45206828305637
+Episode 1583, Reward: 9.148032235252488
+Episode 1584, Reward: 9.221619216874135
+Episode 1585, Reward: 9.022859927328271
+Episode 1586, Reward: 8.328499905526554
+Episode 1587, Reward: 9.28283292084305
+Episode 1588, Reward: 9.124908658316423
+Episode 1589, Reward: 8.694726054418885
+Episode 1590, Reward: 8.8274303129793
+Episode 1591, Reward: 9.255587896997369
+Episode 1592, Reward: 8.143294491011108
+Episode 1593, Reward: 9.35138582658978
+Episode 1594, Reward: 9.840417676038259
+Episode 1595, Reward: 8.751722045503149
+Episode 1596, Reward: 9.48751475290224
+Episode 1597, Reward: 7.306982369002262
+Episode 1598, Reward: 8.760198967628165
+Episode 1599, Reward: 9.156762098977751
+Episode 1600, Reward: 9.373973977807086
+Episode 1601, Reward: 8.555409797680646
+Episode 1602, Reward: 9.17757807436161
+Episode 1603, Reward: 9.238770547213262
+Episode 1604, Reward: 9.528247900503851
+Episode 1605, Reward: 8.51562633840057
+Episode 1606, Reward: 8.547290070310394
+Episode 1607, Reward: 9.284880245056796
+Episode 1608, Reward: 8.372704766193866
+Episode 1609, Reward: 9.238659150371085
+Episode 1610, Reward: 8.826584447481675
+Episode 1611, Reward: 8.985923778403457
+Episode 1612, Reward: 8.802693389578952
+Episode 1613, Reward: 9.362591330267295
+Episode 1614, Reward: 9.03932079881814
+Episode 1615, Reward: 9.481966847719997
+Episode 1616, Reward: 10.062974398614774
+Episode 1617, Reward: 9.279860034566884
+Episode 1618, Reward: 8.622239297188207
+Episode 1619, Reward: 9.80266023540317
+Episode 1620, Reward: 9.73161139754991
+Episode 1621, Reward: 9.228795424291025
+Episode 1622, Reward: 8.877070245011986
+Episode 1623, Reward: 9.254047623461279
+Episode 1624, Reward: 8.6875984361971
+Episode 1625, Reward: 8.946754377412125
+Episode 1626, Reward: 9.687560812142335
+Episode 1627, Reward: 9.045218665701599
+Episode 1628, Reward: 8.81523552051299
+Episode 1629, Reward: 9.151328622624181
+Episode 1630, Reward: 8.8771170546981
+Episode 1631, Reward: 8.457541541375011
+Episode 1632, Reward: 7.930866506186478
+Episode 1633, Reward: 8.824756279757963
+Episode 1634, Reward: 6.960290002501333
+Episode 1635, Reward: 9.476322812348833
+Episode 1636, Reward: 9.750233135524658
+Episode 1637, Reward: 10.125601058261939
+Episode 1638, Reward: 9.360672023239937
+Episode 1639, Reward: 9.042223926626889
+Episode 1640, Reward: 9.510081962334965
+Episode 1641, Reward: 8.947627512509982
+Episode 1642, Reward: 9.527997310481812
+Episode 1643, Reward: 9.136814172247185
+Episode 1644, Reward: 7.953402292144149
+Episode 1645, Reward: 10.549867669998362
+Episode 1646, Reward: 9.96384050887963
+Episode 1647, Reward: 8.461390968437861
+Episode 1648, Reward: 9.91097474509779
+Episode 1649, Reward: 10.45574250268585
+Episode 1650, Reward: 9.21799238265453
+Episode 1651, Reward: 8.127489450157452
+Episode 1652, Reward: 8.91634696931597
+Episode 1653, Reward: 9.190950148353227
+Episode 1654, Reward: 8.82452660531516
+Episode 1655, Reward: 8.76513703236557
+Episode 1656, Reward: 9.099858440229013
+Episode 1657, Reward: 8.83959054865282
+Episode 1658, Reward: 8.933700255506317
+Episode 1659, Reward: 9.604201339260282
+Episode 1660, Reward: 8.695155480144543
+Episode 1661, Reward: 9.04974540866679
+Episode 1662, Reward: 8.816489562252617
+Episode 1663, Reward: 9.007372565346067
+Episode 1664, Reward: 9.485364823387199
+Episode 1665, Reward: 8.73580811432683
+Episode 1666, Reward: 9.618516245913936
+Episode 1667, Reward: 8.419648429630099
+Episode 1668, Reward: 9.581079574518396
+Episode 1669, Reward: 9.074351605190431
+Episode 1670, Reward: 8.928199991299971
+Episode 1671, Reward: 8.683805586789786
+Episode 1672, Reward: 9.749549774527395
+Episode 1673, Reward: 9.295293906117662
+Episode 1674, Reward: 10.514267374796157
+Episode 1675, Reward: 9.78864893594372
+Episode 1676, Reward: 8.38201645042912
+Episode 1677, Reward: 9.32693015752161
+Episode 1678, Reward: 8.911170376142028
+Episode 1679, Reward: 9.787398763305381
+Episode 1680, Reward: 9.061963830580861
+Episode 1681, Reward: 9.044555819495438
+Episode 1682, Reward: 8.531310354919741
+Episode 1683, Reward: 9.312842149010637
+Episode 1684, Reward: 9.26165437023882
+Episode 1685, Reward: 8.77631645683693
+Episode 1686, Reward: 9.143672883861079
+Episode 1687, Reward: 8.860318711313313
+Episode 1688, Reward: 9.132098236147463
+Episode 1689, Reward: 9.362276441501821
+Episode 1690, Reward: 9.358426133220524
+Episode 1691, Reward: 9.95368860671586
+Episode 1692, Reward: 9.116813697847483
+Episode 1693, Reward: 9.20050734678318
+Episode 1694, Reward: 10.128980832572836
+Episode 1695, Reward: 8.926463832817275
+Episode 1696, Reward: 9.214047547581863
+Episode 1697, Reward: 9.26896316014895
+Episode 1698, Reward: 9.154114409732491
+Episode 1699, Reward: 10.377303108405055
+Episode 1700, Reward: 8.817835836917034
+Episode 1701, Reward: 10.160706671217396
+Episode 1702, Reward: 8.772501378363962
+Episode 1703, Reward: 8.331187366233717
+Episode 1704, Reward: 8.995533748509828
+Episode 1705, Reward: 8.982031221416134
+Episode 1706, Reward: 8.348306794357494
+Episode 1707, Reward: 9.471125427490817
+Episode 1708, Reward: 9.82177990614919
+Episode 1709, Reward: 9.543351039340088
+Episode 1710, Reward: 9.324729135669998
+Episode 1711, Reward: 9.466866114184814
+Episode 1712, Reward: 9.415503123424235
+Episode 1713, Reward: 8.220175916351817
+Episode 1714, Reward: 9.717116121913621
+Episode 1715, Reward: 8.568695656498388
+Episode 1716, Reward: 9.885603567793305
+Episode 1717, Reward: 9.139280442232096
+Episode 1718, Reward: 9.0073799662137
+Episode 1719, Reward: 10.0074313609577
+Episode 1720, Reward: 8.861315965368233
+Episode 1721, Reward: 9.119204159746245
+Episode 1722, Reward: 9.479133363006127
+Episode 1723, Reward: 9.278343282746587
+Episode 1724, Reward: 8.88617693214734
+Episode 1725, Reward: 9.185084212547604
+Episode 1726, Reward: 9.964388660861394
+Episode 1727, Reward: 9.17541638307656
+Episode 1728, Reward: 8.319952561931666
+Episode 1729, Reward: 8.879342203723585
+Episode 1730, Reward: 9.831204198907104
+Episode 1731, Reward: 9.636274780550945
+Episode 1732, Reward: 9.861008354196517
+Episode 1733, Reward: 7.938542030272029
+Episode 1734, Reward: 9.310740841783783
+Episode 1735, Reward: 9.24450304476359
+Episode 1736, Reward: 9.829801405908553
+Episode 1737, Reward: 9.434574110030015
+Episode 1738, Reward: 9.131097021343475
+Episode 1739, Reward: 8.66079278260896
+Episode 1740, Reward: 8.325956883369695
+Episode 1741, Reward: 9.003974763663111
+Episode 1742, Reward: 9.185115099669643
+Episode 1743, Reward: 9.252600889401938
+Episode 1744, Reward: 9.982930847703157
+Episode 1745, Reward: 8.858979159714371
+Episode 1746, Reward: 10.18518667968399
+Episode 1747, Reward: 9.539123213488761
+Episode 1748, Reward: 8.120583448764208
+Episode 1749, Reward: 9.133731863880005
+Episode 1750, Reward: 9.257494258070235
+Episode 1751, Reward: 7.6193193587248755
+Episode 1752, Reward: 8.601330335621132
+Episode 1753, Reward: 8.331001287088139
+Episode 1754, Reward: 9.693627217337426
+Episode 1755, Reward: 9.947540330364443
+Episode 1756, Reward: 8.95670400188261
+Episode 1757, Reward: 9.673947048453998
+Episode 1758, Reward: 9.30063648241182
+Episode 1759, Reward: 9.586648340101142
+Episode 1760, Reward: 9.181667140371818
+Episode 1761, Reward: 9.57941352477335
+Episode 1762, Reward: 10.448059022461443
+Episode 1763, Reward: 10.0620979545668
+Episode 1764, Reward: 9.012180176306769
+Episode 1765, Reward: 8.852349435759239
+Episode 1766, Reward: 9.108056897820113
+Episode 1767, Reward: 9.519601152521076
+Episode 1768, Reward: 9.916882430273725
+Episode 1769, Reward: 8.959334310741003
+Episode 1770, Reward: 8.786464277686507
+Episode 1771, Reward: 9.044317161504154
+Episode 1772, Reward: 9.605731910123701
+Episode 1773, Reward: 9.72852613463734
+Episode 1774, Reward: 9.342098542997189
+Episode 1775, Reward: 9.125422303967156
+Episode 1776, Reward: 8.514750240031884
+Episode 1777, Reward: 9.444066357282969
+Episode 1778, Reward: 9.317503961466404
+Episode 1779, Reward: 9.241230102105488
+Episode 1780, Reward: 8.6719726750748
+Episode 1781, Reward: 9.413396696716202
+Episode 1782, Reward: 8.946675205514278
+Episode 1783, Reward: 9.377338060954918
+Episode 1784, Reward: 9.858326144428704
+Episode 1785, Reward: 9.255740557864227
+Episode 1786, Reward: 9.06049888903753
+Episode 1787, Reward: 8.750330253237506
+Episode 1788, Reward: 9.129333062932664
+Episode 1789, Reward: 8.374701689975081
+Episode 1790, Reward: 8.23229443004847
+Episode 1791, Reward: 7.692455567974895
+Episode 1792, Reward: 9.742843928796868
+Episode 1793, Reward: 9.111425246458397
+Episode 1794, Reward: 8.927875561161631
+Episode 1795, Reward: 9.517602741540234
+Episode 1796, Reward: 8.801943754540693
+Episode 1797, Reward: 8.665900631353908
+Episode 1798, Reward: 9.999724873012635
+Episode 1799, Reward: 7.334932502365318
+Episode 1800, Reward: 8.707771293442855
+Episode 1801, Reward: 9.266247702808906
+Episode 1802, Reward: 8.977127418468868
+Episode 1803, Reward: 9.069549328927671
+Episode 1804, Reward: 8.394309982099282
+Episode 1805, Reward: 9.166698174921594
+Episode 1806, Reward: 9.665040173237948
+Episode 1807, Reward: 9.211862339626697
+Episode 1808, Reward: 9.155873098689375
+Episode 1809, Reward: 9.760126027339856
+Episode 1810, Reward: 9.663741814767462
+Episode 1811, Reward: 9.059076511717633
+Episode 1812, Reward: 8.34425047634142
+Episode 1813, Reward: 9.218672277563092
+Episode 1814, Reward: 8.23309812853171
+Episode 1815, Reward: 8.914975944919334
+Episode 1816, Reward: 8.784755015036467
+Episode 1817, Reward: 8.672819189388132
+Episode 1818, Reward: 9.210779867400339
+Episode 1819, Reward: 9.238417057266325
+Episode 1820, Reward: 9.65357626407675
+Episode 1821, Reward: 8.726846934479642
+Episode 1822, Reward: 8.289537764535233
+Episode 1823, Reward: 9.056027891542293
+Episode 1824, Reward: 9.857061515560462
+Episode 1825, Reward: 7.856414354801661
+Episode 1826, Reward: 9.16982982252083
+Episode 1827, Reward: 8.552862913933428
+Episode 1828, Reward: 8.019203595242939
+Episode 1829, Reward: 9.037432559049623
+Episode 1830, Reward: 9.96162134047505
+Episode 1831, Reward: 7.803035504729723
+Episode 1832, Reward: 10.18995706255996
+Episode 1833, Reward: 9.574342815070313
+Episode 1834, Reward: 8.84694543288991
+Episode 1835, Reward: 8.736830278323682
+Episode 1836, Reward: 9.406124580223986
+Episode 1837, Reward: 9.23701158175931
+Episode 1838, Reward: 8.796015222064256
+Episode 1839, Reward: 9.360273143748387
+Episode 1840, Reward: 9.396141571058667
+Episode 1841, Reward: 9.99698565080473
+Episode 1842, Reward: 8.910865358430467
+Episode 1843, Reward: 8.372690883068525
+Episode 1844, Reward: 9.845651533712916
+Episode 1845, Reward: 9.450491259605611
+Episode 1846, Reward: 9.243455191391263
+Episode 1847, Reward: 10.44770222316229
+Episode 1848, Reward: 9.096515239897517
+Episode 1849, Reward: 8.552010945101634
+Episode 1850, Reward: 9.67823820496694
+Episode 1851, Reward: 9.021201380248598
+Episode 1852, Reward: 8.844648726887714
+Episode 1853, Reward: 9.23081830609284
+Episode 1854, Reward: 9.80750922530109
+Episode 1855, Reward: 9.227756766573606
+Episode 1856, Reward: 8.987584474903048
+Episode 1857, Reward: 9.225599166900574
+Episode 1858, Reward: 9.345671846199906
+Episode 1859, Reward: 9.042370102167977
+Episode 1860, Reward: 9.074249981444892
+Episode 1861, Reward: 9.11737917756324
+Episode 1862, Reward: 9.185809136234013
+Episode 1863, Reward: 9.641935495398934
+Episode 1864, Reward: 8.923998578556935
+Episode 1865, Reward: 8.869341941829957
+Episode 1866, Reward: 9.588272898845215
+Episode 1867, Reward: 9.436293133496111
+Episode 1868, Reward: 10.175388218557284
+Episode 1869, Reward: 8.212668057019098
+Episode 1870, Reward: 9.715526208069512
+Episode 1871, Reward: 9.401684910411145
+Episode 1872, Reward: 9.456082706023489
+Episode 1873, Reward: 10.127488180544857
+Episode 1874, Reward: 7.9074375109058215
+Episode 1875, Reward: 8.859222950340332
+Episode 1876, Reward: 8.494867593346726
+Episode 1877, Reward: 10.044335957883712
+Episode 1878, Reward: 8.616963316983776
+Episode 1879, Reward: 9.98752797309363
+Episode 1880, Reward: 8.103682346731032
+Episode 1881, Reward: 9.972976931132745
+Episode 1882, Reward: 9.08614221654813
+Episode 1883, Reward: 9.182125289116856
+Episode 1884, Reward: 9.674413306034506
+Episode 1885, Reward: 8.87278404825493
+Episode 1886, Reward: 8.190779714978166
+Episode 1887, Reward: 9.679370650053356
+Episode 1888, Reward: 8.960091386035494
+Episode 1889, Reward: 9.528974283552687
+Episode 1890, Reward: 9.365910656452982
+Episode 1891, Reward: 9.864311850769033
+Episode 1892, Reward: 9.825537833253273
+Episode 1893, Reward: 10.217252851549967
+Episode 1894, Reward: 9.639369491312394
+Episode 1895, Reward: 9.680231217382534
+Episode 1896, Reward: 9.661093021670403
+Episode 1897, Reward: 9.618428698171273
+Episode 1898, Reward: 9.60719875170653
+Episode 1899, Reward: 9.146862458972219
+Episode 1900, Reward: 9.098000544584481
+Episode 1901, Reward: 10.095581812662566
+Episode 1902, Reward: 9.634505758617141
+Episode 1903, Reward: 9.377819115774887
+Episode 1904, Reward: 9.573711331139796
+Episode 1905, Reward: 9.566131639025174
+Episode 1906, Reward: 8.46842231268237
+Episode 1907, Reward: 10.294538435091093
+Episode 1908, Reward: 9.737925348257429
+Episode 1909, Reward: 8.410232986721997
+Episode 1910, Reward: 10.146118151150306
+Episode 1911, Reward: 9.166389496694242
+Episode 1912, Reward: 9.31567623845556
+Episode 1913, Reward: 9.359732205479748
+Episode 1914, Reward: 8.880024253874744
+Episode 1915, Reward: 8.774635153926774
+Episode 1916, Reward: 8.737349191485354
+Episode 1917, Reward: 9.233465526833234
+Episode 1918, Reward: 9.073507262484844
+Episode 1919, Reward: 9.660007804606586
+Episode 1920, Reward: 9.868782414105326
+Episode 1921, Reward: 8.805652123002913
+Episode 1922, Reward: 9.585155435062656
+Episode 1923, Reward: 9.188988229458975
+Episode 1924, Reward: 10.097452777505373
+Episode 1925, Reward: 10.568887652928428
+Episode 1926, Reward: 9.588168818109311
+Episode 1927, Reward: 9.038475996928236
+Episode 1928, Reward: 8.727067039663895
+Episode 1929, Reward: 9.458211871325998
+Episode 1930, Reward: 9.340304427626757
+Episode 1931, Reward: 9.07631056803624
+Episode 1932, Reward: 9.922193358410762
+Episode 1933, Reward: 9.494171927348104
+Episode 1934, Reward: 9.251936593647349
+Episode 1935, Reward: 9.033844810837344
+Episode 1936, Reward: 9.0492757290149
+Episode 1937, Reward: 8.468700355371677
+Episode 1938, Reward: 9.046827043680134
+Episode 1939, Reward: 10.04874958901832
+Episode 1940, Reward: 10.140905253961892
+Episode 1941, Reward: 9.157872526561347
+Episode 1942, Reward: 9.816069303487083
+Episode 1943, Reward: 9.66233145029121
+Episode 1944, Reward: 9.848793081049376
+Episode 1945, Reward: 9.273986303658708
+Episode 1946, Reward: 10.249618290735016
+Episode 1947, Reward: 9.29147960161848
+Episode 1948, Reward: 8.807788310354248
+Episode 1949, Reward: 9.353711767486127
+Episode 1950, Reward: 9.115023433895063
+Episode 1951, Reward: 10.134157825166103
+Episode 1952, Reward: 9.518122268436272
+Episode 1953, Reward: 8.268693016272232
+Episode 1954, Reward: 8.731994498776999
+Episode 1955, Reward: 9.976102328832095
+Episode 1956, Reward: 9.109071704218996
+Episode 1957, Reward: 9.633547701255823
+Episode 1958, Reward: 9.595931524276963
+Episode 1959, Reward: 9.923608768624597
+Episode 1960, Reward: 8.576620135383376
+Episode 1961, Reward: 9.474647108763625
+Episode 1962, Reward: 9.782008058580447
+Episode 1963, Reward: 9.957981426579275
+Episode 1964, Reward: 10.147021131066847
+Episode 1965, Reward: 9.421151278476597
+Episode 1966, Reward: 7.939045777566105
+Episode 1967, Reward: 8.558663612240826
+Episode 1968, Reward: 8.923408525348545
+Episode 1969, Reward: 9.051984842245098
+Episode 1970, Reward: 9.67852549009996
+Episode 1971, Reward: 9.337824695952946
+Episode 1972, Reward: 9.560645445798771
+Episode 1973, Reward: 10.347564129771099
+Episode 1974, Reward: 9.647930497688087
+Episode 1975, Reward: 9.468689667413315
+Episode 1976, Reward: 9.093383258442067
+Episode 1977, Reward: 10.26179630031074
+Episode 1978, Reward: 8.81493403583005
+Episode 1979, Reward: 9.49377503140858
+Episode 1980, Reward: 9.1189877145127
+Episode 1981, Reward: 10.09690537249371
+Episode 1982, Reward: 10.01555109648723
+Episode 1983, Reward: 9.44259616548629
+Episode 1984, Reward: 9.862680858059722
+Episode 1985, Reward: 9.077863547011534
+Episode 1986, Reward: 9.996763021747082
+Episode 1987, Reward: 8.251044864000662
+Episode 1988, Reward: 9.607839591112587
+Episode 1989, Reward: 9.822686673521437
+Episode 1990, Reward: 10.328057855829822
+Episode 1991, Reward: 8.974619430390728
+Episode 1992, Reward: 10.097888481257886
+Episode 1993, Reward: 10.142096332218802
+Episode 1994, Reward: 9.154719806317095
+Episode 1995, Reward: 9.98817327872262
+Episode 1996, Reward: 8.798174388862737
+Episode 1997, Reward: 10.405463921750156
+Episode 1998, Reward: 9.801410224322305
+Episode 1999, Reward: 9.55666471417116
+Episode 2000, Reward: 8.96457011482133
+Episode 2001, Reward: 9.934569406507004
+Episode 2002, Reward: 9.718987533407969
+Episode 2003, Reward: 8.545059227169546
+Episode 2004, Reward: 9.76919332431544
+Episode 2005, Reward: 8.400150530594518
+Episode 2006, Reward: 9.890367994998616
+Episode 2007, Reward: 10.259799419560949
+Episode 2008, Reward: 9.368674061170394
+Episode 2009, Reward: 9.7620457074613
+Episode 2010, Reward: 9.679423161752748
+Episode 2011, Reward: 10.984668447365197
+Episode 2012, Reward: 9.630655671429246
+Episode 2013, Reward: 9.618022110830125
+Episode 2014, Reward: 10.383927768317582
+Episode 2015, Reward: 9.490683858280454
+Episode 2016, Reward: 9.549691396856256
+Episode 2017, Reward: 9.11642114395019
+Episode 2018, Reward: 9.903134898368945
+Episode 2019, Reward: 9.814846882718467
+Episode 2020, Reward: 9.566662490340656
+Episode 2021, Reward: 10.181530997256532
+Episode 2022, Reward: 10.515586745524407
+Episode 2023, Reward: 9.737191913397595
+Episode 2024, Reward: 8.948785137105435
+Episode 2025, Reward: 8.765732822465964
+Episode 2026, Reward: 10.72974612060138
+Episode 2027, Reward: 10.11805100591146
+Episode 2028, Reward: 9.584211141265014
+Episode 2029, Reward: 9.70261135675121
+Episode 2030, Reward: 10.054770078159255
+Episode 2031, Reward: 9.722169625937218
+Episode 2032, Reward: 9.101411115985243
+Episode 2033, Reward: 9.982127648530419
+
+[BEST MODEL SAVED] Avg100 Reward: 9.55
+
+Episode:  2034 | Reward:      10.21 | Avg100:       9.55
+Episode 2034, Reward: 10.20666922996689
+
+[BEST MODEL SAVED] Avg100 Reward: 9.56
+
+Episode:  2035 | Reward:       9.81 | Avg100:       9.56
+Episode 2035, Reward: 9.814147602203366
+
+[BEST MODEL SAVED] Avg100 Reward: 9.57
+
+Episode:  2036 | Reward:       9.76 | Avg100:       9.57
+Episode 2036, Reward: 9.759781708919649
+
+[BEST MODEL SAVED] Avg100 Reward: 9.57
+
+Episode:  2037 | Reward:       9.41 | Avg100:       9.57
+Episode 2037, Reward: 9.411165480258298
+
+[BEST MODEL SAVED] Avg100 Reward: 9.58
+
+Episode:  2038 | Reward:       9.74 | Avg100:       9.58
+Episode 2038, Reward: 9.740132409175153
+Episode 2039, Reward: 9.512608430458418
+Episode 2040, Reward: 9.555806204001625
+Episode 2041, Reward: 10.277657467008606
+
+[BEST MODEL SAVED] Avg100 Reward: 9.59
+
+Episode:  2042 | Reward:      10.17 | Avg100:       9.59
+Episode 2042, Reward: 10.173682984366845
+Episode 2043, Reward: 8.706461872548337
+Episode 2044, Reward: 10.599685531936501
+Episode 2045, Reward: 9.304681904420889
+Episode 2046, Reward: 9.189758663786588
+
+[BEST MODEL SAVED] Avg100 Reward: 9.59
+
+Episode:  2047 | Reward:      10.65 | Avg100:       9.59
+Episode 2047, Reward: 10.645065710335642
+
+[BEST MODEL SAVED] Avg100 Reward: 9.60
+
+Episode:  2048 | Reward:       9.89 | Avg100:       9.60
+Episode 2048, Reward: 9.8879846019483
+Episode 2049, Reward: 8.970574200275989
+
+[BEST MODEL SAVED] Avg100 Reward: 9.61
+
+Episode:  2050 | Reward:      10.42 | Avg100:       9.61
+Episode 2050, Reward: 10.41962868221556
+Episode 2051, Reward: 9.488508486801868
+Episode 2052, Reward: 9.041933029097494
+
+[BEST MODEL SAVED] Avg100 Reward: 9.61
+
+Episode:  2053 | Reward:       9.52 | Avg100:       9.61
+Episode 2053, Reward: 9.518175776251944
+
+[BEST MODEL SAVED] Avg100 Reward: 9.62
+
+Episode:  2054 | Reward:       9.69 | Avg100:       9.62
+Episode 2054, Reward: 9.691980305702565
+Episode 2055, Reward: 9.897630304490274
+Episode 2056, Reward: 8.889114790853766
+Episode 2057, Reward: 9.307914092510979
+Episode 2058, Reward: 10.002364979525272
+Episode 2059, Reward: 9.894737751497585
+
+[BEST MODEL SAVED] Avg100 Reward: 9.62
+
+Episode:  2060 | Reward:       9.33 | Avg100:       9.62
+Episode 2060, Reward: 9.333249879814412
+Episode 2061, Reward: 9.250972102482232
+
+[BEST MODEL SAVED] Avg100 Reward: 9.63
+
+Episode:  2062 | Reward:      10.37 | Avg100:       9.63
+Episode 2062, Reward: 10.366304753304098
+Episode 2063, Reward: 9.924632408081536
+Episode 2064, Reward: 9.585416305501711
+
+[BEST MODEL SAVED] Avg100 Reward: 9.63
+
+Episode:  2065 | Reward:      10.04 | Avg100:       9.63
+Episode 2065, Reward: 10.041953486166909
+
+[BEST MODEL SAVED] Avg100 Reward: 9.64
+
+Episode:  2066 | Reward:       9.50 | Avg100:       9.64
+Episode 2066, Reward: 9.49529292546593
+
+[BEST MODEL SAVED] Avg100 Reward: 9.66
+
+Episode:  2067 | Reward:       9.97 | Avg100:       9.66
+Episode 2067, Reward: 9.966074216579372
+Episode 2068, Reward: 8.830009561792883
+
+[BEST MODEL SAVED] Avg100 Reward: 9.66
+
+Episode:  2069 | Reward:       9.64 | Avg100:       9.66
+Episode 2069, Reward: 9.642545242390204
+
+[BEST MODEL SAVED] Avg100 Reward: 9.66
+
+Episode:  2070 | Reward:      10.02 | Avg100:       9.66
+Episode 2070, Reward: 10.023931659890106
+Episode 2071, Reward: 9.293140941282543
+Episode 2072, Reward: 9.598099714382755
+Episode 2073, Reward: 9.380564406863446
+Episode 2074, Reward: 9.501102593759128
+Episode 2075, Reward: 10.059615494647977
+Episode 2076, Reward: 8.687785332689085
+Episode 2077, Reward: 9.863152917806271
+Episode 2078, Reward: 9.99619065564195
+Episode 2079, Reward: 9.424395914202716
+Episode 2080, Reward: 9.332263726229503
+Episode 2081, Reward: 9.692311810380154
+Episode 2082, Reward: 8.426186711648826
+Episode 2083, Reward: 9.87361463199108
+Episode 2084, Reward: 10.66032695841998
+Episode 2085, Reward: 8.594684838806227
+Episode 2086, Reward: 9.642954255283813
+
+[BEST MODEL SAVED] Avg100 Reward: 9.67
+
+Episode:  2087 | Reward:      10.33 | Avg100:       9.67
+Episode 2087, Reward: 10.331392912503157
+Episode 2088, Reward: 9.48960450232956
+Episode 2089, Reward: 9.923174397024917
+Episode 2090, Reward: 8.276366413863654
+Episode 2091, Reward: 9.349488349606569
+Episode 2092, Reward: 10.39301433775498
+Episode 2093, Reward: 10.870147821695092
+
+[BEST MODEL SAVED] Avg100 Reward: 9.67
+
+Episode:  2094 | Reward:       9.92 | Avg100:       9.67
+Episode 2094, Reward: 9.915460324723641
+Episode 2095, Reward: 9.12314961718472
+Episode 2096, Reward: 9.630803439392169
+C:\Users\enric\AppData\Local\Programs\Python\Python311\Lib\site-packages\glfw\__init__.py:917: GLFWError: (65537) b'The GLFW library is not initialized'
+  warnings.warn(message, GLFWError)
+Episode 2097, Reward: 9.25279153197686

@@ -1,0 +1,65 @@
+_wandb:
+    value:
+        cli_version: 0.26.1
+        e:
+            5bud1e3y8h3zf89laqrp53w9425ta8r6:
+                codePath: part1\train.py
+                codePathLocal: train.py
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "12.7"
+                disk:
+                    /:
+                        total: "480313151488"
+                        used: "376833048576"
+                email: enrico.sechi27@gmail.com
+                executable: C:\Users\enric\AppData\Local\Programs\Python\Python311\python.exe
+                git:
+                    commit: d253aafdfe1508ed7b4eb9a7c8c1447d39bdf976
+                    remote: https://github.com/LucaCampus/FAIML-RL-26.git
+                gpu: NVIDIA GeForce RTX 3050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2048
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce RTX 3050 Laptop GPU
+                      uuid: GPU-e8eb9452-556f-d607-679c-3b158f444faa
+                host: AsusTufGaming15
+                memory:
+                    total: "16989736960"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\enric\OneDrive\Documenti\Fundamentals of AI\Projects\FAIML-RL-26\part1\train.py
+                python: CPython 3.11.0
+                root: C:\Users\enric\OneDrive\Documenti\Fundamentals of AI\Projects\FAIML-RL-26\part1
+                startedAt: "2026-05-13T13:14:46.496979Z"
+                writerId: 5bud1e3y8h3zf89laqrp53w9425ta8r6
+        m: []
+        python_version: 3.11.0
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 1
+                - 2
+                - 3
+                - 13
+                - 16
+            "4": 3.11.0
+            "5": 0.26.1
+            "8":
+                - 3
+            "12": 0.26.1
+            "13": windows-amd64
+algorithm:
+    value: reinforce
+device:
+    value: cuda
+environment:
+    value: Hopper-v4
+episodes:
+    value: 10000
+gamma:
+    value: 0.99
