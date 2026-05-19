@@ -167,6 +167,7 @@ if __name__ == "__main__":
 #| UDR → source  | -4.221      | 62%          |
 #| UDR → target  | -3.878      | 64%          |
 
+#Is UDR able to overcome the shift of mass and lead to more robust policies w.r.t. the naive “source→target” baseline in task 5?
 #Previously we had a significant drop in performance when evaluating the source-trained policy on the target environment.
 #With UDR, the performance drop is much smaller, and we even see a slight improvement in the target environment.
 #This suggests that UDR has helped the policy learn more robust behaviors that generalize better across
@@ -178,3 +179,13 @@ if __name__ == "__main__":
 #the UDR-trained policy achieved comparable performance across both domains. 
 #This indicates that exposure to randomized dynamics during training helped the policy 
 #generalize better to unseen physical conditions.
+
+#Can you think of limitations or downsides of UDR? 
+#UDR also has some important limitations. Since the environment changes every episode, the learning problem becomes 
+#more difficult and training may require more time to converge. The agent can no longer specialize for a 
+#single set of dynamics and instead must learn a more general policy that works across many different conditions. 
+#In addition, the choice of the randomization range is critical: if the range is too narrow, 
+#the policy may still overfit, while excessively large or unrealistic ranges can make training unstable and reduce performance. 
+#UDR may also slightly reduce optimal performance in the original source environment because
+#robustness is prioritized over specialization. Finally, UDR depends on manually chosen distributions, 
+#and in real sim-to-real scenarios the true differences between simulation and reality are often unknown.
