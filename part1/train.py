@@ -12,7 +12,7 @@ import random
 def main():
     render = False
 
-    seed = 42
+    seed = 777
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
