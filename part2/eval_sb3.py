@@ -161,3 +161,20 @@ if __name__ == "__main__":
 #The challenge is that the simulator never perfectly matches reality, creating the so-called sim-to-real gap. 
 #Domain Randomization is used to reduce this gap by exposing the policy to many different simulated physics 
 #conditions during training, making it more robust when deployed in the real environment.
+
+#| Configuration | Mean Return | Success Rate |
+#| ------------- | ----------- | ------------ |
+#| UDR → source  | -4.221      | 62%          |
+#| UDR → target  | -3.878      | 64%          |
+
+#Previously we had a significant drop in performance when evaluating the source-trained policy on the target environment.
+#With UDR, the performance drop is much smaller, and we even see a slight improvement in the target environment.
+#This suggests that UDR has helped the policy learn more robust behaviors that generalize better across
+#different dynamics, reducing the sim-to-real gap.
+#The policy is no longer overfitting to the specific mass of the cube in the source environment, and can handle a wider range of masses,
+#which is why it performs better in the target environment.
+#Uniform Domain Randomization significantly improved transfer robustness between source and target environments. 
+#Unlike the baseline source-trained policy, which showed a performance drop when evaluated on the target environment, 
+#the UDR-trained policy achieved comparable performance across both domains. 
+#This indicates that exposure to randomized dynamics during training helped the policy 
+#generalize better to unseen physical conditions.
