@@ -90,7 +90,7 @@ class RandomizationWrapper(gym.Wrapper):
             success_rate = np.mean(self.success_history)
 
             # If agent performs well, expand difficulty
-            if success_rate > 0.5:
+            if success_rate > 0.3:
 
                 self.mass_max = min(
                     self.mass_max + 0.5,
