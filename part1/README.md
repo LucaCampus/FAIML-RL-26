@@ -14,6 +14,8 @@ python train.py --n_episodes 1000 --gamma 0.99 --lr 1e-3 --algorithm reinforce -
 # Actor-Critic
 python train.py --n_episodes 1000 --gamma 0.99 --lr 1e-3 --algorithm actor-critic
 
+python train.py --algorithm actor-critic --lr 1e-4 --lr_critic 1e-3 --n_episodes 20000 --gamma 0.99
+
 python test_policy.py --model best_model_reinforce.pt --n_episodes 10
 
 python test_policy.py --model best_model.pt --n_episodes 10

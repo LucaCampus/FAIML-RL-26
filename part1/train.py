@@ -17,7 +17,6 @@ def main():
     parser.add_argument('--n_episodes', type=int, default=1000)
     parser.add_argument('--gamma', type=float, default=0.99)
     parser.add_argument('--lr', type=float, default=1e-3)
-    parser.add_argument('--lr_critic', type=float, default=None)
     parser.add_argument('--baseline', type=float, default=None)
     parser.add_argument('--algorithm', type=str, default='reinforce', choices=['reinforce', 'actor-critic'])
     args = parser.parse_args()
@@ -35,7 +34,7 @@ def main():
     action_space = env.action_space.shape[0]      # 3
 
     policy = Policy(state_space, action_space)
-    agent = Agent(policy, gamma=args.gamma, lr=args.lr, lr_critic=args.lr_critic, baseline=args.baseline, algorithm=args.algorithm)
+    agent = Agent(policy, gamma=args.gamma, lr=args.lr, baseline=args.baseline, algorithm=args.algorithm)
 
     baseline_str = f"_baseline{args.baseline}" if args.baseline is not None else ""
     run_name = f"{args.algorithm}_ep{args.n_episodes}_gamma{args.gamma}_lr{args.lr}{baseline_str}"
