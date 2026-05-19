@@ -104,7 +104,7 @@ def main() -> None:
 
         env = RandomizationWrapper(
         env,
-        mass_range=(0.5, 5.5),
+        mass_range=(0.5, 6.0),
         mode="adr",
     )
 

@@ -148,3 +148,15 @@ class RandomizationWrapper(gym.Wrapper):
 
 #This wrapper is the ENTIRE sim-to-real mechanism, it changes the env physics without changing the task, the robot,
 #or the policy.
+
+# Uniform Domain Randomization (UDR):
+# UDR improves robustness by randomly changing environment parameters during training.
+# In this project, the cube mass is sampled uniformly from a predefined range at the beginning
+# of each episode. This forces the agent to learn behaviors that work across multiple dynamics
+# instead of overfitting to a single environment configuration.
+
+# Automatic Domain Randomization (ADR):
+# ADR extends UDR by adapting the randomization range automatically during training.
+# The environment starts with easier conditions and progressively increases the variability
+# as the agent improves. This creates a curriculum learning effect that helps the policy
+# gradually become robust to a wider range of physical dynamics.
