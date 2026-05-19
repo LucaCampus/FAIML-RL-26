@@ -79,10 +79,19 @@ class Policy(torch.nn.Module):
 
 
 class Agent(object):
-    def __init__(self, policy, device='cpu', gamma=0.99, lr=1e-3, baseline=None, algorithm='reinforce'):
+    def __init__(self, policy, device='cpu', gamma=0.99, lr=1e-3, lr_critic=None, baseline=None, algorithm='reinforce'):
         self.train_device = device
         self.policy = policy.to(self.train_device)
-        self.optimizer = torch.optim.Adam(policy.parameters(), lr=lr)
+        lr_critic = lr_critic if lr_critic is not None else lr
+        self.optimizer = torch.optim.Adam([
+            {'params': list(policy.fc1_actor.parameters()) +
+                       list(policy.fc2_actor.parameters()) +
+                       list(policy.fc3_actor_mean.parameters()) +
+                       [policy.sigma], 'lr': lr},
+            {'params': list(policy.fc1_critic.parameters()) +
+                       list(policy.fc2_critic.parameters()) +
+                       list(policy.fc3_critic.parameters()), 'lr': lr_critic}
+        ])
 
         self.gamma = gamma
         self.baseline = baseline
@@ -107,6 +116,7 @@ class Agent(object):
             #
             # TASK 2:
             #   - compute discounted returns
+            #TODO: returns normalization
             returns = discount_rewards(rewards, self.gamma)
             if self.baseline is not None:
                 returns = returns - self.baseline
