@@ -14,3 +14,6 @@ videos/
 
 # Logs
 *.log
+
+#Venv
+.venv310/
