@@ -173,7 +173,8 @@ class Agent(object):
             # The critic tries to learn the actual returns, using mean squared error loss between 
             # its value estimates and the TD targets.
             critic_loss = F.mse_loss(state_values, targets)
-
+ 
+            #the critic loss (MSE) is often numerically much larger than the actor loss, the critic could dominate training.
             loss = actor_loss + 0.5 *critic_loss
 
         # Gradient step

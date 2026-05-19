@@ -7,14 +7,23 @@ import torch
 import wandb
 import numpy as np
 from agent import Policy, Agent
+import random
 
 def main():
-    render = True
+    render = False
+
+    seed = 42
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
 
     if render:
         env = gym.make('Hopper-v4', render_mode='human')
     else:
         env = gym.make('Hopper-v4', render_mode='rgb_array')
+
+    env.reset(seed=seed)
+    env.action_space.seed(seed)
 
     print('State space:', env.observation_space)
     print('Action space:', env.action_space)
@@ -25,16 +34,16 @@ def main():
 
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
-    use_baseline = False  # change to False for vanilla REINFORCE
-    agent = Agent(policy, device=torch.device('cuda'), algorithm = 'actor_critic', use_baseline=use_baseline)
+    use_baseline = True  # change to False for vanilla REINFORCE
+    agent = Agent(policy, device=torch.device('cpu'), algorithm = 'reinforce', use_baseline=use_baseline)
     print(agent.train_device)
 
     if use_baseline:
         print("Using baseline:", use_baseline)
 
-    num_episodes = 100
+    num_episodes = 20000
 
-        #
+    #
     # WANDB
     #
     wandb.init(
