@@ -2,3 +2,5 @@ __pycache__
 wandb
 best_model.pt
 videos
+best_model_actor-critic.pt
+best_model_reinforce.pt
