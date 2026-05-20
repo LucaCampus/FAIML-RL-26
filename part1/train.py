@@ -110,30 +110,30 @@ def main():
 
             print(f"\n[BEST MODEL SAVED] "f"Avg100 Reward: {best_avg_reward:.2f}\n")
 
-            #
-            # PRINT LOG
-            #
-            print(
-                f"Episode: {ep:5d} | "
-                f"Reward: {episode_reward:10.2f} | "
-                f"Avg100: {avg_reward:10.2f}"
+        #
+        # PRINT LOG
+        #
+        print(
+            f"Episode: {ep:5d} | "
+            f"Reward: {episode_reward:10.2f} | "
+            f"Avg100: {avg_reward:10.2f}"
             )
 
-            #
-            # WANDB LOGGING
-            #
-            log_dict = {"episode": ep, "reward": episode_reward, "avg_reward_100": avg_reward}
+        #
+        # WANDB LOGGING
+        #
+        log_dict = {"episode": ep, "reward": episode_reward, "avg_reward_100": avg_reward}
 
-            #
-            # OPTIONAL LOSSES
-            #
-            if hasattr(agent, "last_actor_loss"):
-                log_dict["actor_loss"] = agent.last_actor_loss
+        #
+        # OPTIONAL LOSSES
+        #
+        if hasattr(agent, "last_actor_loss"):
+            log_dict["actor_loss"] = agent.last_actor_loss
 
-            if hasattr(agent, "last_critic_loss"):
-                log_dict["critic_loss"] = agent.last_critic_loss
+        if hasattr(agent, "last_critic_loss"):
+            log_dict["critic_loss"] = agent.last_critic_loss
 
-            wandb.log(log_dict)
+        wandb.log(log_dict)
 
         print(f"Episode {ep}, Reward: {episode_reward}")
 

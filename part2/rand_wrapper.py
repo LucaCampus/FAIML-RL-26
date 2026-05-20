@@ -90,17 +90,22 @@ class RandomizationWrapper(gym.Wrapper):
             success_rate = np.mean(self.success_history)
 
             # If agent performs well, expand difficulty
-            if success_rate > 0.3:
+            if success_rate > 0.7:
+
+                old_mass_max = self.mass_max
 
                 self.mass_max = min(
-                    self.mass_max + 0.5,
-                    self.mass_max_limit
+                self.mass_max + 0.5,
+                self.mass_max_limit
                 )
 
-                print(
+            # Print only if the range actually changed
+                if self.mass_max > old_mass_max:
+
+                    print(
                     f"[ADR] Expanding range -> "
                     f"[{self.mass_min:.2f}, {self.mass_max:.2f}]"
-                )
+                    )
 
         #Wrapper does not modify behavior during step.
         return obs, reward, terminated, truncated, info
