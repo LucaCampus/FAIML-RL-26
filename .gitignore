@@ -16,4 +16,4 @@ videos/
 *.log
 
 #Venv
-.venv310/
+venv311/
