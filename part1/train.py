@@ -34,8 +34,8 @@ def main():
 
     # Initialize policy and agent
     policy = Policy(state_dim, action_dim)
-    use_baseline = True  # change to False for vanilla REINFORCE
-    agent = Agent(policy, device=torch.device('cpu'), algorithm = 'reinforce', use_baseline=use_baseline)
+    use_baseline = False  # change to False for vanilla REINFORCE
+    agent = Agent(policy, device=torch.device('cpu'), algorithm = 'actor_critic', use_baseline=use_baseline)
     print(agent.train_device)
 
     if use_baseline:
