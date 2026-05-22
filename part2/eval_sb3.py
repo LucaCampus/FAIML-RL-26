@@ -189,3 +189,9 @@ if __name__ == "__main__":
 #UDR may also slightly reduce optimal performance in the original source environment because
 #robustness is prioritized over specialization. Finally, UDR depends on manually chosen distributions, 
 #and in real sim-to-real scenarios the true differences between simulation and reality are often unknown.
+
+#What about ADR? Are there limitations/assumptions here?
+#ADR improves over UDR by adapting the randomization range automatically during training, but it still has limitations. 
+#It depends on manually chosen hyperparameters such as the success threshold, expansion step, and initial range. 
+#If these values are poorly selected, the curriculum may become too aggressive or too conservative. 
+#Moreover, ADR assumes that progressively increasing environment difficulty leads to better generalization, which may not always hold for all tasks or domains.

@@ -51,6 +51,13 @@ def parse_args() -> argparse.Namespace:
         default=10000,
         help="Number of training timesteps",
     )
+
+    parser.add_argument(
+        "--run-name",
+        type=str,
+        default="",
+        help="Optional suffix for model name",
+    )
     
     return parser.parse_args()
 
@@ -150,6 +157,9 @@ def main() -> None:
         f"{args.env_type}_"
         f"{args.timesteps // 1000}k"
     )
+
+    if args.run_name:
+        save_name += f"_{args.run_name}"
     
     # TODO: model.save(save_name)
     model.save(save_name)
