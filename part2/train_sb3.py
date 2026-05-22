@@ -23,7 +23,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--env-type",
         type=str,
-        default="source",
+        default="target",
         choices=["source", "target"],
         help="PandaPush environment type",
     )
@@ -49,7 +49,7 @@ def main() -> None:
     env = gym.make(
         "PandaPush-v3",
         render_mode="rgb_array",
-       # type=args.env_type, CAPIRE A MODIFICA
+       type=args.env_type, 
         reward_type="dense",
     )
 

@@ -1,11 +1,14 @@
 import argparse
 import os
+import sys
 
 import gymnasium as gym
 import numpy as np
+import numpy.core.numeric as numpy_numeric
 from stable_baselines3 import SAC
-#from stable_baselines3 import 
 import panda_gym  # noqa: F401 - required so Panda envs are registered
+
+sys.modules["numpy._core.numeric"] = numpy_numeric
 
 
 def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool, env_type: str) -> None:
@@ -18,7 +21,14 @@ def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool
     render_mode = "human" if render else "rgb_array"
     env = gym.make("PandaPush-v3", render_mode=render_mode, type=env_type, reward_type="dense")
     #TODO: load model here
-    model = SAC.load(model_path)
+    model = SAC.load(
+        model_path,
+        env=env,
+        custom_objects={
+            "action_space": env.action_space,
+            "observation_space": env.observation_space,
+        },
+    )
 
     episode_returns = []
     successes = []
