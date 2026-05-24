@@ -1,6 +1,7 @@
 import argparse
 import os
 import sys
+import time
 
 import gymnasium as gym
 import numpy as np
@@ -11,7 +12,14 @@ import panda_gym  # noqa: F401 - required so Panda envs are registered
 sys.modules["numpy._core.numeric"] = numpy_numeric
 
 
-def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool, env_type: str) -> None:
+def evaluate(
+    model_path: str,
+    n_episodes: int,
+    deterministic: bool,
+    render: bool,
+    env_type: str,
+    render_delay: float,
+) -> None:
     if not os.path.exists(model_path):
         raise FileNotFoundError(
             f"Model file not found: {model_path}. "
@@ -44,6 +52,8 @@ def evaluate(model_path: str, n_episodes: int, deterministic: bool, render: bool
             action,_ = model.predict(obs, deterministic=deterministic)
             obs, reward, terminated, truncated, info = env.step(action)
             episode_return += float(reward)
+            if render and render_delay > 0:
+                time.sleep(render_delay)
 
         episode_returns.append(episode_return)
 
@@ -72,13 +82,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--model-path",
         type=str,
-        required=True,
+        required=False,
+        default=r"C:\Users\lucac\Documents\UNI\\2_MAGISTRALE\ANNO_1\Semestre_2\Fundamentals of Artificial Intelligence, Machine and Deep Learning\Project\FAIML-RL-26\part2\Model_1M_Source.zip",
         help="Path to a PPO model zip file (e.g., ppo_panda_push.zip)",
     )
     parser.add_argument(
         "--episodes", 
         type=int, 
-        default=500, 
+        default=50, 
         help="Number of eval episodes"
     )
     parser.add_argument(
@@ -88,8 +99,15 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--render",
-        action="store_true",
+        # action="store_true",
+        default=True,
         help="Render with a window (render_mode='human')",
+    )
+    parser.add_argument(
+        "--render-delay",
+        type=float,
+        default=0.03,
+        help="Seconds to wait after each rendered step",
     )
     parser.add_argument(
         "--env-type",
@@ -108,4 +126,5 @@ if __name__ == "__main__":
         deterministic=not args.stochastic,
         render=args.render,
         env_type=args.env_type,
+        render_delay=args.render_delay,
     )
