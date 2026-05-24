@@ -1,0 +1,8 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Training logs
+events.out.tfevents.*
+runs/
+wandb/
