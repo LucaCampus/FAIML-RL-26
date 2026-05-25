@@ -109,6 +109,8 @@ class Agent(object):
             #   - compute discounted returns
             #TODO: re
             returns = discount_rewards(rewards, self.gamma)
+            #print(f"Returns mean: {returns.mean().item():.2f}, std: {returns.std().item():.2f}")
+
             if self.baseline is not None:
                 returns = returns - self.baseline
 
@@ -137,7 +139,7 @@ class Agent(object):
             #   - compute actor loss and critic loss
             actor_loss = -(action_log_probs * advantages).sum()
             critic_loss = F.mse_loss(state_values, bootstrapped_returns)
-            loss = actor_loss + critic_loss
+            loss = actor_loss + 0.5*critic_loss
 
         else:
             raise ValueError(f"Unknown algorithm '{self.algorithm}'. Choose 'reinforce' or 'actor-critic'.")

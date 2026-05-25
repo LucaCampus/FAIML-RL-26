@@ -4,3 +4,7 @@ best_model.pt
 videos
 best_model_actor-critic.pt
 best_model_reinforce.pt
+best_model_reinforce_baseline50.0.pt
+best_model_reinforce_baseline250.0.pt
+best_model_reinforce_baseline15.0.pt
+best_model_reinforce_baseline10.0.pt
