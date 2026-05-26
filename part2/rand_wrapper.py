@@ -3,7 +3,7 @@ import gymnasium as gym
 import numpy as np
 
 EPISODES_PER_EVAL = 20
-SUCCESS_THRESH = 0.7
+SUCCESS_THRESH = 0.3
 MAX_INCREMENT = 0.5
 
 class RandomizationWrapper(gym.Wrapper):
@@ -112,7 +112,6 @@ class RandomizationWrapper(gym.Wrapper):
             print(
                 f"[{self.mode}] mass={new_mass:.2f} "
                 f"range=[{self.mass_min:.2f},{self.mass_max:.2f}] "
-                f"type={self.last_sample_type}"
             )
 
         return super().reset(**kwargs)

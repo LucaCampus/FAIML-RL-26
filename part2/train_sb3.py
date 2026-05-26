@@ -103,7 +103,7 @@ def main() -> None:
     )
 
     if args.sampling_strategy != "none":
-        env = RandomizationWrapper(env, args.sampling_strategy)
+        env = RandomizationWrapper(env, mass_range=(0.5, 6), mode=args.sampling_strategy)
 
     tensorboard_log = f"runs/{run_name}"
 
