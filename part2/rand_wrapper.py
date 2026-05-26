@@ -3,7 +3,7 @@ import gymnasium as gym
 import numpy as np
 
 EPISODES_PER_EVAL = 20
-SUCCESS_THRESH = 0.3
+SUCCESS_THRESH = 0.7
 MAX_INCREMENT = 0.5
 
 class RandomizationWrapper(gym.Wrapper):
@@ -100,7 +100,7 @@ class RandomizationWrapper(gym.Wrapper):
 
         if new_mass is not None:
 
-            sim = self.env.unwrapped.task.sim
+            sim = self.env.unwrapped.task.sim # type: ignore
             object_body_id = sim._bodies_idx["object"]
 
             sim.physics_client.changeDynamics(
@@ -109,9 +109,19 @@ class RandomizationWrapper(gym.Wrapper):
                 mass=float(new_mass),
             )
 
-            print(
-                f"[{self.mode}] mass={new_mass:.2f} "
-                f"range=[{self.mass_min:.2f},{self.mass_max:.2f}] "
-            )
+            if self.mode == "adr":
+
+                print(
+                    f"[ADR] mass={new_mass:.2f} "
+                    f"current_range=[{self.mass_min:.2f},{self.mass_max:.2f}] "
+                    f"global_range=[{self.mass_min_limit:.2f},{self.mass_max_limit:.2f}]"
+                )
+
+            else:
+
+                print(
+                    f"[{self.mode}] mass={new_mass:.2f} "
+                    f"range=[{self.mass_min_limit:.2f},{self.mass_max_limit:.2f}]"
+                )
 
         return super().reset(**kwargs)
