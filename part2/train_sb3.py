@@ -13,7 +13,6 @@ from stable_baselines3.common.monitor import Monitor
 
 DEFAULT_WANDB_PROJECT = "FAIML_RL_Part2"
 
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train SAC on PandaPush-v3")
     parser.add_argument(
@@ -65,7 +64,6 @@ def parse_args() -> argparse.Namespace:
 
     return parser.parse_args()
 
-
 def main() -> None:
     args = parse_args()
     timesteps_k = args.timesteps // 1000
@@ -82,6 +80,7 @@ def main() -> None:
     env = Monitor(env)
     env.reset(seed=args.seed)
     env.action_space.seed(args.seed)
+    
 
     run = wandb.init(
         project=args.wandb_project,
@@ -107,10 +106,13 @@ def main() -> None:
         env = RandomizationWrapper(env, args.sampling_strategy)
 
     tensorboard_log = f"runs/{run_name}"
+
     if args.algorithm == "sac":
         model = SAC("MultiInputPolicy", env, verbose=1, tensorboard_log=tensorboard_log, seed=args.seed)
     elif args.algorithm == "ppo":
         model = PPO("MultiInputPolicy", env, verbose=1, tensorboard_log=tensorboard_log, seed=args.seed)
+    else:
+        raise ValueError(f"Unsupported algorithm: {args.algorithm}")
 
     save_path = f"models/{run_name}"
     try:
@@ -123,7 +125,6 @@ def main() -> None:
     finally:
         env.close()
         run.finish()
-    # model.save(save_path) useless because wandb already saves the model 
 
 if __name__ == "__main__":
     main()

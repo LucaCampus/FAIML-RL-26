@@ -28,7 +28,12 @@ def evaluate(
 
     render_mode = "human" if render else "rgb_array"
     env = gym.make("PandaPush-v3", render_mode=render_mode, type=env_type, reward_type="dense")
-    #TODO: load model here
+
+    sim = env.unwrapped.task.sim
+    object_body_id = sim._bodies_idx["object"]
+    mass = sim.physics_client.getDynamicsInfo(object_body_id, -1)[0]
+    print(f"Evaluation env_type={env_type}, object mass={mass}")
+
     model = SAC.load(
         model_path,
         env=env,
@@ -48,7 +53,6 @@ def evaluate(
         episode_return = 0.0
 
         while not (terminated or truncated):
-            #TODO: get action from the model
             action,_ = model.predict(obs, deterministic=deterministic)
             obs, reward, terminated, truncated, info = env.step(action)
             episode_return += float(reward)
@@ -99,8 +103,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--render",
-        # action="store_true",
-        default=True,
+        action="store_true",
         help="Render with a window (render_mode='human')",
     )
     parser.add_argument(

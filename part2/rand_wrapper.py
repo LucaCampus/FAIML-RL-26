@@ -1,5 +1,10 @@
 
 import gymnasium as gym
+import numpy as np
+
+EPISODES_PER_EVAL = 20
+SUCCESS_THRESH = 0.7
+MAX_INCREMENT = 0.5
 
 class RandomizationWrapper(gym.Wrapper):
     """
@@ -18,6 +23,14 @@ class RandomizationWrapper(gym.Wrapper):
 
         # global limits
         self.mass_min_limit, self.mass_max_limit = mass_range
+        
+        self.mass_min = self.mass_min_limit
+        self.mass_max = min(
+            self.mass_min_limit + 1.0,
+            self.mass_max_limit
+        )
+
+        self.success_history = []
 
     # -----------------------
     # Mass Sampling
@@ -27,8 +40,22 @@ class RandomizationWrapper(gym.Wrapper):
 
         if self.mode == "none":
             return None
+        
+        elif self.mode == "udr":
+            return np.random.uniform(
+                self.mass_min_limit,
+                self.mass_max_limit,
+            )
+        
+        elif self.mode == "adr":
+            return np.random.uniform(
+                self.mass_min,
+                self.mass_max
+            )
         else:
-            raise NotImplementedError(f"Sampling strategy '{self.mode}' is not implemented yet.")
+            raise NotImplementedError(
+                f"Sampling method {self.mode} is not implemented yet!"
+            )
 
     def step(self, action):
 
@@ -36,7 +63,30 @@ class RandomizationWrapper(gym.Wrapper):
 
         done = terminated or truncated
 
-        # Optionally, you can add here extra logic
+        if self.mode == "adr" and done:
+            success = float(info.get("is_success", 0.0))
+            self.success_history.append(success)
+
+            if len(self.success_history) >= EPISODES_PER_EVAL:
+                self.success_history.pop(0)
+
+            success_rate = np.mean(self.success_history)
+
+            if success_rate > SUCCESS_THRESH:
+                old_mass_max = self.mass_max
+
+                self.mass_max = min(
+                    self.mass_max + MAX_INCREMENT,
+                    self.mass_max_limit
+                )
+
+                if self.mass_max > old_mass_max:
+                    print(
+                        f"[ADR] Expanding range -> [{self.mass_min:.2f},{self.mass_max:.2f}]"
+                    )
+
+
+        
 
         return obs, reward, terminated, truncated, info
 
@@ -46,7 +96,7 @@ class RandomizationWrapper(gym.Wrapper):
 
     def reset(self, **kwargs):
 
-        new_mass = ... #TODO: sample new mass
+        new_mass = self._sample_mass()
 
         if new_mass is not None:
 

@@ -3,7 +3,7 @@ import os
 import sys
 import time
 from dataclasses import dataclass
-from typing import Type
+from typing import Any, Type
 
 import gymnasium as gym
 import numpy as np
@@ -337,7 +337,7 @@ def log_to_wandb(results: list[EvaluationResult]) -> None:
         for label in TASK5_LABELS
     ]
 
-    log_payload = {
+    log_payload: dict[str, Any] = {
         "task5/episode_metrics": wandb.Table(
             columns=["config", "train_env", "test_env", "episodes_count", "episode", "return", "length", "success"],
             data=episode_rows,
