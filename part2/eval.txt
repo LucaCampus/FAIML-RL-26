@@ -1,8 +1,0 @@
-Training	Test	Mean return	Success rate
-source	source	-0.777	96%
-source	target	-0.661	100%
-target	target	-0.484	100%
-
-target → target è upper bound (ha il return medio migliore)
-source → target è lower bound 
-per la fase di Domain Randomization (success rate resta alto ma il return medio è peggiore del modello allenato sul target)
