@@ -82,9 +82,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--model-path",
         type=str,
-        required=False,
-        default=r"C:\Users\lucac\Documents\UNI\\2_MAGISTRALE\ANNO_1\Semestre_2\Fundamentals of Artificial Intelligence, Machine and Deep Learning\Project\FAIML-RL-26\part2\Model_1M_Source.zip",
-        help="Path to a PPO model zip file (e.g., ppo_panda_push.zip)",
+        required=False
     )
     parser.add_argument(
         "--episodes", 
@@ -99,8 +97,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--render",
-        # action="store_true",
-        default=True,
+        action="store_true",
         help="Render with a window (render_mode='human')",
     )
     parser.add_argument(
