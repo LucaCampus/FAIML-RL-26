@@ -13,7 +13,9 @@ from stable_baselines3.common.monitor import Monitor
 
 DEFAULT_WANDB_PROJECT = "FAIML_RL_Part2"
 
+
 def parse_args() -> argparse.Namespace:
+    # All relevant experiment choices are CLI arguments so the run name and W&B config stay reproducible.
     parser = argparse.ArgumentParser(description="Train SAC on PandaPush-v3")
     parser.add_argument(
         "--task",
@@ -66,10 +68,13 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+
+    # Shared identifier used by W&B, TensorBoard logs, and saved model folders.
     timesteps_k = args.timesteps // 1000
     run_name = f"{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{timesteps_k}k_seed{args.seed}"
     wandb_group = f"{args.task}_training"
 
+    # The local panda-gym version maps env_type source/target to different object masses.
     env = gym.make(
         "PandaPush-v3",
         render_mode="rgb_array",
@@ -77,11 +82,13 @@ def main() -> None:
         reward_type="dense",
     )
 
+    # Monitor records episode return/length/success so SB3 and W&B can log rollout metrics.
     env = Monitor(env)
     env.reset(seed=args.seed)
     env.action_space.seed(args.seed)
     
 
+    # sync_tensorboard=True forwards SB3 TensorBoard scalars from runs/<run_name> to W&B.
     run = wandb.init(
         project=args.wandb_project,
         group=wandb_group,
@@ -103,10 +110,12 @@ def main() -> None:
     )
 
     if args.sampling_strategy != "none":
+        # UDR/ADR randomize the block mass on top of the chosen source/target domain.
         env = RandomizationWrapper(env, mass_range=(0.5, 6), mode=args.sampling_strategy)
 
     tensorboard_log = f"runs/{run_name}"
 
+    # MultiInputPolicy is required because PandaPush observations are Dict observations.
     if args.algorithm == "sac":
         model = SAC("MultiInputPolicy", env, verbose=1, tensorboard_log=tensorboard_log, seed=args.seed)
     elif args.algorithm == "ppo":
@@ -116,6 +125,7 @@ def main() -> None:
 
     save_path = f"models/{run_name}"
     try:
+        # WandbCallback saves the final model to models/<run_name>/model.zip at training end.
         model.learn(total_timesteps=args.timesteps,
                         callback=WandbCallback(
                             model_save_path=save_path,
