@@ -71,8 +71,8 @@ def main() -> None:
 )
 
     #TODO: add randomization wrapper here
-    # if args.sampling_strategy != "none":
-    #     env = RandomizationWrapper(env, args.sampling_strategy)
+    if args.sampling_strategy != "none":
+        env = RandomizationWrapper(env, args.sampling_strategy)
     #TODO: create model and train it
     if args.algorithm == "sac":
         model = SAC("MultiInputPolicy", env, verbose=1, tensorboard_log=f"runs/{args.algorithm}_{args.sampling_strategy}_{args.env_type}_{args.timesteps // 1000}k")
