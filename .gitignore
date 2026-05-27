@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ML Training Artifacts
+part2/models/
+part2/runs/
+part2/wandb/
+
+# Weights & Biases
+wandb/
+
+# OS
+.DS_Store
+Thumbs.db
