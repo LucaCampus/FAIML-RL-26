@@ -41,7 +41,7 @@ def main():
     run_name = f"{args.algorithm}_{baseline_tag}_hopper_{args.n_episodes}ep_seed{args.seed}"
     baseline_str = f"_baseline{args.baseline}" if args.baseline is not None else ""
     model_name = f"best_model_{args.algorithm}{baseline_str}.pt"
-    wandb.init(entity="terr1veneto", project='REINFORCE', name=run_name, config=vars(args))
+    wandb.init(entity="terr1veneto", project='newRunsPart1', name=run_name, config=vars(args))
 
     best_avg_reward = -float('inf')
     rewards_history=[]
