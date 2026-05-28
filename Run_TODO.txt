@@ -1,0 +1,116 @@
+#TODO: MANCANO I FILE DI EVALUATION PER LE TASK DI REINFORCE E ACTOR CRITIC
+
+reinforce
+lr --> 0.01
+gamma --> 0.99
+3 baseline [0, 10, 20, 30]
+3 seed  [42, 123, 777]
+
+actor critic
+gamma --> 0.99
+2 lr [0.001, 0.0003]
+3 seed  [42, 123, 777]
+
+Task 2
+✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 42
+✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 42
+✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 42
+#ANTONIO
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 42
+
+# ENRICO
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 123
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 123
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 123
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 123
+
+#LUCA
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 777
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 777
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 777
+python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 777
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_udr_source_1000k_seed777/model.zip --episodes 50 --env-type target
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source_1000k_seed777/model.zip --episodes 50 --env-type target
+
+
+Task 3
+
+✓ python train.py --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 42
+✓ python train.py --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 42
+
+#ANTONIO
+python train.py --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 123
+python train.py --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 123
+
+#MARGHE
+python train.py --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 777
+python train.py --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 777
+
+
+Task 4
+
+
+PPO VS SAC 
+#1 LUCA
+✓ python train_sb3.py --algorithm ppo --env-type source --timesteps 500_000 --seed 42
+✓ python train_sb3.py --algorithm sac --env-type source --timesteps 500_000 --seed 42
+
+#2 ENRI
+✓ python train_sb3.py --algorithm ppo --env-type source --timesteps 500_000 --seed 123
+✓ python train_sb3.py --algorithm sac --env-type source --timesteps 500_000 --seed 123
+
+#3 ANTO
+✓ python train_sb3.py --algorithm sac --env-type source --timesteps 500_000 --seed 777
+✓ python train_sb3.py --algorithm ppo --env-type source --timesteps 500_000 --seed 777
+
+GUIDELINES
+
+
+Task 5
+best_model = best from task 4
+
+#1 LUCA
+✓ python train_sb3.py --algorithm sac --env-type source --timesteps 1_000_000 --seed 42
+✓ python train_sb3.py --algorithm sac --env-type target --timesteps 1_000_000 --seed 42
+	
+✓ python eval_sb3.py --model-path [METTI SOURCE] --render --env-type source
+✓ python eval_sb3.py --model-path [METTI SOURCE] --render --env-type target
+✓ python eval_sb3.py --model-path [METTI TARGET] --render --env-type target
+
+#2 ENRI
+✓ python train_sb3.py --algorithm sac --env-type source --timesteps 1_000_000 --seed 123
+✓ python train_sb3.py --algorithm sac --env-type target --timesteps 1_000_000 --seed 123
+
+✓ python eval_sb3.py --model-path [METTI SOURCE] --render --env-type source
+✓ python eval_sb3.py --model-path [METTI SOURCE] --render --env-type target
+✓ python eval_sb3.py --model-path [METTI TARGET] --render --env-type target
+
+#3 ANTO
+✓ python train_sb3.py --algorithm sac --env-type source --timesteps 1_000_000 --seed 777
+✓ python train_sb3.py --algorithm sac --env-type target --timesteps 1_000_000 --seed 777
+
+✓ python eval_sb3.py --model-path [METTI SOURCE] --render --env-type source
+✓ python eval_sb3.py --model-path [METTI SOURCE] --render --env-type target
+✓ python eval_sb3.py --model-path [METTI TARGET] --render --env-type target
+
+
+Task 6
+
+#LUCA
+python train_sb3.py --task task5 --sampling-strategy udr --env-type source --seed 42
+python train_sb3.py --task task5 --sampling-strategy adr --env-type source --seed 42
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_udr_source_1000k_seed42/model.zip --episodes 50 --env-type target
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source_1000k_seed42/model.zip --episodes 50 --env-type target
+
+#ENRICO
+python train_sb3.py --task task5 --sampling-strategy udr --env-type source --seed 123
+python train_sb3.py --task task5 --sampling-strategy adr --env-type source --seed 123
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_udr_source_1000k_seed123/model.zip --episodes 50 --env-type target
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source_1000k_seed123/model.zip --episodes 50 --env-type target
+
+
+#ANTONIO
+python train_sb3.py --task task5 --sampling-strategy udr --env-type source --seed 777
+python train_sb3.py --task task5 --sampling-strategy adr --env-type source --seed 777
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_udr_source_1000k_seed777/model.zip --episodes 50 --env-type target
+python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source_1000k_seed777/model.zip --episodes 50 --env-type target
