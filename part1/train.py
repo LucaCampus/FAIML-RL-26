@@ -63,8 +63,9 @@ def main():
         loss = agent.update_policy()
         rewards_history.append(episode_reward)
         average_reward = np.mean(rewards_history[-100:])
+        std_reward = np.std(rewards_history[-100:])
         
-        wandb.log({'episode_reward': episode_reward, 'loss': loss, 'average_reward': average_reward}, step=ep)
+        wandb.log({'episode_reward': episode_reward, 'loss': loss, 'average_reward': average_reward, 'std_reward': std_reward}, step=ep)
         print(f'Episode {ep+1} reward: {episode_reward:.2f}, average reward: {average_reward:.2f}, loss: {loss:.4f}')
 
         if average_reward > best_avg_reward:
