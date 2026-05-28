@@ -9,9 +9,6 @@ import gymnasium as gym
 import wandb
 from agent import Policy, Agent
 
-torch.manual_seed(42)
-np.random.seed(42)
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--n_episodes', type=int, default=1000)
@@ -19,7 +16,11 @@ def main():
     parser.add_argument('--lr', type=float, default=1e-3)
     parser.add_argument('--baseline', type=float, default=None)
     parser.add_argument('--algorithm', type=str, default='reinforce', choices=['reinforce', 'actor-critic'])
+    parser.add_argument('--seed', type=int, default=42)
     args = parser.parse_args()
+
+    torch.manual_seed(args.seed)
+    np.random.seed(args.seed)
 
     env = gym.make('Hopper-v4')
 
@@ -46,7 +47,7 @@ def main():
 
     for ep in range(args.n_episodes):
         done = False
-        state, info = env.reset(seed=42 if ep == 0 else None)  # Reset environment to initial state
+        state, info = env.reset(seed=args.seed if ep == 0 else None)  # Reset environment to initial state
         episode_reward = 0
 
         while not done:  # Until the episode is over

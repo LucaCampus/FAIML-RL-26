@@ -15,6 +15,7 @@ def main():
     parser.add_argument('--render', action='store_true', default=True)
     parser.add_argument('--save_video', action='store_true', default=True)
     parser.add_argument('--video_dir', type=str, default='videos')
+    parser.add_argument('--seed', type=int, default=42)
     args = parser.parse_args()
 
     render_mode = 'rgb_array' if args.save_video else ('human' if args.render else None)
@@ -36,7 +37,7 @@ def main():
     episode_rewards = []
     for ep in range(args.n_episodes):
         done = False
-        state, _ = env.reset()
+        state, _ = env.reset(seed=args.seed + ep)  # Reset environment to initial state 
         episode_reward = 0
 
         while not done:
@@ -48,7 +49,7 @@ def main():
         episode_rewards.append(episode_reward)
         print(f'Episode {ep+1}: reward = {episode_reward:.2f}')
 
-    print(f'\nMean reward over {args.n_episodes} episodes: {np.mean(episode_rewards):.2f} +/- {np.std(episode_rewards):.2f}')
+    print(f'\nMean reward over {args.n_episodes} episodes: {np.mean(episode_rewards):.2f} +/- {np.std(episode_rewards):.2f}\nMin: {np.min(episode_rewards):.2f}, Max: {np.max(episode_rewards):.2f}')
     env.close()
 
 
