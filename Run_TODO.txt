@@ -15,7 +15,7 @@ Task 2
 ✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 42
 ✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 42
 ✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 42
-#ANTONIO
+#MARGHE
 python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 42
 
 # ENRICO
