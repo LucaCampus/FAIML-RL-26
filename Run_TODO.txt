@@ -12,39 +12,39 @@ gamma --> 0.99
 3 seed  [42, 123, 777]
 
 Task 2
-✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 42
-✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 42
-✓ python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 42
+✓ python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 42 
+✓ python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 42
+✓ python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 42
 #MARGHE
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 42
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 42
 
 # ENRICO
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 123
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 123
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 123
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 123
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 123
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 123
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 123
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 123
 
 #LUCA
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 777
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 777
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 777
-python train.py --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 777
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 10 --seed 777
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 0 --seed 777
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 20 --seed 777
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.01 --gamma 0.99 --baseline 30 --seed 777
 python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_udr_source_1000k_seed777/model.zip --episodes 50 --env-type target
 python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source_1000k_seed777/model.zip --episodes 50 --env-type target
 
 
 Task 3
 
-✓ python train.py --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 42
-✓ python train.py --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 42
+✓ python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 42
+✓ python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 42
 
 #ANTONIO
-python train.py --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 123
-python train.py --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 123
+python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 123
+python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 123
 
 #MARGHE
-python train.py --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 777
-python train.py --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 777
+python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 777
+python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 777
 
 
 Task 4
