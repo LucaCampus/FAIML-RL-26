@@ -115,7 +115,7 @@ class Agent(object):
                 returns = returns - self.baseline
 
             #   - compute policy gradient loss function given actions and returns
-            loss = -(action_log_probs * returns).sum()
+            loss = -(action_log_probs * returns).mean()
 
         elif self.algorithm == 'actor-critic':
             #
@@ -137,7 +137,7 @@ class Agent(object):
             advantages = bootstrapped_returns - state_values.detach()
 
             #   - compute actor loss and critic loss
-            actor_loss = -(action_log_probs * advantages).sum()
+            actor_loss = -(action_log_probs * advantages).mean()
             critic_loss = F.mse_loss(state_values, bootstrapped_returns)
             loss = actor_loss + 0.5*critic_loss
 

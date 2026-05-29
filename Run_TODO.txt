@@ -12,10 +12,11 @@ gamma --> 0.99
 3 seed  [42, 123, 777]
 
 Task 2
-✓ python train.py --n_episodes 20000 --algorithm reinforce --lr 0.001 --gamma 0.99 --baseline 0 --seed 42 
-✓ python train.py --n_episodes 20000 --algorithm reinforce --lr 0.001 --gamma 0.99 --baseline 10 --seed 42
-✓ python train.py --n_episodes 20000 --algorithm reinforce --lr 0.001 --gamma 0.99 --baseline 20 --seed 42
+
 #MARGHE
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.001 --gamma 0.99 --baseline 0 --seed 42 
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.001 --gamma 0.99 --baseline 10 --seed 42
+python train.py --n_episodes 20000 --algorithm reinforce --lr 0.001 --gamma 0.99 --baseline 20 --seed 42
 python train.py --n_episodes 20000 --algorithm reinforce --lr 0.001 --gamma 0.99 --baseline 30 --seed 42
 
 # ENRICO
@@ -35,8 +36,9 @@ python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source
 
 Task 3
 
-✓ python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 42
-✓ python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 42
+#ANOTNIO
+python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 42
+python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 42
 
 #ANTONIO
 python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 123
