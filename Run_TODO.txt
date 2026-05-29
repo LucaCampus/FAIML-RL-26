@@ -41,8 +41,8 @@ python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0
 python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 42
 
 #ANTONIO
-python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 123
-python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 123
+✓ python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.001 --gamma 0.99 --seed 123
+✓ python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 123
 
 #MARGHE
 python train.py --n_episodes 20000 --algorithm actor-critic --lr 0.0003 --gamma 0.99 --seed 777

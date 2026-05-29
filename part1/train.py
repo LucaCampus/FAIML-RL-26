@@ -37,11 +37,10 @@ def main():
     policy = Policy(state_space, action_space)
     agent = Agent(policy, gamma=args.gamma, lr=args.lr, baseline=args.baseline, algorithm=args.algorithm)
 
-    baseline_tag = f"baseline{args.baseline}" if args.baseline is not None else "nobaseline"
-    run_name = f"{args.algorithm}_{baseline_tag}_ep_{args.n_episodes}_gamma{args.gamma}_lr{args.lr}_seed{args.seed}"
+    run_name = f"{args.algorithm}_baseline{args.baseline}_ep_{args.n_episodes}_gamma{args.gamma}_lr{args.lr}_seed{args.seed}"
     baseline_str = f"_baseline{args.baseline}" if args.baseline is not None else ""
     model_name = f"best_model_{args.algorithm}{baseline_str}.pt"
-    wandb.init(entity="terr1veneto", project='newRunsPart1', name=run_name, config=vars(args))
+    wandb.init(entity="terr1veneto", project='FinalRunsPart1', name=run_name, config=vars(args))
 
     best_avg_reward = -float('inf')
     rewards_history=[]
