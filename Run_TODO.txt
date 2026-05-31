@@ -114,5 +114,5 @@ python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source
 #ANTONIO
 ✓ python train_sb3.py --task task5 --sampling-strategy udr --env-type source --seed 777
 ✓ python train_sb3.py --task task5 --sampling-strategy adr --env-type source --seed 777
-python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_udr_source_1000k_seed777/model.zip --episodes 50 --env-type target
-python eval_sb3.py --model-path [CONTROLLA SIA GIUSTO PATH]models/sac_adr_source_1000k_seed777/model.zip --episodes 50 --env-type target
+✓ python eval_sb3.py --model-path models/sac_udr_source_1000k_seed777/model.zip --episodes 50 --env-type target
+✓ python eval_sb3.py --model-path models/sac_adr_source_1000k_seed777/model.zip --episodes 50 --env-type target
