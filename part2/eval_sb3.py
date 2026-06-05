@@ -9,6 +9,8 @@ import numpy.core.numeric as numpy_numeric
 from stable_baselines3 import SAC
 import panda_gym  # noqa: F401 - required so Panda envs are registered
 
+sys.modules["numpy._core.numeric"] = numpy_numeric
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Evaluate SAC on PandaPush-v3")
     parser.add_argument(

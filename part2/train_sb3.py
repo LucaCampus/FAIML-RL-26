@@ -111,7 +111,7 @@ def main() -> None:
 
     if args.sampling_strategy != "none":
         # UDR/ADR randomize the block mass on top of the chosen source/target domain.
-        env = RandomizationWrapper(env, mass_range=(0.5, 6), mode=args.sampling_strategy)
+        env = RandomizationWrapper(env, mass_range=(0.5, 25.0), mode=args.sampling_strategy)
 
     tensorboard_log = f"runs/{run_name}"
 

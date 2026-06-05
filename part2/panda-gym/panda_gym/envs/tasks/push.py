@@ -25,7 +25,7 @@ class Push(Task):
         self.obj_range_low = np.array([-obj_xy_range / 2, -obj_xy_range / 2, 0])
         self.obj_range_high = np.array([obj_xy_range / 2, obj_xy_range / 2, 0])
         self.type = type
-        self.current_mass = 1.0 if self.type == "source" else 5.0
+        self.current_mass = 1.0 if self.type == "source" else 25.0
         with self.sim.no_rendering():
             self._create_scene()
 
