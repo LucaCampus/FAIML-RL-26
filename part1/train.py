@@ -45,10 +45,10 @@ def main():
 
     for ep in range(args.n_episodes):
         done = False
-        state, info = env.reset(seed=args.seed if ep == 0 else None)  # Reset environment to initial state
+        state, info = env.reset(seed=args.seed if ep == 0 else None)  
         episode_reward = 0
 
-        while not done:  # Until the episode is over
+        while not done:  
             action, log_prob = agent.get_action(state)  # Sample action from policy
             next_state, reward, terminated, truncated, _ = env.step(action.detach().numpy())  # Step the simulator to the next timestep
             done = terminated or truncated

@@ -26,10 +26,8 @@ class Policy(torch.nn.Module):
         """
         self.fc1_actor = torch.nn.Linear(state_space, self.hidden)
         self.fc2_actor = torch.nn.Linear(self.hidden, self.hidden)
-        # outputs the mean for each action dimension
         self.fc3_actor_mean = torch.nn.Linear(self.hidden, action_space)
         
-        # Learned standard deviation for exploration at training time 
         self.sigma_activation = F.softplus
         init_sigma = 0.5
         self.sigma = torch.nn.Parameter(torch.zeros(self.action_space)+init_sigma)
@@ -38,11 +36,8 @@ class Policy(torch.nn.Module):
         """
             Critic network
         """
-        # TASK 3: critic network for actor-critic algorithm
         self.fc1_critic = torch.nn.Linear(state_space, self.hidden)
         self.fc2_critic = torch.nn.Linear(self.hidden, self.hidden)
-        # the critic's job is to answer one single question: "how good is this state?" 
-        # and the answer is a single number
         self.fc3_critic = torch.nn.Linear(self.hidden, 1) 
 
         self.init_weights()
@@ -54,7 +49,6 @@ class Policy(torch.nn.Module):
                 torch.nn.init.normal_(m.weight)
                 torch.nn.init.zeros_(m.bias)
 
-    # builds the probability distribution over actions given the current state
     def forward(self, x):
         """
             Actor
@@ -70,7 +64,6 @@ class Policy(torch.nn.Module):
         """
             Critic
         """
-        # TASK 3: forward in the critic network
         x_critic = self.tanh(self.fc1_critic(x))
         x_critic = self.tanh(self.fc2_critic(x_critic))
         state_value = self.fc3_critic(x_critic)
@@ -104,9 +97,6 @@ class Agent(object):
         self.states, self.next_states, self.action_log_probs, self.rewards, self.done = [], [], [], [], []
 
         if self.algorithm == 'reinforce':
-            #
-            # TASK 2:
-            #   - compute discounted returns
             returns = discount_rewards(rewards, self.gamma)
 
             if self.baseline is not None:
@@ -116,25 +106,18 @@ class Agent(object):
             loss = -(action_log_probs * returns).mean()
 
         elif self.algorithm == 'actor-critic':
-            #
-            # TASK 3:
-            #   - compute bootstrapped discounted return estimates
             _, next_state_values = self.policy(next_states)
             _, state_values = self.policy(states)
             # .sqeeze(-1) is not considering the last dimension
             # detach() is not to compute gradients (this is just the state value, a number)
             next_state_values = next_state_values.squeeze(-1).detach()
 
-            # state values = what the critic predicted for the state at timestep t
             state_values = state_values.squeeze(-1)
 
-            #bootstrapped_returns = what the critic should have predicted 
             bootstrapped_returns = rewards + self.gamma * next_state_values * (1 - done)
 
-            #   - compute advantage terms
             advantages = bootstrapped_returns - state_values.detach()
 
-            #   - compute actor loss and critic loss
             actor_loss = -(action_log_probs * advantages).mean()
             critic_loss = F.mse_loss(state_values, bootstrapped_returns)
             loss = actor_loss + 0.5*critic_loss
@@ -161,7 +144,7 @@ class Agent(object):
         else:   # Sample from the distribution
             action = normal_dist.sample()
 
-            # Compute Log probability of the action [ log(p(a[0] AND a[1] AND a[2])) = log(p(a[0])*p(a[1])*p(a[2])) = log(p(a[0])) + log(p(a[1])) + log(p(a[2])) ]
+            # Compute Log probability of the action
             action_log_prob = normal_dist.log_prob(action).sum()
 
             return action, action_log_prob
