@@ -1,4 +1,4 @@
-# Starting code for course project of FAIML - 01VSDWS
+# Project of FAIML - 01VSDWS assigned to Group 58 (Campus Luca, Pendin Margherita, Sechi Enrico, Vetrone Antonio)
 
 Official assignment at [Google Doc](https://docs.google.com/document/d/1AXgLXux3l69vDAPLL-UYD3luFOw3JbyR-pLCS2yuNZk/edit?usp=sharing)
 
@@ -28,6 +28,8 @@ pip install -r requirements.txt
 ```
 You can check your installation by launching `python test_random_policy.py`.
 
+**Note**
+We highly suggest using Conda to manage the environment.
 
 ## Part 1: Hopper-v4
 You can train the policy on the Hopper environment using the `train.py` script in the `part1` folder.
@@ -64,35 +66,35 @@ python train_sb3.py --algorithm sac --env-type source --timesteps 1_000_000 --se
 cd part2
 python train_sb3.py --algorithm ppo --env-type source --timesteps 1_000_000 --seed 777
 ```
-### 1. Local
 
-if you have a Linux system, you can work on the course project directly on your local machine. By doing so, you will also be able to render the Mujoco Hopper environment and visualize what is happening.
-We highly suggest using Conda to manage the environment.
-
-**Dependencies**
-- Run `pip install -r requirements.txt`
-
-Check your installation by launching `python test_random_policy.py`.
-
-
-### 2. Google Colab
-
-You can also run the code on [Google Colab](https://colab.research.google.com/)
-
-- Download all files contained in the `colab_template` folder in this repo (inside phase_1 folder).
-- Load the `test_random_policy.ipynb` file on [https://colab.research.google.com/](colab) and follow the instructions on it.
-
-NOTE 1: rendering is currently **not** officially supported on Colab, making it hard to see the simulator in action. We recommend that each group manages to play around with the visual interface of the simulator at least once, to best understand what is going on with the underlying Hopper environment.
-
-NOTE 2: you need to stay connected to the Google Colab interface at all times for your python scripts to keep training.
-
-## 3. Extra step for Push task
-To train on the panda-gym task you have to follow these steps first:
-
+### Evaluation 
+You can evaluate the trained models using the `eval_sb3.py` script in the `part2` folder.
 ```bash
-cd part2/panda-gym
-pip install -e .
+cd part2
+python eval_sb3.py --model-path '[MODEL_PATH]' --render --env-type source
 ```
+The objective of the evaluation is to test the generalization capabilities of the trained policies to unseen environments, by evaluating them on the target environment (i.e. with a different mass for the object to push) and on the source environment to compare the performance. 
+You can evaluate the trained models on the target environment by changing the `--model-path` argument with the path where the model trained (source or target) is saved and `--env-type` argument to `target` in the command above.
+
+The `--render` argument allows you to visualize the environment while evaluating the model. You can also specify a delay for rendering to better see the simulation using the `--render-delay` argument in the command above.
+
+### Domain Randomization
+To better improve the generalization capabilities of the trained policies, you can also train them with domain randomization. You can choose between Uniform Domain Randomization (UDR) and Adversarial Domain Randomization (ADR) by changing the `--sampling-strategy` argument in the command below.
+
+- **UDR**:
+```bash
+cd part2
+python train_sb3.py --algorithm sac --env-type source --timesteps 1_000_000 --seed 777 --sampling-strategy udr
+```
+- **ADR**:
+```bash
+cd part2
+python train_sb3.py --algorithm sac --env-type source --timesteps 1_000_000 --seed 777 --sampling-strategy adr
+``` 
+All the trained models can be found in `part2/models/model.zip`.
+
+## Weights & Biases
+The training scripts are set up to log the training process on [Weights & Biases](https://wandb.ai/).
 
 ## Project structure
 
@@ -111,6 +113,8 @@ FAIML-RL-26/
     ├── rand_wrapper.py <-- randomization wrapper for UDR/ADR
     ├── test_random_policy.py
     ├── train_sb3.py
+    ├── models/ <-- trained models
+    │   └── model.zip
     └── panda-gym/
         └── panda_gym/ (main package)
             └── envs/
