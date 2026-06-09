@@ -34,10 +34,6 @@ class RandomizationWrapper(gym.Wrapper):
 
         self.success_history = []
 
-    # -----------------------
-    # Mass Sampling
-    # -----------------------
-
     def _sample_mass(self):
 
         if self.mode == "none":
@@ -95,10 +91,6 @@ class RandomizationWrapper(gym.Wrapper):
         
 
         return obs, reward, terminated, truncated, info
-
-    # -----------------------
-    # Reset
-    # -----------------------
 
     def reset(self, **kwargs):
 
