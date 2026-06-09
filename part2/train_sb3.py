@@ -21,7 +21,7 @@ def parse_args() -> argparse.Namespace:
         "--task",
         type=str,
         default="task4",
-        choices=["task4", "task5"],
+        choices=["task4", "task6"],
         help="Project phase; controls the default W&B group",
     )
     parser.add_argument(
