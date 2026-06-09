@@ -107,9 +107,7 @@ class Agent(object):
             #
             # TASK 2:
             #   - compute discounted returns
-            #TODO: re
             returns = discount_rewards(rewards, self.gamma)
-            #print(f"Returns mean: {returns.mean().item():.2f}, std: {returns.std().item():.2f}")
 
             if self.baseline is not None:
                 returns = returns - self.baseline

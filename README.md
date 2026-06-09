@@ -2,14 +2,68 @@
 
 Official assignment at [Google Doc](https://docs.google.com/document/d/1AXgLXux3l69vDAPLL-UYD3luFOw3JbyR-pLCS2yuNZk/edit?usp=sharing)
 
-## Getting started
+# FAIML Reinforcement Learning Project
 
-Before starting to implement your own code, make sure to:
-1. read and study the material provided (see Section 1 of the assignment)
-2. read the documentation of the main packages you will be using ([Gymnasium](https://gymnasium.farama.org), [stable-baselines3](https://stable-baselines3.readthedocs.io/en/master/index.html))
-3. play around with the code in the template to familiarize with all the tools. Especially with the `test_random_policy.py` script.
+Project for the Fundamentals of Artificial Intelligence, Machine and Deep Learning course.
+
+The project studies reinforcement learning algorithms in two control tasks:
+
+- **Part 1:** Hopper-v4 continuous control with REINFORCE and Actor-Critic.
+- **Part 2:** PandaPush-v3 robotic manipulation with SAC/PPO and domain randomization.
+
+## Project Overview
+
+This repository contains two main parts:
+
+| Part | Environment | Goal | Methods |
+|------|-------------|------|---------|
+| Part 1 | MuJoCo Hopper-v4 | Learn locomotion control | REINFORCE, Actor-Critic |
+| Part 2 | PandaPush-v3 | Push an object to a target position | SAC, PPO, UDR, ADR |
+
+## Installation
+Create and activate a Python environment, then install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+You can check your installation by launching `python test_random_policy.py`.
 
 
+## Part 1: Hopper-v4
+You can train the policy on the Hopper environment using the `train.py` script in the `part1` folder.
+
+- **REINFORCE**: `python train.py --algorithm reinforce`
+```bash
+cd part1
+python train.py --algorithm reinforce --n_episodes 1000 --gamma 0.99 --lr 0.003
+```
+
+- **Actor-Critic**: `python train.py --algorithm actor_critic`
+```bash
+cd part1
+python train.py --algorithm actor_critic --n_episodes 1000 --gamma 0.99 --lr 0.003
+```
+It is possible to modify the hyperparameters of the training loop by changing the arguments passed to the `train.py` script (i.e. '--lr' for the learning rate).
+
+The best model trained on the Hopper environment can be found in `part1/best_model.pth`.
+
+## Part 2: PandaPush-v3
+For the **second part**, you need to install the `panda-gym` package:
+```bash
+cd part2/panda-gym
+pip install -e .
+```
+You can train the policy on the PandaPush environment using the `train_sb3.py` script in the `part2` folder.
+- **SAC**: `python train_sb3.py --algorithm sac`
+```bash
+cd part2
+python train_sb3.py --algorithm sac --env-type source --timesteps 1_000_000 --seed 777
+```
+- **PPO**: `python train_sb3.py --algorithm ppo`
+```bash
+cd part2
+python train_sb3.py --algorithm ppo --env-type source --timesteps 1_000_000 --seed 777
+```
 ### 1. Local
 
 if you have a Linux system, you can work on the course project directly on your local machine. By doing so, you will also be able to render the Mujoco Hopper environment and visualize what is happening.
@@ -67,7 +121,7 @@ FAIML-RL-26/
                 └── tasks/
                     ├── flip.py
                     ├── pick_and_place.py
-                    ├── push.py <-- you will use this environment
+                    ├── push.py
                     ├── reach.py
                     ├── slide.py
                     └── stack.py

@@ -27,8 +27,6 @@ def main():
     print('State space:', env.observation_space)  # state-space
     print('Action space:', env.action_space)  # action-space
 
-    #TODO: implement training loop for REINFORCE and Actor-Critic using the agent defined in agent.py
-
     # setup policy and agent
 
     state_space = env.observation_space.shape[0]  # 11
